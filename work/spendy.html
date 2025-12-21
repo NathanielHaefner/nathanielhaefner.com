@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Work | Spendy</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/work/all-work.html">Work</a> | <a href="/work/design-research.html">design research</a>
+        <span>2019</span>
+    </h2>
+    
+    <h1 class="header-title">Spendy</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="project-intro">
+    <h1 class="scrollMARKER balance-text">Spendy</h1>
+    <div class="image-box">
+        <img
+                    alt="Spendy"
+                    loading="eager"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-cover.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-cover.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-cover.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-cover.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-cover.jpg"
+                />
+    </div>
+    <aside class="project-details">
+        <div class="details">
+            <div>
+                <h4>Dimensions</h4>
+                <p>667px × 375px</p>
+                <p>6in × 3in × .5in</p>
+                <p>1280px × 720px</p>
+            </div>
+            <div>
+                <h4>Medium</h4>
+                <p>Plastic, Vinyl, Digital</p>
+            </div>
+        </div>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <h2>Researching a Student Debt Issue</h2>
+        <p>This project incorporates the internet of things principle of having physical objects interact digitally to help solve a problem.</p>
+        <p>The goal for this project is to prototype a product or system that helps millennial women with college degrees curb impulse buys in order to focus on using that money to pay back student loans. Women are not only shouldering more of the national student debt, but also are more likely to make impulse purchases.</p>
+
+        <h2>Student Debt</h2>
+        <p>The prevalance of student debt in the US is $1.56 Trillion, which is equivalent to 31,200,000 pairs of jeans or 1,952,440 iPhones. The debt has tripled since 2005.</p>
+        <p>Tutition for college has increased at a faster rate than the level of income for students with degrees. This is exaserbated for women, who typically earn a lower salary than males with an equivalent amount of schooling.</p>
+        <figure>
+            <img
+                    alt="cost vs earnings of college"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-01.jpg"
+                />
+            <figcaption>Cost vs earnings of tuition and degree holders.</figcaption>
+        </figure>
+        <p>Specifically for millennials in Texas, student loan debt is the largest share of millennial debt, accounting for an average of 40% of their total credit and loan balances. Millennials in Texas ranked #1 and #3 with the highest amount for the age group.</p>
+        <blockquote>
+            <p class="balance-text">The average student debt in San Antonio is $27,122, while Austin is $26,164.</p>
+        </blockquote>
+        <h3>College Borrowers</h3>
+        <p>65% of students borrow money to pay for college and 65% of of those borrowers have under $1000 in savings after graduation&mdash;before they need to start paying back their student loans.</p>
+        <p>56% of college students are women and they on average borrow $2700 more than men. Women shoulder $890 Billion of the total student debt. Most students who take out high-interest loans are borrowing more than they need to live. Students are not aware that they do not have to accept a loan for the offered amount and can take a smaller loan.</p>
+
+        <h2>Impulse Purchases</h2>
+        <p>Chase Bank found that 83% of US millennials had made an impulse purchase. This was especially likely on payday or when millennials were cruising shopping websites online. In those instances, their urge to purchase items on impulse alone exceeded that of other age groups.</p>
+        <p>42% of US millennials had made an impulse purchase in the past four weeks.</p>
+        <blockquote>
+            <p class="balance-text">Men buy electronics. Women buy clothing.</p>
+        </blockquote>
+        <p>Chase indicated that millennials were more likely to express regret or dissatisfaction after an impulse purchase. Women are also more likely to make impulse purchases, with 20% of female shoppers citing “retail therapy” as reason for buying, but only 9% of males.</p>
+        <p>With every 1% increase in student loan debt, the likelihood of owning a house decreases by 15%. Students with loans are also 11% less likely to start a business. For a consumer-driven economy like ours, less spending means lower revenues and profits, slowing financial growth of the city.</p>
+
+        <h2>Applying Research</h2>
+        <p>To focus on a target demographic, an empathy map was constructed to give a face to the user.</p>
+        <figure>
+            <img
+                    alt="empathy map"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-02.jpg"
+                />
+            <figcaption>Empathy map.</figcaption>
+        </figure>
+        <p>To brainstorm ways to help users understand the issues surrounding their impulse buying and the weight of the debt they carry, How Might Wes (HMWs) were listed and prioritized. These become possible features for the final prototype. The list was generated based on social and psychological principles of spending habits found in young adults.</p>
+        <figure>
+            <img
+                    alt="hmw"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-03.jpg"
+                />
+            <figcaption>How Might Wes prioritized.</figcaption>
+        </figure>
+        <p>The prioritization grid for the voted on HMWs indicates that showing students how to reward themselves without spending money is both important to the user and fairly easy to design.</p>
+        <figure>
+            <img
+                    alt="prioritization grid"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-04.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-04.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-04.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-04.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-04.jpg"
+                />
+            <figcaption>Prioritization grid in terms of feasibility to design.</figcaption>
+        </figure>
+        <p>This lead to the creation of an experience roadmap where we take our users through a certain feature set over time. Our user can / Our user will be able to…</p>
+        <figure>
+            <img
+                    alt="experience roadmap"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-05.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-05.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-05.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-05.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-05.jpg"
+                />
+            <figcaption>Prioritization grid in terms of feasibility to design.</figcaption>
+        </figure>
+        <p>Sketeches were made of various potential products that meet the requirements of the research.</p>
+        <figure>
+            <img
+                    alt="how might wes"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-06.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-06.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-06.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-06.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-06.jpg"
+                />
+            <figcaption>How Might Wes prioritized.</figcaption>
+        </figure>
+
+        <h2>Solution</h2>
+        <p>After sketching, the best solution became a phone case with a companion application, since it would be easy to integrate into a college student’s existing lifestyle.</p>
+        <p>The Spendy application and phone case wallet helps to curb impulse purchases by requiring a trusted advisor to grant or deny access to your credit cards. The phone case locks credit cards inside the case and can only* be retrieved with the approval of a spending request by your spending guru.</p>
+
+        <h2>Application Wireframes</h2>
+        <p>Starting with sketches for basic functionality, the application took form as a melding of software and hardware.</p>
+        <figure>
+            <img
+                    alt="thumbnails"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-08.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-08.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-08.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-08.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-08.jpg"
+                />
+            <figcaption>Application thumbnails.</figcaption>
+        </figure>
+        <p>The final wireframes serve as an exploration of specific app functionality and cover many use cases such as initial sign up, connecting accounts, finding a guru, and requesting purchases.</p>
+        <p>Other screens shown are how the application gamifies spendless sprees to have friends compete for the longest streak. The app will gently suggest that purchases could be saved for a later date and will suggest using the purchase price of items to instead be used to repay student debts.</p>
+        <p>The overall goal of the app is to help the user establish better financial habits and be mindful of how impulse spending harms their long term financial goals.</p>
+        <figure class="figure-grid figure-p">
+            <div class="device-frame phone-p">
+                <img
+                    alt="onboarding"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-onboard-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-onboard-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-onboard-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="onboarding"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-onboard-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-onboard-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-onboard-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-02.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="onboarding"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-onboard-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-onboard-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-onboard-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-03.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="onboarding"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-onboard-04.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-onboard-04.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-onboard-04.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-04.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-04.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="onboarding"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-onboard-05.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-onboard-05.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-onboard-05.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-05.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-onboard-05.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="student loan login"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-03.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="loan status"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-02.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="bank account login"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-04.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-04.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-04.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-04.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-04.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="find guru"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="guru request"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-07.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-07.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-07.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-07.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-07.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="guru onboard"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-guru-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-guru-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-guru-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-guru-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-guru-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="guru confirmed"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-06.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-06.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-06.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-06.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-06.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="spending limit"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-setup-05.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-setup-05.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-setup-05.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-05.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-setup-05.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="main screen"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-overview-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-overview-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-overview-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-overview-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-overview-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="main menu"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-overview-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-overview-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-overview-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-overview-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-overview-02.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="item list"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-items.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-items.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-items.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-items.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-items.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="friends list"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-friends.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-friends.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-friends.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-friends.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-friends.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="buying"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-buy-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-buy-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-buy-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="buying"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-buy-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-buy-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-buy-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-02.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="guru reply"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-guru-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-guru-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-guru-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-guru-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-guru-03.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="buying refuse"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-buy-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-buy-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-buy-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-03.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="buying reinforcment"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-buy-04.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-buy-04.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-buy-04.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-04.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-buy-04.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="purchase request"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-purchase-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-purchase-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-purchase-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-purchase-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-purchase-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="guru ask"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-guru-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-guru-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-guru-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-guru-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-guru-02.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="purchase allowed"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-purchase-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-purchase-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-purchase-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-purchase-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-purchase-02.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="purchase directions"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-purchase-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-purchase-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-purchase-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-purchase-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-purchase-03.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="reward"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-reward-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-reward-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-reward-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-reward-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-reward-01.jpg"
+                />
+            </div>
+            <div class="device-frame phone-p">
+                <img
+                    alt="reward social"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-wireframe-reward-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-wireframe-reward-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-wireframe-reward-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-wireframe-reward-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-wireframe-reward-02.jpg"
+                />
+            </div>
+            <figcaption>Wireframe and user flow for the Spendy app.</figcaption>
+        </figure>
+
+        <h2>Case Prototype</h2>
+        <p>The Spendy case prototype shows the main features of the wallet phone case. It has a carrying strap, card slots that are locked, as well as the connector to plug the phone into the case. The case would also have a battery, to keep the phone charged longer&mdash;further incentivising its use. The prototype is non-functional, but just aims to show the scale and provide the ability to do mock tests with the application.</p>
+        <p>The phone case wallet locks two credit/debit cards into the back of the phone and can only be accessed when the accompanying app grants permission. The case also will offer RIFD protection and can hold an ID card that can always be accessed. A wrist strap makes it easy to carry and less likely for the user to leave it somewhere by accident.</p>
+        <figure>
+            <img
+                    alt="case sketches"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-07.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-07.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-07.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-07.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-07.jpg"
+                />
+            <figcaption>Sketches of the phone case.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="case"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-case-01.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-case-01.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-case-01.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-case-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-case-01.jpg"
+                />
+            <figcaption>Card side of the phone case.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="case"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-case-02.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-case-02.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-case-02.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-case-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-case-02.jpg"
+                />
+            <figcaption>Card side detail of lock.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="case"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-case-03.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-case-03.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-case-03.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-case-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-case-03.jpg"
+                />
+            <figcaption>Phone side of case with plug.</figcaption>
+        </figure>
+
+        <h2>Video Prototype</h2>
+        <p>To help explain Spendy to users, a promotional video prototype was developed. The video explains the functionality of the phone case and how a friend can act as a trusted spending guru.</p>
+        <p>A quick storyboard helped to plan the animations in the video and develop a script.</p>
+        <figure>
+            <img
+                    alt="video storyboard"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/spendy/200w/200-spendy-process-09.jpg 200w,
+                        /images/projects/2019/spendy/400w/400-spendy-process-09.jpg 400w,
+                        /images/projects/2019/spendy/800w/800-spendy-process-09.jpg 800w,
+                        /images/projects/2019/spendy/1200w/1200-spendy-process-09.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/spendy/1200w/1200-spendy-process-09.jpg"
+                />
+            <figcaption>Video storyboard.</figcaption>
+        </figure>
+        <p>The video prototype shows the most common uses for the Spendy app system with simple animations and characters to make the app more universally appealing.</p>
+        <figure class="shadow">
+            <div class="video-frame">
+                <iframe src="https://www.youtube-nocookie.com/embed/MmxLSQr1feg?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+            </div>
+        </figure>
+    </article>
+</section>
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Work | in.gredients</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/work/all-work.html">Work</a> | <a href="/work/design-research.html">design research</a>
+        <span>2017</span>
+    </h2>
+    
+    <h1 class="header-title">in.gredients</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="project-intro">
+    <h1 class="scrollMARKER balance-text">in.gredients</h1>
+    <div class="image-box">
+        <img
+                    alt="in.gredients"
+                    loading="eager"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-cover.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-cover.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-cover.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-cover.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-cover.jpg"
+                />
+    </div>
+    <aside class="project-details">
+        <div class="details">
+            <div>
+                <h4>Dimensions</h4>
+                <p>15in × 10in × 3in</p>
+                <p>11in × 8.5in</p>
+                <p>3.5in × 2.5in</p>
+                <p>5in × 3in</p>
+                <p>2in × 2in</p>
+                <p>1024px × 768px</p>
+            </div>
+            <div>
+                <h4>Medium</h4>
+                <p>Matte Stock, Cardboard, Glass, Cotton, Digital</p>
+            </div>
+        </div>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <h2>Project Overview</h2>
+        <h3>Sustainable & Local</h3>
+        <p>Located in East Austin, in.gredients is a zero waste grocery store that provides local and seasonal produce, bulk items, and prepared foods. in.gredients also has live music, trivia nights, and hosts events and workshops for the surrounding community.</p>
+        <figure class="figure-p">
+            <img
+                    alt="bulk dispensors"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-store03.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-store03.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-store03.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-store03.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-store03.jpg"
+                />
+            <figcaption>Bulk food dispensors common to the store.</figcaption>
+        </figure>
+        <h3>Participants</h3>
+        <p>Working with the staff on provided information about the ways in which the store educates the customers about the store ethos and how the mission of the store contributes to the overall customer experience.</p>
+        <h3>Objective</h3>
+        <p>A project for in.gredients should entice repeat customer participation to help develop a lasting impression on the importance of the mission of in.gredients&mdash;to reduce landfill waste and promote local and sustainable food. The challenge is to break old customer habits of buying unsustainable foods and help them form new habits of shopping responsibly.</p>
+
+        <h2>Research Methods</h2>
+        <h3>Direct Observations</h3>
+        <p>For the initial research phase, direct observation of the store and the people shopping required taking photographs and writing notes about things happening at the store. I also went to the store to shop bringing my own containers, and without in order to experience the store as a brand new customer and as a veteran shopper who fully embraces the in.gredients ethos.</p>
+        <p>While visiting the store, I took note of the existing branding of in.gredients as well as the materials used throughout the store in order to establish a design language for the eventual solution.</p>
+        <figure class="figure-grid">
+            <img
+                    alt="silverware holder"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-store01.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-store01.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-store01.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-store01.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-store01.jpg"
+                />
+            <img
+                    alt="price sign"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-store02.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-store02.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-store02.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-store02.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-store02.jpg"
+                />
+            <figcaption>Branding and signage in the store.</figcaption>
+        </figure>
+
+        <h3>Survey</h3>
+        <p>The in.gredients staff was prompted to participate in a short story in order to figure out the sustainable grocery practices and buying habits of the people who actually work at the store since they are most likely to embody the store ethos. The survey also asked the employees to list all the items they knew were on the banned ingredients list to see how their answers compared to the items from the full list.</p>
+        <p>A recent customer survey had been given to around 80 people who shop at in.gredients and the results were shared to supplement the research.</p>
+        <figure class="figure-p">
+            <img
+                    alt="survey results"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-survey.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-survey.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-survey.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-survey.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-survey.jpg"
+                />
+            <figcaption>Sample of the staff surveys.</figcaption>
+        </figure>
+
+        <h3>Participatory Card Exercise</h3>
+        <p>Using a deck of cards containing common ingredients for sale in the store and a modifying card showing an attribute, the in.gredients staff and a few customers participated in a game intended to discover the optimal type of packaging to hold items purchased in the store. The deck of cards contained 24 different foods and products and 6 attribute cards.</p>
+        <figure class="figure-p">
+            <img
+                    alt="full set of survey cards"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-cardset.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-cardset.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-cardset.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-cardset.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-cardset.jpg"
+                />
+            <figcaption>Full set of participatory cards.</figcaption>
+        </figure>
+        <h4>Playing the Game</h4>
+        <p>For 2 minutes, each person would draw or diagram a type of container that would hold each of the 4 ingredient cards that also takes on the property of the attribute card. Then each person would explain their design solution. For subsequent rounds, new cards would be drawn until all the cards had been used and many unique solutions had been generated.</p>
+        <figure class="figure-p">
+            <img
+                    alt="drawings produced by card game"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-cardgame.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-cardgame.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-cardgame.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-cardgame.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-cardgame.jpg"
+                />
+            <figcaption>Drawings produced by card outcomes.</figcaption>
+        </figure>
+
+        <h2>Research Results</h2>
+        <h3>Customer Statistics</h3>
+        <p>The goal was to research the customer experience and how customers are educated about the store ethos. The largest demographic of customers are between the ages of 25 and 34, visit the store because of the mission/ethos and location, and shop 2 &ndash; 3 time a month or less at the store.</p>
+        <figure>
+            <img
+                    alt="demographics"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-results02.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-results02.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-results02.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-results02.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-results02.jpg"
+                />
+            <figcaption>Demographics of the store and why they visit.</figcaption>
+        </figure>
+
+        <h2>Containers</h2>
+        <h3>Options in the Store</h3>
+        <p>When customers forget their containers, the options are generic jars from $1.20 &ndash; $2.50 or plastic bins are available for 30¢, 40¢, and, 50¢ based on the size. The jars are on one side of the store and the plastic bins are sold near the weigh station.</p>
+        <p>Also, small brown paper bags and small plastic bags are available to customers in store. A customer can bring in any clean container and weight at the tare station before filling it with bulk items. Often, a customer will use a large plastic bag and only fill it with a small amount of bulk food.</p>
+        <blockquote>
+            <p class="balance-text">“The best containers to bring into the store are glass and clear plastic, because studies have shown that food stored in clear containers are more likely to be eaten and used before they go bad.”</p>
+            <cite>&mdash;Grayson, Content Lead/Marketing Director</cite>
+        </blockquote>
+        <figure class="figure-grid">
+            <img
+                    alt="plastic containers"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-store04.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-store04.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-store04.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-store04.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-store04.jpg"
+                />
+            <img
+                    alt="glass jars"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-store05.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-store05.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-store05.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-store05.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-store05.jpg"
+                />
+            <figcaption>Available containers inside the store for purchase.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="25% of visitors"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-results01.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-results01.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-results01.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-results01.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-results01.jpg"
+                />
+            <figcaption>This percentage could be much higher, but customers often forget or do not have any containers at all.</figcaption>
+        </figure>
+
+        <h3>Banned Ingredients</h3>
+        <p>The unacceptable ingredients list is a list of all banned items that in.gredients will not sell. All of the items in their store are free from any of the chemicals and colors from the list.</p>
+        <p>Only a small number of the ingredients on the list were named by the employees in the survey. Also, some employees named items that were not on the list.</p>
+        <figure>
+            <img
+                    alt="banned ingredients list"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-banned.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-banned.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-banned.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-banned.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-banned.jpg"
+                />
+            <figcaption>Banned list of ingredients.</figcaption>
+        </figure>
+
+        <h3>Research Conclusion</h3>
+        <p>Since the ethos and mission are the biggest draw for customers visiting the store, and a majority of the customers visit the store on less than a weekly basis, a reasonable design solution would emphasis the ethos and promote customer engagement and retention. Teaching customers more about what items in.gredients allows in the store and where those items come from, especially the locally grown produce, would also engage customers more and give them a more personal connection to the local grocer.</p>
+        <p>Another aspect of shopping that is more unique to in.gredients is the process of bringing containers rather than using containers provided by the store. The current jars and plastic containers are lacking in branding and do not provide any reminders for the customer about where the item came from or that the container can be reused again and again. They are also not always located in the most accessible area of the store.</p>
+        <p>The staff of in.gredients is highly knowledgeable of the quality and sustainability aspects of their food and home goods, but the information is not always passed along directly to the customer unless the customer inquires about it. Most of the direct engagement for customers comes from attending frequent events hosted at the store. These events provide the largest opportunity to promote new programs or practices and reach the largest audience.</p>
+        <p>In researching the sustainable practices that the store itself follows, there were a few things that had the potential to be improved upon. The main culprit of landfill trash generated at the store comes from either customers brining outside trash into the store in the form of non-reusable containers or from the non-recyclable backing paper from stickers. By reminding people to bring proper containers and by also reusing the same containers, both sources of trash could be reduced.</p>
+
+        <h2>Design Solution</h2>
+        <h3>Subscription Service</h3>
+        <p>The solution is to provide a subscription service that lets customers rely on the knowledge of the in.gredients staff to create weekly boxes of food and other products, which can be collected by the customer. The customer will simply sign up in person or through the website and come to the store to pick up a sustainable box of food in branded, reusable containers.</p>
+        <p>Subscribers will pay for a month’s or more of weekly boxes that will not only provide them more convenient access to seasonal produce, but also interesting recipes, promotional items, and special jars and containers to use again and again at the store.</p>
+        <p>The weekly food and item boxes reinforce the store ethos and mission. The box comes with reusable containers to get customers used to bringing in their own containers for buying bulk, which will help reduce the entrance barrier to sustainable shopping practices at the store.</p>
+        <p>Customers will engage in sustainable practices along with the store by returning empty boxes and jars for reuse. Incentives will be provided to customers who frequently return the empty items, which will enhance the participation of subscribers.</p>
+        <figure>
+            <img
+                    alt="subscription box"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-subscription.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-subscription.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-subscription.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-subscription.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-subscription.jpg"
+                />
+            <figcaption>Items in the subscription box without the food.</figcaption>
+        </figure>
+
+        <h3>Subscription Box</h3>
+        <p>Waxed cardboard boxes are reusable and can hold a variety of produce, jars of bulk items, and refrigerated items. They can be folded flat when unused to reduce the amount of space used to store them. Recipe cards containing the contents of the box are included in a moisture resistant pocket. The box features the branding of the store as well as directions on how to return the box when empty.</p>
+        <figure class="figure-grid">
+            <img
+                    alt="box closed"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-boxclosed.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-boxclosed.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-boxclosed.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-boxclosed.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-boxclosed.jpg"
+                />
+            <img
+                    alt="box inside lid"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-boxlid.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-boxlid.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-boxlid.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-boxlid.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-boxlid.jpg"
+                />
+            <img
+                    alt="box open with contents"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-boxopen.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-boxopen.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-boxopen.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-boxopen.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-boxopen.jpg"
+                />
+            <figcaption>Reusable subscription box.</figcaption>
+        </figure>
+        <figure class="figure-p">
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-boxflat.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-boxflat.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-boxflat.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-boxflat.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-boxflat.jpg"
+                />
+            <figcaption>Box folded flat.</figcaption>
+        </figure>
+
+        <h3>Recipe Cards</h3>
+        <p>Recipe cards will be included in each box and will provide a list of all the items in the box as well as how to prepare them. Recipes will be prepared by the staff. The 3×5in cards will be printed front and back and produced in-house as needed to reduce waste and cost.</p>
+        <figure class="figure-p">
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-recipes.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-recipes.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-recipes.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-recipes.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-recipes.jpg"
+                />
+            <figcaption>Recipe cards that can be kept by the subscriber.</figcaption>
+        </figure>
+
+        <h3>Glass Jars</h3>
+        <p>Etched jars share the ethos with customers and promote reuse inside the store. Jars can be collected from customers, washed, etched to keep costs low. They will be used for holding wet and loose items in subscription boxes. A sticker for the lids have a space for a handwritten date to show when items are picked up as well as a space for a plu# for item identification. The jars will be weighed and the tare value etched onto the jar itself to make shopping easier and also reduce the amount of sticker trash created at the tare station.</p>
+        <p>The etching makes the jar more special and gives the customer a reason to keep the jar rather than only use it once. Since the jar is branded instead of generic, the customer will feel more attachment to the in.gredients brand and be more likely to return there to fill the jar with more bulk items.</p>
+        <figure class="figure-grid">
+            <img
+                    alt="etched jar"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-jar.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-jar.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-jar.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-jar.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-jar.jpg"
+                />
+            <img
+                    alt="jar lid sticker"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-jarlid.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-jarlid.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-jarlid.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-jarlid.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-jarlid.jpg"
+                />
+            <figcaption>Etched glass jar and lid sticker.</figcaption>
+        </figure>
+        <h4>Jar Message Schedule</h4>
+        <p>The jars can contain a variety of messaging options that depict various aspects of the store ethos. Some jars are more about waste prevention, some jars touch on the items from the banned ingredients list, and some jars promote the local and community practices of sustainable farming.</p>
+        <p>Since jars come in many different sizes, the messages can be tailored in size and dimension to fit any size jar. Since the jars are etched individually, each specific jar’s attributes can be taken into account without having to resort to a one-size-fits-all solution and a possible restriction on jar types.</p>
+        <figure>
+            <img
+                    alt="jar messages"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-jarmessage.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-jarmessage.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-jarmessage.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-jarmessage.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-jarmessage.jpg"
+                />
+            <figcaption>Messages designed to fit any size glass jar.</figcaption>
+        </figure>
+
+        <h3>Cotton Bags</h3>
+        <p>Canvas and muslin bags stitched by fair-wage workers will be used to store smaller dry items like beans, rice, and tea. Branding on the bags will reinforce the ethos and make them interesting, so people will keep and reuse them. The bags will be printed using stamps and waterproof ink. Stamps are more easily updated than full runs of commercially printed bags and can be printed on demand to keep initial costs low.</p>
+        <p>For the subscription box, it is likely that many sizes of cotton bags will be needed for various items. With the stamping system, a large variety of bags can be accommodated using only a few designs and individual stamps.</p>
+        <figure class="figure-p">
+            <img
+                    alt="cotton bag"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-bag.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-bag.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-bag.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-bag.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-bag.jpg"
+                />
+            <figcaption>Stamped cotton bags.</figcaption>
+        </figure>
+
+        <h3>Sign-Up Form</h3>
+        <p>Subscriptions for the boxes can be signed up for online through the in.gredients website. In-store iPads can be used to access the sign-up form for customers who visit in person or during events. Since the box will be picked up from the store and comes in one size, the sign-up process is quite minimal and takes only a few moments.</p>
+        <p>Customers will first choose the duration of their subscription. Discounts for signing up for longer durations will entice people to select longer subscriptions. Customers can then add any additional information about what they would like in their box and any relevant dietary restrictions. After agreeing to the terms of service, the customer will enter new account information and payment information to complete the process.</p>
+        <p>After becoming a subscriber, the customer can log into the site and edit any details about their box or cancel their subscription service before the next billing cycle.</p>
+        <figure class="figure-grid">
+            <div class="device-frame browser">
+                <img
+                    alt="sign up process"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-signup01.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-signup01.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-signup01.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-signup01.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-signup01.jpg"
+                />
+            </div>
+            <div class="device-frame browser">
+                <img
+                    alt="log in process"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-signup02.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-signup02.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-signup02.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-signup02.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-signup02.jpg"
+                />
+            </div>
+            <div class="device-frame browser">
+                <img
+                    alt="complete form"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-signup03.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-signup03.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-signup03.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-signup03.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-signup03.jpg"
+                />
+            </div>
+            <figcaption>Online sign-up flow for subscription service.</figcaption>
+        </figure>
+
+        <h2>Project Budget</h2>
+        <h3>Implementation Plan</h3>
+        <p>The aim of the project is to promote reusable materials, so many costs will be upfront and the project will cost less to continue over time. A few of the items will have variable costs depending on if they are obtained for free through donations or purchased new. Since many items can stand alone, the costs could be spread out over a longer period of time by rolling out different aspects of the subscription box in waves. Muslin and cotton bags could be added after the initial boxes and jars.</p>
+        <p>Also, any of the designed elements be made available outside of the subscription service to enhance retail sales from customers without subscriptions to promote the store ethos. Subscriptions could be sold to groups of people, such as offices where in.gredients would be responsible for delivering the boxes rather than having them picked up. </p>
+        <p>Since the box, jars, and bags are modular by nature, they can be used in any number of promotional or awareness campaigns.</p>
+        <p>For materials costs alone, each box would cost between $7.49 and $11.22 to create with 2 jars, 2 bags, and a recipe card. Over time, the box cost will be reduced when customers return and reuse the contents and offset the cost of buying new boxes and materials each time.</p>
+        <figure class="figure-p">
+            <img
+                    alt="budget"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2017/ingredients/200w/200-ingredients-budget.jpg 200w,
+                        /images/projects/2017/ingredients/400w/400-ingredients-budget.jpg 400w,
+                        /images/projects/2017/ingredients/800w/800-ingredients-budget.jpg 800w,
+                        /images/projects/2017/ingredients/1200w/1200-ingredients-budget.jpg 1200w"
+                    sizes="(min-width: 1400px) 26vw, (min-width: 1120px) 36vw, (min-width: 760px) 40vw, 75vw"
+                    src="/images/projects/2017/ingredients/1200w/1200-ingredients-budget.jpg"
+                />
+            <figcaption>The first set of 50 boxes could cost between $875 and $1060.</figcaption>
+        </figure>
+        <p>On a final note: the in.gredients store had to close its doors in late 2018. Sustainable grocery stores will always face competition from larger supermarkets.</p>
+    </article>
+</section>
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

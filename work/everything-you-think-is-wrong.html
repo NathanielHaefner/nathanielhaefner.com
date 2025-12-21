@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Work | Everything You Think Is Wrong</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/work/all-work.html">Work</a> | <a href="/work/typography.html">typography</a>
+        <span>2019</span>
+    </h2>
+    
+    <h1 class="header-title">Everything You Think Is Wrong</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="project-intro">
+    <h1 class="scrollMARKER balance-text">Everything You Think Is Wrong</h1>
+    <div class="image-box">
+        <img
+                    alt="Everything You Think Is Wrong"
+                    loading="eager"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-cover.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-cover.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-cover.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-cover.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-cover.jpg"
+                />
+    </div>
+    <aside class="project-details">
+        <div class="details">
+            <div>
+                <h4>Dimensions</h4>
+                <p>12.8in × 4.5in</p>
+            </div>
+            <div>
+                <h4>Medium</h4>
+                <p>Matte Stock</p>
+            </div>
+        </div>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <h2>Stop the Spread of Your Stupidity</h2>
+        <p>For the Everything You Think Is Wrong Calendar, I wanted to showcase common misconceptions found in American culture that are consistently passed on or spoken as fact. The calendar functions as a weekly planner with a single misconception for each week. Each page showcases a correction to the commonly believed knowledge, an insult to the reader, and a factoid explaining the reality behind the truth.</p>
+        <p>This 52 week calendar presents not only a way to help them remember when to go to work, but also shares some of the most common information falsely spread and repeated in the world in an attempt to shift the collective conscious closer to the intelligent side of the spectrum.</p>
+
+        <h2>A Calendar for Idiots</h2>
+        <p>The main concept stems from a list of national days, one of which is Everything You Think Is Wrong Day, celebrated on the 15th of March. This day aims to raise awareness of factual inaccuracies, and doubles as a day to let people know that not everything they think is correct. To me, this day should be celebrated year round, so I decided it would make for a good annual project and stretch the day into a full year’s worth of awareness.</p>
+        <blockquote>
+            <p class="balance-text">For generations, people have passed on knowledge retold over and over as truth and fact. Much of this knowledge is inherently wrong. Common misconceptions about science, technology, nature, human anatomy, and the physical world hold root in our shared knowledge base. Cast aside your relentless brainlessness and recognize the fallacies surrounding your education.</p>
+        </blockquote>
+        <p>The calendar is quite comical in nature, since the writing used takes the tone of an insulting know-it-all despite the information being relatively trivial. The words assume the person using the calendar is a complete idiot and relentlessly reminds the reader of their inferiority. The fact that the same page in the calendar is used for a whole week emphasizes the need for prolonged exposure to the truth in order to get an idiot to understand.</p>
+
+        <figure>
+            <img
+                    alt="eytiw front"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-front.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-front.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-front.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-front.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-front.jpg"
+                />
+            <figcaption>Calendar cover.</figcaption>
+        </figure>
+
+        <p>With the humorous content and useful form factor, the Everything You Think Is Wrong calendar makes for an interesting tool for people willing to subject themselves to a bit of self-deprecation.</p>
+        <figure class="shadow">
+            <img
+                    alt="eytiw if lost"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-lost.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-lost.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-lost.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-lost.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-lost.jpg"
+                />
+            <figcaption>"If Lost" page is insulting.</figcaption>
+        </figure>
+
+
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-04.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-04.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-04.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-04.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-04.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-05.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-05.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-05.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-05.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-05.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-06.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-06.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-06.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-06.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-06.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-08.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-08.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-08.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-08.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-08.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-10.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-10.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-10.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-10.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-10.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-12.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-12.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-12.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-12.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-12.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-14.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-14.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-14.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-14.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-14.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-16.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-16.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-16.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-16.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-16.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-18.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-18.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-18.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-18.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-18.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-20.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-20.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-20.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-20.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-20.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-22.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-22.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-22.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-22.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-22.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-24.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-24.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-24.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-24.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-24.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-26.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-26.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-26.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-26.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-26.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-28.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-28.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-28.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-28.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-28.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-30.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-30.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-30.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-30.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-30.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-32.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-32.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-32.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-32.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-32.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-34.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-34.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-34.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-34.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-34.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-36.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-36.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-36.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-36.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-36.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-38.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-38.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-38.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-38.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-38.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-39.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-39.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-39.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-39.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-39.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-40.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-40.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-40.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-40.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-40.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-42.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-42.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-42.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-42.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-42.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-44.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-44.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-44.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-44.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-44.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-46.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-46.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-46.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-46.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-46.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-48.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-48.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-48.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-48.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-48.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-50.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-50.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-50.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-50.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-50.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-52.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-52.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-52.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-52.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-52.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-54.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-54.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-54.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-54.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-54.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-56.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-56.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-56.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-56.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-56.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-58.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-58.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-58.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-58.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-58.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-60.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-60.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-60.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-60.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-60.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-62.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-62.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-62.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-62.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-62.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-64.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-64.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-64.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-64.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-64.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-66.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-66.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-66.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-66.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-66.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-68.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-68.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-68.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-68.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-68.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-70.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-70.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-70.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-70.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-70.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-72.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-72.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-72.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-72.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-72.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-74.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-74.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-74.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-74.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-74.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-76.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-76.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-76.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-76.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-76.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-78.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-78.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-78.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-78.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-78.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-80.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-80.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-80.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-80.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-80.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-82.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-82.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-82.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-82.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-82.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-84.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-84.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-84.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-84.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-84.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-86.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-86.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-86.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-86.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-86.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-88.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-88.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-88.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-88.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-88.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-90.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-90.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-90.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-90.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-90.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-91.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-91.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-91.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-91.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-91.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-92.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-92.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-92.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-92.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-92.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-94.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-94.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-94.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-94.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-94.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-96.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-96.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-96.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-96.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-96.jpg"
+                />
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-98.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-98.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-98.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-98.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-98.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-100.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-100.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-100.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-100.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-100.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-102.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-102.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-102.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-102.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-102.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-104.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-104.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-104.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-104.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-104.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-106.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-106.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-106.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-106.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-106.jpg"
+                />
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-108.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-108.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-108.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-108.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-108.jpg"
+                />
+        </figure>
+        <figure class="shadow">
+            <img
+                    alt="calendar page"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-pages-112.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-pages-112.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-pages-112.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-112.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-pages-112.jpg"
+                />
+            <figcaption>Selected calendar pages.</figcaption>
+        </figure>
+
+        <h2>Design Factors</h2>
+        <p>The overall size and proportions of the calendar aims to work well with other desktop objects. The width of the calendar is 77p, which is just slightly smaller than a 13-inch laptop, which many bags can easily accommodate. When unfolded the calendar has the same footprint as a laptop as well. The calendar also has an a-frame backing board allowing the calendar to sit upright on a table and store flat when traveling. To make the yearly calendar more simple to use, recessed tabs are used to keep the overall form factor while making it easy to find a particular month.</p>
+
+        <figure>
+            <img
+                    alt="calendar open"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-open.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-open.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-open.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-open.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-open.jpg"
+                />
+            <figcaption>Gridded paper.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="calendar standing"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-stand.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-stand.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-stand.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-stand.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-stand.jpg"
+                />
+            <figcaption>Built in stand.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="calendar tabs"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-tabs.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-tabs.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-tabs.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-tabs.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-tabs.jpg"
+                />
+            <figcaption>Tabs to help locate months.</figcaption>
+        </figure>
+
+        <h2>Typography and Grid</h2>
+        <p>Akzidenz Grotesk in a medium weight is used throughout the entirety of the calendar. Used prominently in the international typographic style, the typeface aims for clarity and frankness, which pairs well with content driven by pure facts. The extreme hierarchy between a 100pt sentence and a 20pt joke followed by a 9pt factoid gives a clear indication of reading order. All the type except for the smallest is set completely solid to remove any sense of wiggle room in the nature of the content. Facts are facts.</p>
+
+        <figure>
+            <img
+                    alt="font in the calendar"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-typography.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-typography.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-typography.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-typography.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-typography.jpg"
+                />
+            <figcaption>Akzidenz Grotesk type sample.</figcaption>
+        </figure>
+
+
+        <p>A 7-column grid is utilized to allow for each weekday to have its own column, but it simultaneously allows for an asymmetrical layout fitting of the international type style. The days are arranged starting on Monday with Saturday and Sunday taking up the last two slots. This allows for the grid structure of the upper page to relate back to the grid used on the calendar section in the bottom half. Additionally, the wire binding method also aligns to the grid and the hole spacing mirrors the gridded dots on the calendar. The binding also changes color according to the grid to further reinforce it and allow the person to open the pages in the right direction on the first try—almost like it has been idiot-proofed.</p>
+
+        <figure class="shadow">
+            <img
+                    alt="grid paper"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/everything-you-think-is-wrong/200w/200-eytiw-grid.jpg 200w,
+                        /images/projects/2019/everything-you-think-is-wrong/400w/400-eytiw-grid.jpg 400w,
+                        /images/projects/2019/everything-you-think-is-wrong/800w/800-eytiw-grid.jpg 800w,
+                        /images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-grid.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/everything-you-think-is-wrong/1200w/1200-eytiw-grid.jpg"
+                />
+            <figcaption>Gridded paper.</figcaption>
+        </figure>
+
+     </article>
+</section>
+
+
+
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

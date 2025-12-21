@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Work | Love Booksellers</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/work/all-work.html">Work</a> | <a href="/work/brand-identity.html">brand identity</a>
+        <span>2011</span>
+    </h2>
+    
+    <h1 class="header-title">Love Booksellers</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="project-intro">
+    <h1 class="scrollMARKER balance-text">Love Booksellers</h1>
+    <div class="image-box">
+        <img
+                    alt="Love Booksellers"
+                    loading="eager"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-cover.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-cover.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-cover.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-cover.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-cover.jpg"
+                />
+    </div>
+    <aside class="project-details">
+        <div class="details">
+            <div>
+                <h4>Dimensions</h4>
+                <p>6in × 4in</p>
+                <p>6in × 1.5in</p>
+            </div>
+            <div>
+                <h4>Medium</h4>
+                <p>Glossy Stock</p>
+            </div>
+        </div>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <h2>We Love Books</h2>
+        <p>Love Booksellers is a branding concept for a local bookstore revolving around a kinetic logo and color palette. The multiple versions of the logo allow the designs of coupons, flyers, and bookmarks with great variety.</p>
+        <p>The logo features an intertwined and nested heart shape using two colors to represent the relationship between customer and the local shop. Using a large system of bright colors, the identity can appeal to a wide audience that appeals to the sense of choice that reflects the content of a bookstore.</p>
+        <figure class="figure-grid">
+            <img
+                    alt="main logo"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-logo.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-logo.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-logo.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-logo.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-logo.jpg"
+                />
+            <img
+                    alt="logo colors"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-colors.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-colors.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-colors.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-colors.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-colors.jpg"
+                />
+            <figcaption>Main logo and diverse color palette.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="alternate logo"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-logo-set.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-logo-set.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-logo-set.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-logo-set.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-logo-set.jpg"
+                />
+            <figcaption>Alternate logos in different orientations and colors.</figcaption>
+        </figure>
+        <h2>Dynamic Identity</h2>
+        <p>Setting the type on an angle helps maintain the dynamic visuals that the rest of the brand achieves. The logo is also used to create wallpapers for the interior of the space, and can designate different sections of the store using different color variations.</p>
+        <figure>
+            <img
+                    alt="wallpaper pattern"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-pattern.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-pattern.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-pattern.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-pattern.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-pattern.jpg"
+                />
+            <figcaption>Wallpaper pattern.</figcaption>
+        </figure>
+        <figure class="figure-grid shadow">
+            <img
+                    alt="coupon"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-coupon-01.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-coupon-01.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-coupon-01.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-coupon-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-coupon-01.jpg"
+                />
+            <img
+                    alt="coupon"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-coupon-02.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-coupon-02.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-coupon-02.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-coupon-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-coupon-02.jpg"
+                />
+            <figcaption>Coupon and event flyer.</figcaption>
+        </figure>
+        <h2>Bookmarks</h2>
+        <p>To show off the potential of the colors, angles, and variations designed into the brand system, a series of bookmarks was designed. The bookmarks use solid blocks of colors all pulled from the vast color choices.</p>
+        <figure class="figure-grid figure-p shadow">
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-01.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-01.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-01.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-01.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-02.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-02.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-02.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-02.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-03.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-03.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-03.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-03.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-04.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-04.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-04.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-04.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-04.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-05.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-05.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-05.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-05.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-05.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-06.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-06.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-06.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-06.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-06.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-07.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-07.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-07.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-07.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-07.jpg"
+                />
+            <img
+                    alt="bookmark"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2011/love-booksellers/200w/200-love-books-bookmark-08.jpg 200w,
+                        /images/projects/2011/love-booksellers/400w/400-love-books-bookmark-08.jpg 400w,
+                        /images/projects/2011/love-booksellers/800w/800-love-books-bookmark-08.jpg 800w,
+                        /images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-08.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2011/love-booksellers/1200w/1200-love-books-bookmark-08.jpg"
+                />
+            <figcaption>Bookmarks using many colors and logo variations.</figcaption>
+        </figure>
+    </article>
+</section>
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>
