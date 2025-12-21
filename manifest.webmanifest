@@ -1,0 +1,15 @@
+{
+  "short_name": "NH",
+  "name": "Nathaniel Haefner",
+  "description": "Designer & Educator",
+  "icons": [
+    {
+      "src": "images/ui/nh-app.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#d50000",
+  "display": "minimal-ui"
+}
