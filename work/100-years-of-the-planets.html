@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Work | 100 Years of The Planets</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/work/all-work.html">Work</a> | <a href="/work/environmental-design.html">environmental design</a>
+        <span>2019</span>
+    </h2>
+    
+    <h1 class="header-title">100 Years of The Planets</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="project-intro">
+    <h1 class="scrollMARKER balance-text">100 Years of The Planets</h1>
+    <div class="image-box">
+        <img
+                    alt="100 Years of The Planets"
+                    loading="eager"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-cover.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-cover.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-cover.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-cover.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-cover.jpg"
+                />
+    </div>
+    <aside class="project-details">
+        <div class="details">
+            <div>
+                <h4>Dimensions</h4>
+                <p>300ft × 12ft</p>
+                <p>21ft × 24ft</p>
+                <p>12in × 12in</p>
+            </div>
+            <div>
+                <h4>Medium</h4>
+                <p>Digital</p>
+                <p>Matte Stock</p>
+                <p>Vinyl</p>
+            </div>
+        </div>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <h2>Celebrating 100 Years</h2>
+        <p>The first public concert occured on February 27, 1919 in London by the Royal Philharmonic Society conducted by Holst’s friend Adrian Boult. Since the music composed by Holst felt so new and original in the eyes of Boult, he decided the audience could only handle five of the seven movements, and it wasn’t until November 15, 1920 that the public would hear the entirety of the opus.</p>
+
+        <h2>Planetarium Installation</h2>
+        <p>To celebrate the centennial of Gustav Holst’s The Planets, a typographic concept for an illuminated installation that synchronizes the music to a typographic display of written orchestration, creates a visual take on his symphony like that of the stars in a planetarium. The whole room consists of a dimly lit, circular wall with a diameter of almost one hundred feet with an eight foot opening at the front. Just beyond the opening, a 21-foot wide flat wall acts as an introduction to the work and prevents the external light from entering the room.</p>
+
+        <figure>
+            <img
+                    alt="entrance view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-entrance.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-entrance.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-entrance.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-entrance.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-entrance.jpg"
+                />
+        </figure>
+        <figure class="figure-p">
+            <img
+                    alt="flat entrance view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-entranceflat.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-entranceflat.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-entranceflat.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-entranceflat.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-entranceflat.jpg"
+                />
+            <figcaption>Installation Entrance Wall.</figcaption>
+        </figure>
+        <figure class="figure-grid">
+            <img
+                    alt="exterior view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-exterior.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-exterior.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-exterior.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-exterior.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-exterior.jpg"
+                />
+            <img
+                    alt="window view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-window.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-window.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-window.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-window.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-window.jpg"
+                />
+            <img
+                    alt="vault view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-vault.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-vault.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-vault.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-vault.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-vault.jpg"
+                />
+            <img
+                    alt="circular view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-circular.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-circular.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-circular.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-circular.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-circular.jpg"
+                />
+            <img
+                    alt="top view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-top.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-top.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-top.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-top.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-top.jpg"
+                />
+            <img
+                    alt="entrance view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-wall.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-wall.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-wall.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-wall.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-wall.jpg"
+                />
+            <figcaption>Installation Views.</figcaption>
+        </figure>
+
+        <p>In the center of the room, a small podium stands as a monument to Holst, with the works revolving around him. A light from the center of the room shines on the wall to brighten the vertical section corresponding to the music playing. The entire length of the symphony runs just short of an hour, giving the light time to make a full revolution and for the audience to experience the entirety of the suite audibly and visually.</p>
+        <figure>
+            <img
+                    alt="altar view"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-installation-altar.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-installation-altar.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-installation-altar.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-altar.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-installation-altar.jpg"
+                />
+            <figcaption>Central altar with light source.</figcaption>
+        </figure>
+
+
+        <h2>Typographic Representation</h2>
+        <p>When typographically representing a symphonic piece of music, the elements that most deserved visual representation are the space around and loudness of the instruments. To accomplish this, a grid system is employed similar to sheet music, but represented each instrument as a typographic abbreviation rather than notes on a staff. By confining each instrument to a measure and increasing the or decreasing the type size relative to the dynamic level of the sound, an interesting texture of positive space emerges. Louder measures fill up the grid space, but begin to appear as fragments of type anatomy—quieter measures showcase the letterforms in full, but have more space around them.</p>
+
+        <figure>
+            <img
+                    alt="mars"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-mars.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-mars.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-mars.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-mars.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-mars.jpg"
+                />
+            <figcaption>Wall section for Mars.</figcaption>
+        </figure>
+
+        <p>In addition, the instruments that hold the melody are treated in italics to provide a stronger sense of movement. This captures an intricacy of the music and visually pairs well when viewed synchronistically with each planet’s score and allows visitors to experience The Planets within a new dimension.</p>
+
+        <figure>
+            <img
+                    alt="venus"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-venus.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-venus.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-venus.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-venus.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-venus.jpg"
+                />
+            <figcaption>Wall section for Venus</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="mercury"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-mercury.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-mercury.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-mercury.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-mercury.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-mercury.jpg"
+                />
+            <figcaption>Wall section for Mercury</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="jupiter"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-jupiter.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-jupiter.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-jupiter.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-jupiter.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-jupiter.jpg"
+                />
+            <figcaption>Wall section for Jupiter</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="saturn"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-saturn.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-saturn.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-saturn.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-saturn.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-saturn.jpg"
+                />
+            <figcaption>Wall section for Saturn</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="uranus"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-uranus.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-uranus.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-uranus.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-uranus.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-uranus.jpg"
+                />
+            <figcaption>Wall section for Uranus</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="neptune"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-neptune.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-neptune.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-neptune.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-neptune.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-neptune.jpg"
+                />
+            <figcaption>Wall section for Neptune</figcaption>
+        </figure>
+
+        <p>Each wall section is installed along the curving surface of the space. Since each movement of the orchestration is a different length, the sections of wall are naturally different sizes, but all unified by a common height. This ensures that the timing of the exhibition remains linear to match the music.</p>
+        <figure>
+            <img
+                    alt="circular wall lengths"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-wall-circular.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-wall-circular.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-wall-circular.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-circular.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-wall-circular.jpg"
+                />
+            <figcaption>Layout and Wall Section Lengths.</figcaption>
+        </figure>
+
+        <h2>Virtual Exhibition</h2>
+        <p>In order to make the event more accessible, the installation also can be viewed as a virtual environment with inexpensive VR headsets. The full suite plays while "guests" can freely explore the space, moving and looking in any direction.</p>
+        <figure>
+            <div class="video-frame shadow">
+                <iframe src="https://www.youtube-nocookie.com/embed/9rkE0BtOcLM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+            </div>
+            <figcaption>Virtual reality demonstration.</figcaption>
+        </figure>
+
+
+        <h2>Limited Record Release</h2>
+        <p>In addition to the installation, an exhibition catalog in the form of a multi-record vinyl package completes the experience for visitors.</p>
+        <p>The typographic styling of the record cover reflect the modular grid of the installation, where the letters of the names of each planet are confined to a grid and enlarged and arranged dynamically. Any parts of the letters that overlap the designated space is trimmed away, leaving a distinct spacing between still-recognizable letterforms. This represents the play between space and recognition inherent to Holst’s work. Hiding part of the letters shows also evokes the connection to works of other composers, in which Holst’s revolutionary style can be heard influencing and peeking out in modern scores.</p>
+
+        <figure class="figure-grid shadow">
+            <img
+                    alt="front album cover"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album01.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album01.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album01.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album01.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album01.jpg"
+                />
+            <img
+                    alt="back album cover"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album02.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album02.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album02.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album02.jpg 1200w"
+                    sizes="(min-width: 1400px) 30vw, (min-width: 1120px) 21vw, (min-width: 760px) 30vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album02.jpg"
+                />
+            <figcaption>Record covers.</figcaption>
+        </figure>
+
+        <figure class="figure-grid figure-p shadow">
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album03.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album03.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album03.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album03.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album03.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album04.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album04.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album04.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album04.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album04.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album05.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album05.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album05.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album05.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album05.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album06.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album06.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album06.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album06.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album06.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album11.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album11.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album11.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album11.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album11.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album12.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album12.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album12.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album12.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album12.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album07.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album07.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album07.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album07.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album07.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album08.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album08.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album08.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album08.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album08.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album09.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album09.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album09.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album09.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album09.jpg"
+                />
+            <img
+                    alt="album section"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-album10.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-album10.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-album10.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album10.jpg 1200w"
+                    sizes="(min-width: 1400px) 15vw, (min-width: 1120px) 13vw, (min-width: 760px) 20vw, 50vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-album10.jpg"
+                />
+            <figcaption>Record sleve sections.</figcaption>
+        </figure>
+
+        <p>The package functions as an accordian fold and showcases new album art, seven separate records for each of the seven movements, and infor-mational sections on each panel interpreting the sounds heard for each planet. The back of the record sleeve tells the story of Holst and his famous composition. A modified version of the wall graphics take up the remainder of the space on the back of the sleeve.</p>
+
+        <figure>
+            <img
+                    alt="album sleeve folded"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-record01.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-record01.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-record01.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-record01.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-record01.jpg"
+                />
+        </figure>
+        <figure>
+            <img
+                    alt="album sleeve expanded"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-record02.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-record02.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-record02.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-record02.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-record02.jpg"
+                />
+        </figure>
+        <figure>
+            <img
+                    alt="records"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2019/100-years-of-the-planets/200w/200-theplanets-record03.jpg 200w,
+                        /images/projects/2019/100-years-of-the-planets/400w/400-theplanets-record03.jpg 400w,
+                        /images/projects/2019/100-years-of-the-planets/800w/800-theplanets-record03.jpg 800w,
+                        /images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-record03.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2019/100-years-of-the-planets/1200w/1200-theplanets-record03.jpg"
+                />
+            <figcaption>Accordian sleeve and record labels.</figcaption>
+        </figure>
+
+
+        <p>Holst is exclusively known for The Planets, but he always experienced a disconnect between its popularity and to his preference for works later in his career. Perhaps as any artist might sense, Holst felt his appeal revolved around this one work and its lasting popularity would always define his whole career. The installation and exhibition record sleeve capture his sentiments and showcase his masterpiece with a new perspective.</p>
+
+     </article>
+</section>
+
+
+
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>
