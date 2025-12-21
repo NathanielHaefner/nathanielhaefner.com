@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Blog | For the Battery Remaining</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/blog/all-posts.html">Blog</a> | <a href="/blog/criticism.html">criticism</a>
+        <span>10/28/2018</span>
+    </h2>
+    
+    <h1 class="header-title">For the Battery Remaining</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="blog-post-intro">
+    <h1 class="scrollMARKER balance-text">For the Battery Remaining</h1>
+</section>
+<section>
+    <article class="view-content">
+        <div class="post-meta">
+    <span>by NH | </span>
+    <span>Oct 28, 2018 | </span>
+    <span class="read-time"></span>
+</div>
+        <p>When dealing with a literary work in which the text follows a distinct sequence like Annie Dillard’s <em>For the Time Being</em>, I found myself torn between which format reading the book feels more comfortable. Flipping through the pages of the printed book as opposed to infinitely scrolling the repeating subsections of each chapter feels different, but the flaws and merits of each system provide for a difficult decision. Ultimately, the e-book version provides the most options, but the print version gives an overall better aesthetic and typographically sound experience.</p>
+        <p><em>For the Time Being</em> ranks as one of my favorite books, despite it being less of a critical success than her Pulitzer Prize-winning <em>Pilgrim at Tinker Creek</em>. While Dillard’s accolades come highly advertised in the book, each format presents the ads in specific ways. The print edition hints at her masterwork on the cover, opening spread, and among the extra blank pages left over from the final printing signature. These are subtle and ignorable, but the digital book obtrudes with absurdity.</p>
+        <p>When checking the book out from the public library, I jumped through the hoops of downloading, all while watching my iPad’s battery drops a few percent along the way. I went from the library page to a borrowing page prompting me with similar or more popular books (including <em>Pilgrim at Tinker Creek</em>). Next, the library forced me to visit Amazon to get the Kindle version. Upon opening the e-book, I faced another consumerism-driven pop-up screen enticing me to read other books than the one I had been attempting to read for the last ten minutes. Clearly, the print version gives a better experience.</p>
+        <figure>
+            <img
+                    alt="borrowing digitally"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/for-the-battery-remaining/200w/200-for-the-time-being-borrow.jpg 200w,
+                        /images/posts/2018/for-the-battery-remaining/400w/400-for-the-time-being-borrow.jpg 400w,
+                        /images/posts/2018/for-the-battery-remaining/800w/800-for-the-time-being-borrow.jpg 800w,
+                        /images/posts/2018/for-the-battery-remaining/1200w/1200-for-the-time-being-borrow.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/for-the-battery-remaining/1200w/1200-for-the-time-being-borrow.jpg"
+                />
+            <figcaption>The process of borrowing a book from the public library requires me to visit two different sites with book suggestions, ratings, and summaries, only to show me the same information again when I open the book in the Kindle app for the first time.</figcaption>
+        </figure>
+        <p>Reading the book on my iPad Pro, which is physically about twice the size of my old high school paperback, tests my eye’s patience. When not viewing pure text, low-resolution jpegs offend the eye. However, the book uses very few images—mainly just the substitute cover and a stylized ellipsis borrowed directly from the printed version. This lazy translation of print to e-book reiterates Blom’s saying about how, “publishers see new distribution channels such as iPads as possibilities to repeat their old trick one more time in new packaging. It doesn’t work” (4). The typography and page layout emphasize the weaknesses of the e-book. The size of the iPad makes for really wide measures of text, even with the most generous settings, while the printed version utilizes a traditional text frame with comfortable margins and leading.</p>
+        <figure>
+            <img
+                    alt="digital and physical book covers"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/for-the-battery-remaining/200w/200-for-the-time-being-covers.jpg 200w,
+                        /images/posts/2018/for-the-battery-remaining/400w/400-for-the-time-being-covers.jpg 400w,
+                        /images/posts/2018/for-the-battery-remaining/800w/800-for-the-time-being-covers.jpg 800w,
+                        /images/posts/2018/for-the-battery-remaining/1200w/1200-for-the-time-being-covers.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/for-the-battery-remaining/1200w/1200-for-the-time-being-covers.jpg"
+                />
+            <figcaption>The covers, despite being from the same publisher showcase the lack of quality put into the e-book format compared to the print format. The e-book cover is a low-resolution jpeg that scales poorly on larger screens like the iPad Pro.</figcaption>
+        </figure>
+        <p>One potential benefit of the e-book allows the typeface to swap out universal standards like Georgia and Helvetica to something more akin to my personal preference. I tried to match the medium-weight condensed typeface found in the print book, but the closest available was Amazon Ember Bold&mdash;another ad in the form of a typeface! Regardless of which typeface I chose, none of them conveyed the same sense of mood and tone of Dillard’s eloquent and profound writing style. The ink of the printed book gives way to slight variations from character to character, so each letter has its own identity in relation to how much ink and pressure adhered it to the page. Dillard writes about sand but could equally be talking about the book’s typography saying, “it smooths some of its rough edges” (98). Another difference is the tone of the paper relative to the brightness of the screen. When set to sepia, the screen always has a dirty tint to it compared to the bright white of my iPad’s outer frame. Despite being a darker shade of sepia, the book has no external frame, so eventually, my brain forgets I’m looking at a color and translates the page as white and natural.</p>
+        <figure>
+            <img
+                    alt="typography choices in digital"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/for-the-battery-remaining/200w/200-for-the-time-being-typography.jpg 200w,
+                        /images/posts/2018/for-the-battery-remaining/400w/400-for-the-time-being-typography.jpg 400w,
+                        /images/posts/2018/for-the-battery-remaining/800w/800-for-the-time-being-typography.jpg 800w,
+                        /images/posts/2018/for-the-battery-remaining/1200w/1200-for-the-time-being-typography.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/for-the-battery-remaining/1200w/1200-for-the-time-being-typography.jpg"
+                />
+            <figcaption>The margins, sepia settings, and typeface choices have been adjusted to match, but they do not feel as comfortable and well designed as the print version of the book.</figcaption>
+        </figure>
+        <p>The e-book redeems itself with the remarkable way the sections of the chapters work in a scrolling format. For this book in particular, “Dillard's unifying theme is the congruence of thought” (Knopf). The text in the book jumps from idea to idea in short bursts, making for odd section breaks in the printed book. The e-book scrolls right through them unaffected. The infinite nature kept me reading for a longer period, getting lost in the words as opposed to losing immersion each time I turned the physical page, aiding in the work's overall congruence and consistency. In some of Dillard’s older works from the 1970s this wouldn’t be appropriate, but <em>For the Time Being</em> was penned in the internet age, perhaps with the scrolling format in mind.</p>
+        <p>Overall, the book has advantages in both applications, but ultimately I enjoyed reading the printed book more, despite the customizability of the e-book. Books written for the e-book medium will undoubtedly take advantage of the benefits, but translating older works may not enhance the experience over the traditional paperback—which never displays pop-ups and never drops a battery percent.</p>
+        <aside class="references">
+            <h6>Works Cited</h6>
+            <ol>
+                <li>Blom, Erwin. “I Read More Than Ever.” I Read Where I Am: Exploring New Information Cultures, edited by Mieke Gerritzen and Geert Lovink, Infodecodata, 2010, 4–5. Print.</li>
+                <li>Dillard, Annie. For the Time Being. New York: Vintage Books, 1999. Print.</li>
+                <li>Knopf, Alfred A. “Nonfiction Book Review: For the Time Being by Annie Dillard.” Publisher’s Weekly. Web. 27 Oct. 2018. https://www.publishersweekly.com/978-0-375-40380-4.</li>
+            </ol>
+        </aside>
+        <p>From the project: <a href="/work/the-underlying-message.html">The Underlying Message</a></p>
+    </article>
+</section>
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

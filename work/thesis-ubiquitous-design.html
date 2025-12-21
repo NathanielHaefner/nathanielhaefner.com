@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Work | Thesis: Ubiquitous Design</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/work/all-work.html">Work</a> | <a href="/work/design-research.html">design research</a>
+        <span>2020</span>
+    </h2>
+    
+    <h1 class="header-title">Thesis: Ubiquitous Design</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="project-intro">
+    <h1 class="scrollMARKER balance-text">Thesis: Ubiquitous Design</h1>
+    <div class="image-box">
+        <img
+                    alt="Thesis: Ubiquitous Design"
+                    loading="eager"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-cover.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-cover.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-cover.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-cover.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-cover.jpg"
+                />
+    </div>
+    <aside class="project-details">
+        <div class="details">
+            <div>
+                <h4>Dimensions</h4>
+                <p>8.5in × 11in</p>
+            </div>
+            <div>
+                <h4>Medium</h4>
+                <p>Digital</p>
+            </div>
+            <div>
+                <h4>Download</h4>
+                <p><a href="/downloads/Ubiquitous-Design-Thesis-2020.pdf" download>Full PDF</a></p>
+            </div>
+        </div>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <h2>A Study of Popular Fonts and Typographic Understanding</h2>
+        <p>This thesis is the culmination of my MFA degree. It aims to answer the questions surrounding popular typefaces and how a new system for organizing and protecting fonts would help benefit those both highly involved with the creation of fonts and those who simply use them on a daily basis.</p>
+        <p>Below are excerpts of the thesis, which can be downloaded as a PDF above.</p>
+
+        <h2>Abstract</h2>
+        <p>Ubiquitous typefaces, such as Helvetica and Times New Roman, were designed in the age of metal type and, despite their age, are still ingrained into modern software—allowing these typefaces to continue to reach a wide audience and achieve ubiquity. In order for new typefaces to differentiate and compete with existing choices, type designers must employ user preferences and leverage digital technology to create a stronger relationship between typographic voice and physical properties of typefaces. By performing A-B typeface comparisons based on structure with designers and non-designers based on sentiment and perception, establishing emotional profiles for the most common typefaces, and interviewing prominent typeface designers about their practices, this research explores the relationship between ubiquity and physical features to set a baseline for future typeface designs. Further, this research investigates ubiquitous typefaces through measuring physical properties and determining their relationship to non-physical and emotional characteristics to better recognize how typeface design can address user preferences and understanding in a variety of typographic settings.</p>
+
+        <h2>I. INTRODUCTION</h2>
+        <p>Typefaces impart their characteristics in all forms of written communication. There are millions of typefaces from which to choose in for use everyday correspondence, publications, logos, signs—but a handful appear more frequently and prominently than the rest. How many typefaces are needed to convey the intent of a message to a reader? Some typeface designers argue for a handful, while others proclaim there should be as many typefaces as there are individual people—as each person has a unique voice, so should typography. Despite the plethora of choices, people tend to use only a specific few. Do these typefaces carry such an elegant mix of beauty and function that their gravity pulls and calls both designer and novice into their stewardship, or are they simply selected due to constant availability and perpetual familiarity? Consciousness or conditioning?</p>
+        <p>Do these typefaces possess intangible characteristics and an underlying feeling that make them the go-to choice for written communication, or are they reused out of habit or complacency by people who pay little attention to the typefaces they select? With this question in mind, this research investigates ubiquitous typefaces through measuring physical properties and determining their relationship to non-physical and emotional characteristics to better understand how typeface design can address user preferences in a variety of typographic settings. The intent is to bridge the gap between intended feel, measurable attributes, and common usage within the constructs of typography.</p>
+        <p>In looking at the history of some of the most popular typefaces, this research attempts to understand if they were designed under the right conditions to become ubiquitous, or if they are a product of timeless design. Further, an examination of a new system for typeface classification that would alleviate the need for expertise when choosing the right typeface outside the field of design will be conducted. The new system will reflect the state of typographic understanding for non-designers as related to the intent of professional typeface designers.</p>
+        <p>This thesis will not only explore ubiquitous typefaces, but also examine the role of typefaces as a tool for communication for those outside the design profession. Before developing typographic understandings, a general look at ubiquity will set the stage for dealing with more specific topics inherent to type.</p>
+
+
+        <p>...</p>
+
+        <h2>VI. TRENDS IN TYPOGRAPHY</h2>
+        <h3>Role of Typography</h3>
+        <p>Part of what makes a typeface popular involves the needs of the people using it. To figure out why a typeface meets specific needs, it is pertinent to understand exactly what a typeface does. Many typographers and typeface designers have commented on the nature of the typeface and how it relates to people’s ability to communicate.</p>
+        <p>“I bring into the light of day the precious stores of knowledge and wisdom long hidden in the grave of ignorance. I coin for you the enchanting tale, the philosopher's moralizing and the poet’s visions...I AM TYPE!” (Goudy 218). This excerpt, written from the perspective of the embodiment of typography, comes from a pamphlet written in 1931 by Frederic Goudy, one of the most prolific American typeface designers—notable for his masterpiece Goudy Old Style (Macmillan 93). Goudy expresses that typography is made for the transmission of ideas. However, ideas can be transmitted differently, as through speech or gesture, but printed words are much less ephemeral.</p>
+        <p>When speaking, people convey tone, urgency, and severity quite naturally and easily, but the written word needs help in this regard. “In communication, type is the visual equivalent of an audible voice—a tangible link between writer and reader” (Cheng 7). Connecting the reader and the writer involves a bit of translation, even if both understand the same language. Typography can aid in reproducing the subtle nuances of language that the words themselves may fail to communicate. Gerard Unger describes how this clarification comes with other advantages, such as the ability for editing one’s thoughts—allowing for a more organized syntax in what he calls the “grammar of legibility” (Theory of Type Design 29). In essence, typography is a complete system for documenting experiences in a more lasting way, while using the mechanical advantages of easy reproduction through interchangeable pieces. Type grants a lasting existence to the ideas of humankind.</p>
+        <p>“Typography exists to honor content” (Bringhurst 17). Bringhurst further elucidates the best way to honor content is by using a typeface that embodies the concept of durability in which it links “an earned or unearned interest that gives living energy to the page” (17). Durability is not permanence. A typeface does not insist that it is perfect and immune to change, and yet lasts because it does not give in to flights of fashion. Typography lives in a delicate balance between granting power to written words and being purposefully (or unintentionally) misapplied to remove any semblance of credit to an idea. To honor typography as the physical embodiment of language, how can people make sure to avoid any errors when picking the letters to best represent a written idea?</p>
+
+
+        <p>...</p>
+
+
+        <h3>Why People Make Typefaces</h3>
+        <p>“Perhaps one of the most obvious reasons is a personal interest in letterforms and the desire to experiment with them” (Burian). Written language relies heavily on typography, so creating a typeface can be a natural inclination for those who study visual communication. As a pure design tool, typography is an elemental pillar. Typographic design is an endeavor with the impact to expand far beyond one’s own personal reach and outlast any trend or era as designers continue to use the tools created today in future works.</p>
+        <p>For others, the global aspect of typeface design comes first. “Creating a typeface in several languages at once is a monumental task and needs the contributions of designers who are native users of each script to maintain authenticity” (Riechers). This is the case for a typeface released just over a year ago by Typotheque called Ping. Peter Bil’ak notes his contributions to the typeface with massive language support, “There are way too many fonts available for Latin only, and I see a real value in having truly international projects that explore new ground across cultures” (Riechers). For Bil’ak and the numerous designers involved in the fruition of Ping, they use type design to extend a means of communication to as wide an audience as possible.</p>
+        <p>Matthew Carter offers a simple explanation to why people make typefaces, “The letters are different because the designers are different. That's all...End of story.” He further adds that in “times of technical innovation, designers want to be pushed into exploring something new” (Carter). Typographers get a front-row seat in the world of changing technology, which will undoubtedly be an endless source of excitement. A complete understanding of typography, if possible, comes from learning about the history, researching underlying characteristics of letters and language, as well as the practice of making letters.</p>
+
+
+        <p>...</p>
+
+        <h2>VIII. RESEARCH METHODOLOGIES</h2>
+        <h3>A-B Testing and Results</h3>
+        <p>The first section A-B tests two typefaces that are as similar as possible except for one difference in a measurement. Each pairing would only be marked with a set of letters to avoid creating bias from name recognition. Also, certain demo words showcase a wide variety of letters while making sure that progression through the survey is obvious to help avoid anyone accidentally skipping a question due to question similarity. For instance, the survey alternates through Hamburgefonts, Penultimate, Videospan, Resonance, Adhesion, and Handglovery, all at 60 points in size (Figure 26).</p>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig26.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig26.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig26.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig26.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig26.jpg"
+                />
+            <figcaption class="nofig">Figure 26. Penultimate. Example of an A-B test comparison type sample.</figcaption>
+        </figure>
+
+        <p>Whenever possible, a ubiquitous typeface is used to keep a lack of recognition from becoming a potential distraction, however, the isolation of a single variable outweighed the need to use a common typeface. These A-B comparisons tested the font pairs in five different categories using a slider value of 0 to 10, where 5 was neutral (as well as the starting value) (Figure 27). Careful consideration was used when assigning each word in the pair to one end of the scale or another to try and avoid dissonance in choosing one side of the scale as better. Users were allowed to slide the scale in 1 integer increments. The categories were human traits including:</p>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig27.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig27.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig27.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig27.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig27.jpg"
+                />
+            <figcaption class="nofig">Figure 27. A-B Test Sliders. Example of how users submit responses to the A-B category choices.</figcaption>
+        </figure>
+
+        <p>These traits would be a baseline for comparing other typefaces in future tests, or for predicting how measurements affect perception in similar typefaces. This would allow for the creation of a low-level spectrum for each trait in regard to typeface design.</p>
+        <p>When transcribing the data into the following formats for general analysis, cues were taken from Edward Tufte’s The Visual Display of Quantitative Information on how to best present the data for consumption. His concept of data-ink explains that the core of a visualization of graphics should showcase the data-information and remove all superfluous lines (Tufte 93). The result is the representation of the data using a series of box-plots that would help to show extremes, medians, and reasonable quartiles of how the data skews. This approach is paired with a simple histogram to show individual results as well as to help others visualize the distribution without the interpretation of the box-plot (Figure 28). The histogram also shows statistical outliers for each typeface outside of the extremes.</p>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig28.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig28.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig28.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig28.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig28.jpg"
+                />
+            <figcaption class="nofig">Figure 28. Box-Plot Sample. Legend for how to interpret a box-plot with integrated histogram.</figcaption>
+        </figure>
+
+        <p>For testing slant, Times New Roman Italic is compared to the regular cut (Figure 29). A traditional serif italic was picked over an oblique cut of a sans serif because true italics are more common in typeface usage. Times New Roman Italic also has a more angled slant than most typefaces to make the difference stand out more from the regular cut. Prior to the study, a hypothesis was generated assuming italics would skew more in the older, feminine, and formal, but be neutral in the other categories.</p>
+
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig29.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig29.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig29.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig29.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig29.jpg"
+                />
+            <figcaption class="nofig">Figure 29: Slant Test Results. A-B test results for slant between Times New Roman Italic and Times New Roman Regular.</figcaption>
+        </figure>
+
+        <p>For weight, Helvetica Light was paired against Bold (Figure 30). These two weights are commonly found on modern device interfaces and carry a good degree of separation without altering other spacing characteristics. A prediction that bold would show mostly neutral results except for a heavy leaning in importance was determined before results were gathered.</p>
+
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig30.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig30.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig30.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig30.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig30.jpg"
+                />
+            <figcaption class="nofig">Figure 30. Weight Test Results. A-B test results for weight between Helvetica Bold and Helvetica Light.</figcaption>
+        </figure>
+
+        <p>...</p>
+
+        <h3>Emotional Profiles and Results</h3>
+        <p>The second part of the survey aimed to create profiles of ubiquitous typefaces based on emotions or feelings (Figure 36). The selections were based on 27 emotions researched by Cowen and Dacher. The emotions were modified to have opposites, which would help determine if people were arbitrarily choosing emotions or finding a consensus within their responses. If a typeface scored equally in an emotion and its opposite, then that data would show mixed feelings and possibly prove the need for more complex testing.</p>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig36.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig36.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig36.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig36.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig36.jpg"
+                />
+            <figcaption class="nofig">Figure 36. Emotional Choice Pairs. Emotions and feelings paired as opposites for open-ended selection.</figcaption>
+        </figure>
+
+        <p>While each pairing is not exactly an opposite, each does its best to convey contrary feelings that would unlikely exist at the same time. Users were allowed to choose as many or as few of the emotions as preferred.</p>
+        <p>To remove any bias, each sample of the typeface used the same word at 60 points in size—Hamburgefonts (Figure 37), which showcases a wide variety of letter types to give a good overview of the font. Also, each typeface was labeled with a letter rather than its name to keep each font anonymous and avoid any name recognition reactions. The samples are the twelve most ubiquitous typefaces described previously.</p>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig37.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig37.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig37.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig37.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig37.jpg"
+                />
+            <figcaption class="nofig">Figure 37. Hamburgefonts. Example of Bodoni MT Regular at 60 points in size for the emotional profile survey question.</figcaption>
+        </figure>
+
+        <p>To showcase the results, a simple histogram was created that put the opposite emotions on the same row—the same way they were presented during the survey. This way they could easily be compared.</p>
+        <p>The first profile is for Arial (Figure 38) which shows the most responses for indifference and satisfaction. The profile for Bodoni (Figure 39) shows the most responses for satisfaction, certainty, nostalgia and novelty. Bodoni received the most responses out of any of the typefaces in the survey and was the highest-ranking result for satisfaction, desire, novelty, nostalgia, and certainty. Calibri (Figure 40) was the typeface that received the least amount of total responses with its highest category being indifference. It was also one of the lowest scoring typefaces for nostalgia and novelty. Futura (Figure 41) averaged on the positive side of the chart and took the highest spot in excitement. It was also the only typeface to not have anyone select empathy as one of its traits. Garamond (Figure 42) was a very indecisive typeface as it received counts quite equally in opposite emotional choices. Its main responses included novelty and nostalgia, with nostalgia being slightly favored. However, Garamond was the only typeface to receive two votes for sadness. Georgia (Figure 43) scored well in satisfaction and boredom as well as having zero responses for confusion. Gill Sans (Figure 44) did not stand out in any category but did score well in satisfaction. It also tied for first in empathy. Gotham (Figure 45) is noted as the most delightful of the typefaces tested as well as scoring second best in excitement. It was also one of the lowest picked for anxiety, and the results lean overwhelmingly on the positive side of the choices. Gotham tied with Gill Sans for the most empathetic typeface. Helvetica (Figure 46) ties Bodoni for certainty while it easily received the most responses for indifference. However, it also received the least number of disgust responses with zero, making it seem like a soft indifference. Roboto (Figure 47) can be noted as the most boring of the typefaces. It just edged out Helvetica by one. Roboto also scored high in indifference. Times New Roman (Figure 48) tied with Helvetica as the least exciting typeface as well as tying Gotham for lowest anxiety. Verdana (Figure 49) was a low response typeface but that did not stop it from gathering a fair number of votes for indifference. Many responses were fairly equal between opposing emotions.</p>
+
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig38.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig38.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig38.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig38.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig38.jpg"
+                />
+            <figcaption class="nofig">Figure 38. Emotional Profile of Arial. The compiled results of the emotional profile section of the survey for Arial Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig39.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig39.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig39.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig39.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig39.jpg"
+                />
+            <figcaption class="nofig">Figure 39. Emotional Profile of Bodoni. The compiled results of the emotional profile section of the survey for Bodoni MT Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig40.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig40.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig40.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig40.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig40.jpg"
+                />
+            <figcaption class="nofig">Figure 40. Emotional Profile of Calibri. The compiled results of the emotional profile section of the survey for Calibri Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig41.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig41.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig41.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig41.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig41.jpg"
+                />
+            <figcaption class="nofig">Figure 41. Emotional Profile of Futura. The compiled results of the emotional profile section of the survey for Futura Medium.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig42.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig42.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig42.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig42.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig42.jpg"
+                />
+            <figcaption class="nofig">Figure 42. Emotional Profile of Garamond. The compiled results of the emotional profile section of the survey for Garamond Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig43.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig43.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig43.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig43.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig43.jpg"
+                />
+            <figcaption class="nofig">Figure 43. Emotional Profile of Georgia. The compiled results of the emotional profile section of the survey for Georgia Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig44.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig44.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig44.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig44.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig44.jpg"
+                />
+            <figcaption class="nofig">Figure 44. Emotional Profile of Gill Sans. The compiled results of the emotional profile section of the survey for Gill Sans Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig45.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig45.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig45.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig45.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig45.jpg"
+                />
+            <figcaption class="nofig">Figure 45. Emotional Profile of Gotham. The compiled results of the emotional profile section of the survey for Gotham Book Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig46.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig46.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig46.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig46.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig46.jpg"
+                />
+            <figcaption class="nofig">Figure 46. Emotional Profile of Helvetica. The compiled results of the emotional profile section of the survey for Helvetica Regular.</figcaption>
+        </figure>
+
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig47.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig47.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig47.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig47.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig47.jpg"
+                />
+            <figcaption class="nofig">Figure 47. Emotional Profile of Roboto. The compiled results of the emotional profile section of the survey for Roboto Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig48.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig48.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig48.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig48.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig48.jpg"
+                />
+            <figcaption class="nofig">Figure 48. Emotional Profile of Times New Roman. The compiled results of the emotional profile section of the survey for Times New Roman Regular.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig49.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig49.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig49.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig49.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig49.jpg"
+                />
+            <figcaption class="nofig">Figure 49. Emotional Profile of Verdana. The compiled results of the emotional profile section of the survey for Verdana Regular.</figcaption>
+        </figure>
+
+
+        <p>...</p>
+
+        <h2>IX. NEW FONT CLASSIFICATION</h2>
+        <p>As a conclusion from survey results and designer interviews, an overhaul to the typeface classification system would improve the connection between the intent of typographic design and how users perceive and use typefaces. Gerard Unger warns of creating typographic theories on design that are too specific to a particular way of working, as typeface designers may have many reasons for drafting and designing letterforms (Theory of Type Design 11). But from the responses of professional typographic designers, it is somewhat clear that typography does not fully involve the user during the design process—a standard occurrence in product and interactive design.</p>
+        <p>As technology grows, typefaces, in their natural state of evolving with it, must embrace the idea that they are becoming more technical and advanced in their design. Font files are no longer static, but versioned and living. Typefaces should respond to user preferences to help make them better rather than be the product of a few close associates or the indulgences of their creators. While this is not always the case for all typeface designs, it is especially true for typefaces that hope to gain global importance as a vessel for language.</p>
+        <p>Typography cannot be a club for the highly trained when it clearly holds such an importance in the very fabric of communication. As previously addressed, typography has barriers of terminology and history that are difficult for those not devoting their design practice or education to understand. To help aid the removal of this barrier, a new classification system that helps make typography more accessible to non-designers as well as making the user a more central component of the design doctrine surrounding typeface design and theory could be conceived.</p>
+
+        <h3>Proposed New System of Classification</h3>
+        <p>Jonathan Hoefler writes, “If there is a Holy Grail of typography it is surely the Omniscient Typeface Classification System, which will organize and index the complete typographical output of mankind” (201). Many attempts have been made to redesign the classification system, including the archival works of Central Lettering Record, a database from the era of the CD-ROM, that “involves using conceptual underpinnings...and a plane, formed by the intersection of a time-line on the one axis, and a list of identified typographic models on the other axis” (Hoefler 208). While this system sounds much more comprehensive, its usability feels like it requires advanced degrees to operate.</p>
+        <p>The Holy Grail of typography is a lot to strive toward, but a new classification system based on emotional rather than physical characteristics, countries of origin, and time periods would give typography a new accessibility as well as alleviate the problems with the current system involving overlapping categories.</p>
+        <p>Hoefler argues that “assigning type to discrete time periods also intimates that historical styles are visual explorations that have long since been completed” (205). To avoid the creative stifling of the existing system, typefaces could be classified as joyous, surprising, sarcastic, upsetting, satisfying, indifferent, or certain. Old standard physical terms like regular, bold, italic, or monospaced, extended, and condensed would no longer be needed as typeface designers will understand how these traits can be imbued within the design. Classification systems based on whether the typeface has serifs, and to what extent do they become pointy, leave the untrained person out of the loop when picking a typeface.</p>
+        <p>People use typography every day, but they are not aware of how to use it properly. This new system would give them a better understanding of what characteristics translate into the intended purpose of their use. Instead of choosing a typeface that looks pretty or is bold, they would choose a typeface that expresses formality, sympathy, or relief. Why should typographers force a layer of interpretation onto the users of fonts? Typefaces lack instruction manuals, but this system would adhere to the usability principle of recognition over recall and let users make informed choices when selecting a typeface by evoking universal emotions.</p>
+        <p>Many users experience typeface choice as a single dropdown menu of preloaded fonts and through semi-obscure interface elements like the ubiquitous B I U menu in their word processor or email programs. Occasionally a choice of individual weights is offered through an extended menu, but these choices lack the ability to convey the purpose of those designs. An interface that replaces the weight names and allows the user to pick from a range of emotional qualities instead would help the user express the content of their message or understand what they are reading. Changing the interface would not be too difficult to implement as it just restructures the options. Even the B I U menu could use a pictorial system to show common emotional expressions in the same way emojis and emoticons do. For users that desire more control over how much of each emotion a typeface could express, a system of ranged sliding inputs could make for easy adjustments (Figure 55).</p>
+        <figure>
+            <img
+                    alt="thesis figure"
+                    loading="lazy"
+                    srcset="
+                        /images/projects/2020/thesis-ubiquitous-design/200w/200-thesis-fig55.jpg 200w,
+                        /images/projects/2020/thesis-ubiquitous-design/400w/400-thesis-fig55.jpg 400w,
+                        /images/projects/2020/thesis-ubiquitous-design/800w/800-thesis-fig55.jpg 800w,
+                        /images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig55.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/projects/2020/thesis-ubiquitous-design/1200w/1200-thesis-fig55.jpg"
+                />
+            <figcaption class="nofig">Figure 55. Emotional Typeface Selection Interface. Proposed interface for selecting typefaces on a sliding emotional scale within a common text editor.</figcaption>
+        </figure>
+
+        <p>This new classification system also would give more control to the user in terms of typesetting. Certain emotions may be best addressed using the space between letters rather than manipulating the letterforms themselves. For instance, designers will often increase the tracking or letterspacing to make words appear more formal or give them a better sense of hierarchy. Many word processing programs do not easily allow for this adjustment, but if it was designed into the style of the typeface the user could access the feature.</p>
+        <p>Foreseen issues with this system include more technical applications of typography. Some typefaces have alternate styles in order to maintain legibility depending on the color and size of the design. These completely physical differences exist to give better contrast when using a typeface on a dark background or to grant a subtle boost to hierarchy without changing the mood or feeling of the work. While the current classification system caters to the subtle typographic changes needed by professionals with extensive typographic understanding, most users of type have few concerns over page texture and hierarchy during daily use.</p>
+        <p>Another issue could be the potential for sending mixed signals while communicating when users fail to choose a typeface that matches their intended writing tone. As useful as it might be to include that intent through a font style, users may feel obligated to avoid neutral settings and oversaturate their writing with numerous fonts for every type of emotion expressed. The use of too many fonts in one work can make for a poor reading experience and shows immaturity in current communication design practices. Despite the potential downsides, the upside of having the general population more conscious of their decisions when communicating with type would add a positive awareness to typeface design profession.</p>
+
+
+        <aside class="references">
+            <h6>Works Cited</h6>
+            <ol>
+                <li>Bil’ak, Peter. Personal interview. 6 Mar. 2020.</li>
+                <li>Bringhurst, Robert. The Elements of Typographic Style, 4th ed., Hartley & Marks, 2012, pp. 10–17, 93–99, 117, 234–237, 335–346.</li>
+                <li>Burian, Veronika. “Why Do We Need More Typefaces?” TypeTogether, Jan. 2017, www.type-together.com/why-do-we-need-more-typefaces. Accessed 24 Feb. 2020.</li>
+                <li>Carter, Matthew. “My life in typefaces.” TED, 18 Mar. 2014, www.ted.com/talks/matthew_carter_my_life_in_typefaces. Accessed 3 Apr. 2020.</li>
+                <li>Cheng, Karen. Designing Type. Yale University Press, 2005, pp. 7–17.</li>
+                <li>Goudy, Frederic W. “I Am Type.” Texts on Type, edited by Steven Heller and Philip B. Meggs, Allworth Press, 2001, pp. 218.</li>
+                <li>Hoefler, Jonathan. “On Classifying Type.” Texts on Type, edited by Steven Heller and Philip B. Meggs, Allworth Press, 2001, pp. 201–209.</li>
+                <li>Macmillan, Neil. An A–Z of Type Designers. Yale University Press, 2006, pp. 52–53, 89–93, 137–140.</li>
+                <li>Riechers, Angela. “Is It Possible to Create A Truly Global Typeface?.” AIGA Eye on Design, eyeondesign.aiga.org, 9 Apr. 2019, eyeondesign.aiga.org/ping-a-single-type-family-for-three-billion-native-speakers/. Accessed 10 Dec. 2019.</li>
+                <li>Tufte, Edward R. The Visual Display of Quantitative Information. 2nd ed., Graphis Press LLC, 2001, pp. 93–129.</li>
+                <li>Unger, Gerard. Theory of Type Design. nai010, 2018, pp. 11–31, 119–122, 218–230.</li>
+            </ol>
+        </aside>
+        <p>This was just a short excerpt from the work. <a href="/downloads/Ubiquitous-Design-Thesis-2020.pdf" download>Download Full PDF</a></p>
+    </article>
+</section>
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

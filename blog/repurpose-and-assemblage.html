@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Blog | Repurpose & Assemblage</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/blog/all-posts.html">Blog</a> | <a href="/blog/criticism.html">criticism</a>
+        <span>03/16/2018</span>
+    </h2>
+    
+    <h1 class="header-title">Repurpose &amp; Assemblage</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="blog-post-intro">
+    <h1 class="scrollMARKER balance-text">Repurpose &amp; Assemblage</h1>
+</section>
+<section>
+    <article class="view-content">
+        <div class="post-meta">
+    <span>by NH | </span>
+    <span>Mar 16, 2018 | </span>
+    <span class="read-time"></span>
+</div>
+
+        <p>Dada, while short-lived and enigmatic, proposes direction and accompanying attitudes for people working in the field of communication design. Designers paying attention to work from the Dada movement learn valuable lessons in repurposing existing materials and creating new works from the assembly of common objects into a form encompassing new meaning. A viewpoint attributed to the movement claims “artistic acts became matters of individual decision and selection” (Meggs, 256) and gives modern designers the freedom to pursue new forms created from obtained objects, without the rejection based on originality or lack of incomplete development.</p>
+        <p>The Dadaist idea of taking existing elements and transforming it into art paves the way for modern designers and artists to break out of traditional applications for materials and blur the boundaries of medium. Very few works from the Dada movement make use of the object in its original form and especially for its original purpose, which defies traditional art mediums. From the creation of the photomontage through collage (Meggs, 258) to the challenge of the limits of art irreversibly blurred by Marcel Duchamp’s ready-mades, the Dada movement gives today’s design discipline the tools to craft works that separate the medium from the artwork and use materials in interesting and new ways. Found objects in Duchamp’s Bicycle Wheel show how a wooden stool and a wheel from a bicycle stop being individual objects when not only assembled in an artistic fashion but also while being changed through a thoughtful process. This new way of thinking about art as a process rather than an outcome also plays an essential part in the Dadaism influence.</p>
+        <p>Many Dada artists, such as Jean Arp believed that chance and choice of the artist characterized the Dada works. Contemporary communication designers employ this idea in a similar fashion. Objects collected through chance encounters are manipulated and compiled through the choices of the designer into a work that shows the objects as an intrinsic form rather than a purposeful item. “Art shouldn’t concern itself with ideal beauty, [...] but should heighten human awareness of the real by any means possible” (Filler, 2010). Giving designers this idea of playing with what is real and what is perceived allows new compositions of real objects to have a strong impact on the viewer.</p>
+        <p>A prime example of the lessons of Dadaism comes from the work of Dan Tobin Smith and his series of typographic compositions called Alphabetical. Each work is composed from a plethora of repurposed objects including busts, rolls of tape, camera parts, shelves, boxes, cups, and containers, where the objects are composed in a dimensional space to create a perceived letter in front of the camera. Both Letter E (Figure 1) and Letter A (Figure 2) showcase how a single perspective on a random collection emphasize a personal and human meaning all on its own. This work employs the Dadaist idea of the disregard for the boundaries traditionally found between painting, sculpture, and image. Smith’s design work meets at the intersection between sculpture and image but maintains its connection to communication design through the expression of typographic elements. Smith claims, “I’ve always been interested in typography as a form of design, and I like the idea of photographically representing typography” (Abbink, 2010). Typography finds a new medium through careful choice of placement and random selection of material. The letterforms in Smith’s work are not confined to the medium of paper, but exist in a dimensional space until captured from the right vantage point.</p>
+        <figure>
+            <img
+                    alt="letter e"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/repurpose-and-assemblage/200w/200-dantobinsmith-e.jpg 200w,
+                        /images/posts/2018/repurpose-and-assemblage/400w/400-dantobinsmith-e.jpg 400w,
+                        /images/posts/2018/repurpose-and-assemblage/800w/800-dantobinsmith-e.jpg 800w,
+                        /images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-e.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-e.jpg"
+                />
+            <figcaption>Dan Tobin Smith, Letter E. 2010. Print. dantobinsmith.com, http://www.dantobinsmith.com/projects/lettere/?id=341. The construction of the letter is influenced by found object manipulation and readymades.</figcaption>
+        </figure>
+        <figure>
+            <img
+                    alt="letter a"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/repurpose-and-assemblage/200w/200-dantobinsmith-a.jpg 200w,
+                        /images/posts/2018/repurpose-and-assemblage/400w/400-dantobinsmith-a.jpg 400w,
+                        /images/posts/2018/repurpose-and-assemblage/800w/800-dantobinsmith-a.jpg 800w,
+                        /images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-a.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-a.jpg"
+                />
+            <figcaption>Dan Tobin Smith, Letter A. 2010. Print. dantobinsmith.com, http://www.dantobinsmith.com/projects/creativereviewannual2/?id=693. The letter created in the image shows a Helvetica A and is made from found objects.</figcaption>
+        </figure>
+        <p>Assemblage either by collage or a more sculptural composition relays the Dada practice of using found materials to create a new work, and Smith’s work revolves around this idea. The most interesting part of the compositions is the recognizable form of the letter existing from random and unrelated objects—something that again stems from Dadaism. The bits of equipment, lights, and figurines separately have no connection other than being a similar color and perhaps reflectivity (Figure 3).</p>
+        <figure>
+            <img
+                    alt="letter e detail"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/repurpose-and-assemblage/200w/200-dantobinsmith-e2.jpg 200w,
+                        /images/posts/2018/repurpose-and-assemblage/400w/400-dantobinsmith-e2.jpg 400w,
+                        /images/posts/2018/repurpose-and-assemblage/800w/800-dantobinsmith-e2.jpg 800w,
+                        /images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-e2.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-e2.jpg"
+                />
+            <figcaption>Dan Tobin Smith, Letter E Detail. 2010. Print. Dan Tobin Smith, http://www.dantobinsmith.com/projects/lettere/?id=340. A detail shot of the objects shows the process of the assemblage.</figcaption>
+        </figure>
+        <p>But when singularities constitute a specific shape as intended by Smith, it communicates a whole new perspective on the relation of the objects. The letter is only formed through the composition taken in all at once. Without standing in the right place, or in this case taking the image from the right angle, the collection of forms reverts back to its disjointed nature. When viewed from an unintended perspective the objects become individual pieces and fail to form a collective message, but simultaneously reveals the process behind the design (Figure 4).</p>
+        <figure>
+            <img
+                    alt="letter a detail"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2018/repurpose-and-assemblage/200w/200-dantobinsmith-a2.jpg 200w,
+                        /images/posts/2018/repurpose-and-assemblage/400w/400-dantobinsmith-a2.jpg 400w,
+                        /images/posts/2018/repurpose-and-assemblage/800w/800-dantobinsmith-a2.jpg 800w,
+                        /images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-a2.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2018/repurpose-and-assemblage/1200w/1200-dantobinsmith-a2.jpg"
+                />
+            <figcaption>Dan Tobin Smith, Letter A Detail. 2010. Print. dantobinsmith.com, http://www.dantobinsmith.com/projects/creativereviewannual2/?id=694. A detail view of the composition out of perspective.</figcaption>
+        </figure>
+        <p>While the works of Dada artists can claim to be crafted from nonsensical objects and processes, their methodology and ideals still lead the way for more contemporary designers and artists. Communicating new ideas and forms through a pieced-together approach and using existing objects lets communication designers continue to engage and challenge the idea of which mediums apply to which disciplines, and what original compositions reveal about the separate pieces that power them.</p>
+        <aside class="references">
+            <h6>Works Cited</h6>
+            <ol>
+                <li>Abbink, Jeanette, and Emily CM Anderson. 3D Typography. New York: Mark Batty Publisher, 2010. 140–141, 220. Print.</li>
+                <li>Filler, Martin. “Our Art Belongs to Dada.” Departures. Other Time Inc., 30 Mar 2010. Web. 16 Mar 2018. https://www.departures.com/art-culture/exhibit/our-art-belongs-dada.</li>
+                <li>Meggs, Philip B, and Alston W. Purvis. Meggs’ History of Graphic Design. Hoboken, N.J: J. Wiley & Sons, 2006. 256–262. Print.</li>
+            </ol>
+        </aside>
+        <p>See the project: <a href="/work/repurpose-and-assemblage.html">Repurpose & Assemblage</a></p>
+    </article>
+</section>
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

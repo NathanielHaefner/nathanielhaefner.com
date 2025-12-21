@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Blog | Play and Learning in Art and Design Education</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/blog/all-posts.html">Blog</a> | <a href="/blog/teaching.html">teaching</a>
+        <span>11/25/2017</span>
+    </h2>
+    
+    <h1 class="header-title">Play and Learning in Art and Design Education</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="blog-post-intro">
+    <h1 class="scrollMARKER balance-text">Play and Learning in Art and Design Education</h1>
+    <aside class="blog-categories contents">
+        <ul>
+            <li><a href="#anchor-section-1">Extant Research on Play and Learning</a></li>
+            <li><a href="#anchor-section-2">Methodology</a></li>
+            <li><a href="#anchor-section-3">Adolescent Interview</a></li>
+            <li><a href="#anchor-section-4">Findings and Discussion</a></li>
+        </ul>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <div class="post-meta">
+    <span>by NH | </span>
+    <span>Nov 25, 2017 | </span>
+    <span class="read-time"></span>
+</div>
+        <p>Play engages multiple dimensions and levels of creativity and learning, especially when students make art (Susan, 2014). Play presents students with methods for going beyond traditional learning experiences and pushes them into a mindset that contributes to imaginative, social, and cultural worlds (Bell, 2016). However, students are often required to be responsible for their own learning in the transition from the more structured teaching environment of high school to a more self-directed environment in university (Winters, 2011). The goal of this study is to investigate ways in which art and design students use play combined with technology to facilitate higher level learning in a self-paced educational environment. The study examines ways in which advanced high-school art students in Central Texas school districts are already engaging in play as a learning tool through interactive experiences using technology to make sense of their world and the process of creating work.</p>
+        <p>A successful and high-achieving student is often aware of their own ability to understand and respond to their own emotions (Susan, 2014). In order for a student to reach this level of understanding, students must be taught about the learning process in general. This idea of meta-learning teaches students to become a more effective learner (Winters, 2011). Play as a form of learning allows students to deconstruct traditional learning methods into ways that help them become their own artist or designer. From the beginning of art and design education, art and design students of all levels are often engaged in a guided play, where a balance is struck between direct instruction from their teachers and free play. Free play allows students to explore various traditional media both in the physical and digital environment, but the blending of these environments adds a new dimension to play. Technology as an aid to art play, which is the play that occurs when students create art (Susan, 2014) allows for students to maintain a higher degree of control over their own learning, especially when the technology is embedded into the process of creating artistic works or designs.</p>
+        <p>Perhaps at this point, a definition of play would help to facilitate how students can engage in the activity. Play consists of changing the meaning of actions and objects to give them a new awareness (Colliver, 2016). Technology and play work together to make use of mixed reality environments, assistive tools for digital content creation, and to facilitate the learning of mundane kinesthetic skills. Artists and designers thrive when thinking creatively, but not having basic skills prevents them from utilizing their creativity to operate at such a high level. By using technology in their play, art and design students get to the high-level creative thinking stage without the cognitive barriers associated with traditional learning experiences.</p>
+
+        <h2 id="anchor-section-1" tabindex="0">Extant Research on Play and Learning</h2>
+        <p>Play and learning often go hand in hand when exploring new materials and ideas. Susan (2014) claims that teachers must prepare an environment in which students can play and learn by interacting, exploring, and creating with art materials. Play helps bring students from a concrete and factual mindset to an abstract and symbolic state (Susan, 2014). This is a common theme throughout the research, where play brings a student from a basic level of learning up to a more creative level, using higher level thinking. Learning through guided play allows students to express their creativity in a safe environment, where a teacher has prepared the learning environment ahead of time to allow successful learning to happen (Susan, 2014). A safe, creative space allows for a student to develop artistically. This combined with a risk-taking mindset, allows the student to flourish and become self-motivated through play.</p>
+        <p>In the study on 18th century Japanese artist Suzuki Harunobu, Bell (2016) shares an emphasis of learning and play as a motivator and a creative simulant for all artists and showcases how the concept of play and learning have deep historical connections. In what became modern day Tokyo, artists found a creative mindset from a profound sense and embrace of play throughout all aspects of culture (Bell, 2016). The types of play associated with Harunobu’s artwork are vast, but include wordplay, interplay between image and text, and play with traditional cultural references. These forms of play provided the essential drive of artistic synthesis that provided Harunobu with an extended and reliable method for creative practice (Bell, 2016). Art and design students can build upon the idea of play, using it as an intervention when their individual creativity needs a boost, as well as an internal motivator for self-paced discovery.</p>
+        <p>Technology also played a role in the inspiration of Harunobu’s work. In the early 18th century, the multicolor woodblock print became more reliable for working artists (Bell, 2016). This new technology allowed printmakers new methods of creating artwork, allowing playful experimentation with their new media. Using the novelty of color printmaking, Harunobu could take risks that could only be afforded through experimentation and a sense of play. The sportive innovation inherent to his art provided a constant force for a growing creative outlet. If the practice of play can have such a positive impact on the work of historical artists, surely the same can be true for students of art in today’s time.</p>
+        <p>For younger children in today’s education system, learning through play is often expected and a core element of early childhood education (Colliver, 2016). In Colliver’s study, he found little value is placed on discussing how much children actual understand about what they learn while playing, since children often are seen as naive to the learning process. Nonetheless, play is an important part of how children learn and perceive the rules and structures of the world around them. However, as students progress and become older, the sense of play is often set aside for more rigorous types of learning, and a focus on communicating learned material is emphasized.</p>
+        <p>Children, as compared to adolescent learners, are not able to effectively communicate what they have learned because they do not understand how to compare their mental states before and after learning has occurred (Colliver, 2016). This idea of metacognition which is the awareness of a person’s own thinking and how to use it, is a helpful contributor when pursuing academics alone, outside of a traditional teaching environment. Older children tend to have a sense of seriousness about play, while younger children engage more with the silliness of play (Colliver, 2016). Unfortunately, this seriousness could be a hindrance to the creative process in which upper level art students engage in making art and artistic choices.</p>
+        <p>As play becomes more structured and the rules for play become more fixed, play as a form of learning becomes more of an exercise in routine rather than a new outlet for expression. Since children and adults think and reason differently from each other (Colliver, 2016), this study fails to give much insight into the benefits of play for adolescents, but does give good insight into how adult minds can use metacognition as a platform for developing meta-learning.</p>
+        <p>Using the idea of metacognition as a learning advantage of adolescents studying art or other subjects, a similar connection can be made about meta-learning, or the development of one’s self-awareness as a learner (Winters, 2011). Further, Winters (2011) explains how students transitioning from the guided learning environment of high school to the loosely structured and self-paced environment of college art and design courses need to understand how their own learning occurs and must be self-aware in order to become self-motivated. While Winters (2011) does not inquire about how play can provide a learning tool for students, she does emphasize that the student learns best in an environment structured or designed by the learner. A sense of play would provide a student with an escape from a traditional thought domain allowing them to create an imaginary role where new rules of learning and creativity are formed (Colliver, 2016). A student that is mindful of their own learning can use a wide range of exploratory, connective, and experimental processes to try out and evaluate their own process of learning (Winters, 2011).</p>
+        <p>A helpful process by which students can explore using imaginary roles is through technological advances in graphically enriched environments. Vear (2017) examines how immersion in a creative space that consists of both real world objects and virtual augmentations can create an intuitive environment for creative play. These “mixed-reality” environments allow students to build communications skills, which is a vital aspect in the education of art and design students. Being immersed in the augmented reality environments helps them quickly transition from thinking about what an object is to a more critical thinking approach of how an object can be used (Vear, 2017). A downfall of older technology using mixed-reality is the lack of convincing interactions between the graphics and the immersed user (Vear, 2017). Without the sense of real engagement with the technology, the student will not make the quick jump up to the areas of higher-level thinking, where creativity lives. The study helps show that teaching using digital technology can increase engagement through creative play.</p>
+        <p>Outside of a direct teaching environment, learning can also be aided through other areas of digital interaction. Artists have created interactive media to display in museums for many decades, but recently the interactive media has become more digital in nature as technology has progressed (Eiserman, 2013). These art installations touch on the idea that the learner can enter and leave the creative space at will, placing the learning into the hands of the person experiencing the exhibit. This is especially relevant to students using technology as means for enhancing creative endeavors in art and design as an extension of self-paced learning. Eiserman (2013) finds that interactive installations can create a scaffolding in a learning environment that push students outside of their comfort zones to a place of proximal development. Students playing in an environment such as this would see an increase in learning about things they would not have normally had the courage or skills to attempt on their own (Eiserman, 2013). This study is especially relevant to finding out how technology can be used as a learning tool, as it demonstrates how other artists are already using immersive digital installations to express themselves and communicate ideas.</p>
+        <p>Besides showing how technology can be an outlet for an artist, technology can also work as a precursor to art learning. With the aid of technology, students can enjoy the high-level creative aspects of art and design before they have developed the low-level sensorimotor skills needed to perform art and design tasks (Morris, 2013). Students learning art have to go through the monotonous motions of learning and practicing technique before they have mastered the skills well enough to enjoy creative expression. When teaching art, this low-level practice disengages students and can be a detriment to a student’s pursuit in art education. Morris (2013) shows that the socially and creatively satisfying results of higher-level artwork can be achieved through technologically augmented practice, where the software handles the low-level tasks while the student enjoys the creative expression. The lower-level skills are not lost on the student, but they are simply learned simultaneously with the high-level concepts. For students taking learning into their own hands, computer based learning systems can keeps students engaged in the interesting and rewarding aspects of learning as they learn the fundamental skills necessary to create art without aid from a computer. While this study is mostly theoretical as it pertains to art education, the case studies on musical education have shown promising results. As boost to creative skills, technology can provide an important role to keeping students interested in learning about art and design, either through guided play, or independent pursuit.</p>
+
+        <h2 id="anchor-section-2" tabindex="0">Methodology</h2>
+        <p>I selected case study as a method because of the study’s “desire to derive a[n] [up]-close or otherwise in-depth understanding of a single or small number of “cases,” set in their real world contexts (Yin, 2012, p.4). In this study I hope to gain a deeper understanding of the ways in which upper level art students use play and technology to facilitate higher level learning through self-paced education. A case study makes for the best method because it will allow for the student to describe the various ways that technology helps them create art and play with new materials in a virtual environment. A single case will be a snapshot into the current status of art education’s use of play as a form of learning, especially in an upper level art class, where much of the coursework is self-paced and highly personal.</p>
+        <p>The study will include high school students in advanced placement (AP) art in a school in Central Texas. The study will include a single student. The study uses convenience sampling, which is a non-probability sampling technique where subjects are selected because of their convenient accessibility and proximity to the researcher. The study could include a student of any gender or race, but they should be a student that wishes to study art in college, which many AP art students do. An AP art student will be able to provide insight into how art is being taught through the use of technology and play in the classroom, since they will have been participating in the art curriculum in the school system for the maximum amount of time.</p>
+        <p>The data will be collected by directly interviewing a student in the classroom setting. The student will be selected from an AP art class at the high school in which my sister teaches. All of the students in the class are given the opportunity to volunteer to take part in the interview, and the instructor of the class will choose a student from those who volunteer. The student was first notified of my role as a Texas State University researcher and had the opportunity read and ask questions before sign a permission slip or have a parent/guardian sign if they are under 18 years old. Next, I will meet with the student individually and in person and explain how I will vocally record the interview in order to produce a written transcript. This will give the student an overview of how the interview process works, so they know what to expect, and can express any concerns about the process. The whole interview should last for about 45 minutes. The student will be seated in their art classroom and verbally asked a series of open-ended questions that will lead to a conversation about what types of playful activities and types of technology are being used in their classroom. The student will be prompted to share any relevant work or projects they are currently working on, which may be photographed or digitally saved to add as artifacts in the study, as long as the student gives consent. Data will only be collected from the student once. The study will take place in the art studio at the student’s high school, where they will be able to show and talk about the tools and technology in the room, if there is any. The interview will take place during the regular class time for AP art, so the student will not need to worry about scheduling the interview outside of class time. It is also important that the interview is in the art classroom, so I can see first-hand the environment and technology being used in the classroom.</p>
+        <p>The measures of the study are interviews that are recorded using the Voice Memos app on an iPhone. The study also includes photographs or digital copies of student artwork as artifacts. The study uses Colliver’s (2016) definition of play as changing the meaning of actions and objects to give them a new awareness. Technology in art education is simply defined as new equipment and tools outside of the traditional mediums of creating artwork. Technology can include computer software, advanced art materials, or applications that aid learning through augmenting the learning environment.</p>
+        <p>Qualitative research is relevant for this study because it seeks to understand the meaning attributed to individuals’ experience (Merriam, 2009) in association with the concept of technology and play in upper level art education. Qualitative data in the form of interviews, observations, field notes, and student-generated work will be gathered. Using the information collected allows for triangulation of the data, which increases the validity of the findings (Miles, Huberman & Saldana, 2013). I will manually code transcripts of interviews and analyzed them as Miles, Huberman, and Saldana (2013) suggest by noting patterns and themes arriving at comparisons and contrasts, and determining conceptual and intuitive explanations.</p>
+
+        <h2 id="anchor-section-3" tabindex="0">Adolescent Interview</h2>
+        <p>In this case study, the student being interviewed is creating works of art for her advanced placement art portfolio, which will be submitted to the College Board for review for AP credit. She plans to continue to study art in college and expects that she will major in art. The student was asked questions about art and technology and shared information about what kinds of experiences with technology and digital artwork she has had during her time studying art in school. During part of the interview, the student used a tablet and digital pencil to make a sketch using an application common for drawing, painting, and illustration. The app was new to her.</p>
+        <p>P:  I'm easily distracted.</p>
+        <p>I:  Does your school uhhh, have any sort of computer labs and programs you can use to do your work?</p>
+        <p>P:  We do, but they are a little bit outdated. They're always really slow.</p>
+        <p>I:  Okay, do you supplement that with your own? Do you have a computer that you use for your own stuff then?</p>
+        <p>P:  Yes, but I don't really bring it to school very much because I like, it doesn't fit in my locker, so I have to carry it around all day.</p>
+        <p>I:  Ahh, and they don't mind you having a computer at school or anything, though?</p>
+        <p>P:  Teachers don't really like it if you use in class, and I haven't used my laptop in art class. Usually I'll just use it at home.</p>
+        <p>I:  Okay.</p>
+        <p>P:  Like the struggle of bringing it there is, is, outweighs the benefit of getting things done in class.</p>
+        <p>I:  Okay.</p>
+        <p>P:  Yeah. My teacher is pretty traditional, and we do a lot of figure drawing. She kind of, like, acts like any computer stuff can be done on these terrible computers in the corner but you really can't.</p>
+        <p>I:  Oh, so you wish the computers were a little nicer, then you would use them a little more?</p>
+        <p>P:  Definitely, and I wish that people who used paint and stuff wouldn't get paint all over the computers.</p>
+        <p>P:  Yeah, a lot of my work in school, I'm proud of it because I can look at my figure drawing from the beginning of the year and it is definitely way worse than the last one I did, um, but I don't want to do figure drawing for the rest of my life.</p>
+        <p>I:  Do you think the uh, work that you do in class is more self-directed or would you say that your teacher tends to give you specific assignments that you do, especially that you are in the highest level and making your portfolio? How much say do you get in what they are versus what your teacher asks you to do?</p>
+        <p>P:  Um, a lot of say, but a lot of times she decides like how many of them would be, would count for a grade. Like she is okay with doing things that are spontaneous pieces of art that really only take five minutes. But if you do that, she wants you to do like thirty of them. So she sort of decides, you know, the level of finished it is, but she is pretty open to a lot of different kinds of art.</p>
+        <p>I:  Okay, cool. Do you think that traditional art, or art that is made with technology or a computer, do you think that either one of them is better than the other?</p>
+        <p>P:  No, I think that sometimes people misuse technology in terms of creating art and make things that maybe don't have value beyond "Whoa, that's a cool exploration of that technology", but I can't see them moving me in a way that some paintings do and some really old art does. That being said, a lot of old art is garbage.</p>
+        <p>I:  [laughs]</p>
+        <p>P:  And I think as we learn technology mediums, new mediums will get to that point.</p>
+        <p>I:  Where it's harder to tell the difference between the two maybe?</p>
+        <p>P:  Yeah, yeah, and like, you know paintings that look like photographs aren't inherently interesting to me either, so like everything has downsides and upsides.</p>
+        <p>I:  Cool! Do you feel like when you are on the computer you have as much freedom to create things as you do on paper?</p>
+        <p>P:  Yeah definitely. I mean I think even more. I think the only sort of like drawback to it is that sometimes I use imagery that wouldn't, that I would get in trouble for if I was asking to be paid for my work. And like obviously when you are just drawing something that is not a problem. In terms of freedom, yeah I think that the speed that you can make something in Photoshop uh really lends itself well to uh, you know, making any level of things whether it has to look really nice or it can look kind of collage-y and abstract. I would say maybe more freedom on the computer.</p>
+        <p>I:  Okay. One thing that we talk about with art as far as art education goes, um, is the idea of a happy accident, where maybe you are attempting to do something and a different outcome occurs because something you didn't attend to happen, right?</p>
+        <p>P:  Okay.</p>
+        <p>I:  Do you think you see some of those things happen in your own work?</p>
+        <p>P:  Totally. Do you mean digitally or all the time?</p>
+        <p>I:  All the time.</p>
+        <p>P:  All the time, all the time. Um, I think art, like maybe not everyone's art, but my art evolves as I make it and as a deadline approaches sometimes I have to figure out a new plan, you know? I just realize I put on too much work for this, so then tons of happy accidents happen. I think that can happen in digital media and in regular media.</p>
+        <p>I:  Yeah. Would you say that if you are creating something digitally versus something more traditional that one might be more fun than the other at this point? Do you enjoy one or the other more?</p>
+        <p>P:  I think there is a lot of joy in, um, making the kind of dumb collages that I make for my friends and um and for reports that don't really matter. I think it is really fun to show that work in classes that aren't my art class. Um, like in an art history class I made this sort of collage of, um, I forget the painting, but I put Kim and Kanye in as the king and the queen in this painting and people thought this was so funny. Um and that's really fun for me to get that reaction out of people. And I think laboring over a drawing, drawing doesn't come quite as naturally to me, um is not necessarily as fun, but is like a skill-building thing.</p>
+
+
+        <h2 id="anchor-section-4" tabindex="0">Findings and Discussion</h2>
+        <p>After interviewing a student about the role of technology and play in their advanced placement art class, a conclusion can be drawn that students are more likely to use technology in independent study outside of class rather than during assignments in art class. The student incorporated technology in her leisure time and independent study time far more than in school due to the ease of having technology available in her home instead of in the classroom. The student is very open and enthusiastic about using more technology in her artwork, but seems disappointed by the lack of quality equipment in the art classroom. Even in an art school there is little emphasis on using technology as a main resource in art education. The student is aware that the technology serves an educational purpose and took it upon herself to learn how to use various programs and applications to aid her own artistic work. This awareness shows that the student understands the necessity to learn outside of  class and speaks to her development as an artist and a student. Mostly, the exposure to technology was self-directed and allowed the student to engage in play and make artwork for her friends in a social context, rather than an educational context.</p>
+        <p>The concept of technology allowing student independence is reiterated by the case study and aligns with the findings of Winters (2011) that students need to be take control of their own learning to transition from the structured environment of high school to the independent nature of college courses. Playing with technology allowed the student to independently and easily learn new skills in an engaging way that felt more fun than instructional. Also, the case study points back to Eiserman’s 2013 study about how students use interactive elements of technology to learn. Rather than directly from a teacher in a classroom, the student described watching instructional videos and working through interactive tutorials to aid in artistic learning. Learning this way gives the student more freedom to learn at more self-directed pace. During the interactive part of the interview, where the student used the tablet to draw, it helped to confirm the findings of Colliver (2016) where a sense of play would help generate new levels of learning and understanding. This also relates to the study by Vear (2017) by putting the student into a creative space consisting of real world objects to draw and virtual augmentations to help draw and set up an intuitive environment for creative play. The student commented on how much they would enjoy using the tablet more in their artwork and expressed interest in having a tablet to use for themselves. The excitement of using a new technology helped motivate the student to draw in the same subject area she had seemed to be reluctant to draw in class, which was figure drawing. Given the opportunity to draw anything, she chose to create a figure drawing even after stating she would not like to make figure drawings for the rest of her life during the interview. Clearly technology can inspire students to apply what they know after discovering a new context to practice their basic skills. This relates to the study by Morris (2013) in which students can use technology to practice basic skills while producing a work of a high degree.</p>
+        <p>This study has limitations due to the small amount of data collected and the limitation of the sample size. Since this study only examines one student from one Central Texas high school, trends in data are difficult to draw. The study should be repeated with more student interviews from a wider selection of schools in the area to make a larger set of data to analyze.</p>
+        <p>For further research, a study should be conducted to find out whether or not students feel like they are engaging in play while making art to see whether or not the play aspect of learning or the technology aspect of learning seems to have a stronger effect on helping art students become more self-directed. This would help to answer a question about whether or not technology is a necessary factor in art education to see if students actually learn more than they would in a more traditional classroom setting.</p>
+        <p>All in all, play and the use of technology in art education has positive benefits in creating a self-paced learning environment for students in advanced art classes. While play can be a strong motivational tool to have students explore new ideas and materials, technology makes these materials and ideas more readily available. Students are willing and ready to use technology in their artwork and technology allows them to learn on their own and prepare for higher education. Students already use technology and play in their free time, and art education could benefit from the higher engagement it provides in a classroom setting as long as the technology is up to date and convenient to use.</p>
+        <aside class="references">
+            <h6>References</h6>
+            <ol>
+                <li>Bell, D. R. (2016). Learning, play, and creativity: Asobi, suzuki harunobu, and the creative practice.</li>
+                <li>Colliver, Y., & Fleer, M. (2016). I already know what I learned: Young children's perspectives on learning through play. Early Child Development & Care, 186(10), 1559-1570. doi:10.1080/03004430.2015.1111880.</li>
+                <li>Eiserman, J., & Hushlak, G. (2013). Keeping interactive art interactive.</li>
+                <li>Morris, D., & Fiebrink, R. (2013). Using machine learning to support pedagogy in the arts. Personal & Ubiquitous Computing, 17(8), 1631-1635. doi:10.1007/s00779-012-0526-1.</li>
+                <li>Susan, M. M., Vaughns, A. B., OHara Anne, a., Novotny Loretta, a.,S., & Kyle, T. J. (2014). Preschool through grade 3 : Art play: Stories of engaging families, inspiring learning, and exploring emotions. YC Young Children, (2), 32.</li>
+                <li>Vear, C., & Mcconnon, L. (2017). Pop up play : A digital creative play space. Digital Creativity, 28(2), 141-156. doi:10.1080/14626268.2016.1199575.</li>
+                <li>Winters, T. (2011). Facilitating meta-learning in art and design education. International Journal of Art & Design Education, 30(1), 90-101. doi:10.1111/j.1476-8070.2011.01685.x.</li>
+                <li>Merriam, S. B., & Tisdell, E. J. (2016). Qualitative research: a guide to design and implementation. San Francisco, CA: Jossey-Bass.</li>
+                <li>Miles, M. B., Huberman, M., & Saldana, J. (2014). Qualitative data analysis: a methods sourcebook. Los Angeles, CA,: SAGE.</li>
+                <li>Yin, R. K. (2012). Applications of case study research. Los Angeles: Sage.</li>
+            </ol>
+        </aside>
+    </article>
+</section>
+
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>

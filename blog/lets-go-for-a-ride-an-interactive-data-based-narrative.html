@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="NH - Designer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="Nathaniel Haefner">
+    <meta name="description" content="Work of Nathaniel Haefner | Designer & Educator">
+
+    <title>NH | Blog | Let’s Go for a Ride: An Interactive, Data-based Narrative</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/nathaniel-haefner.min.css"/>
+
+    <link rel="apple-touch-icon" href="/images/ui/nh-app.png"/>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#d50000">
+    <meta name="msapplication-config" content="/images/ui/browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+</head>
+
+<body class="body ">
+<div class="frame"></div>
+<div class="body-grid">
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+    <div class="body-grid-box"></div>
+</div>
+<header class="global-header">
+    <a class="logo-mark" href="/" title="Home">
+        <i>
+            <svg viewBox="0 0 108 108"><path d="M108,28.9752V25.7961H75.4v3.1791H83.614V50.5766H54V8.8023c0-2.9692.2964-3.382.8825-4.2807q.8793-1.3433,4.6437-1.3441H62.61V0h-20.64V3.1775h3.0839q3.7661,0,4.6437,1.3441c.5862.8987.8825,1.3115.8825,4.2807v65.21L24.7316,25.7961,0,25.7605V28.938H3.0839q3.7662,0,4.6438,1.3441c.5861.8987.8825,1.3115.8825,4.2807V73.4371c0,2.9692-.2964,3.382-.8825,4.2807q-.8793,1.3432-4.6438,1.3442H0v3.1774H20.64V79.062H17.5558q-3.7662,0-4.6438-1.3442c-.5861-.8987-.8825-1.3115-.8825-4.2807V35.0452L50.4764,108H54V54H83.614V79.062H75.4v3.1774H108V79.062h-8.35V28.9752Z"/></svg>
+        </i>
+        <label><span>Nathaniel</span><span>Haefner</span></label>
+    </a>
+    <button aria-label="navigation menu" type="button" id="menuIcon" class="menu-icon">
+        <i></i>
+        <label></label>
+    </button>
+    <button aria-label="search list" type="button" id="searchIcon" class="search-icon">
+        <i></i>
+        <label></label>
+    </button>
+</header>
+<div class="global-navigation">
+    <div class="blinds">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navigation">
+        <ul class="nav-categories">
+            <li><a href="/work/typography.html">Typography</a></li>
+            <li><a href="/work/web-and-interactive.html">Web & Interactive</a></li>
+            <li><a href="/work/data-visualization.html">Data Visualization</a></li>
+            <li><a href="/work/book-and-editorial.html">Book & Editorial</a></li>
+            <li><a href="/work/product-and-form.html">Product & Form</a></li>
+            <li><a href="/work/brand-identity.html">Brand Identity</a></li>
+            <li><a href="/work/campaigns.html">Campaigns</a></li>
+            <li><a href="/work/workshops-and-events.html">Workshops & Events</a></li>
+            <li><a href="/work/art-and-illustration.html">Art & Illustration</a></li>
+            <li><a href="/work/environmental-design.html">Environmental Design</a></li>
+            <li><a href="/work/motion-graphics.html">Motion Graphics</a></li>
+            <li><a href="/work/design-research.html">Design Research</a></li>
+        </ul>
+        <ul class="nav-main">
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="project-search">
+    <div class="input-search">
+        <label for="searchInput">Search</label>
+        <input name="search" type="text" id="searchInput" onfocus="select();" onkeyup="filterSearch()" placeholder="Find a project or post..."/>
+        <button aria-label="clear search" id="clearSearch" class="clear-search">
+            <i></i>
+        </button>
+    </div>
+    <div class="search-list">
+        <ul id="searchList" class="search-ul"><li data-search="art &amp; illustration">
+                <a href="/work/underscoregalore.html">Underscore Galore</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/vastasterisk.html">Vast Asterisk</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/pixelscapes.html">Pixelscapes</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/greyhound-phases.html">Greyhound Phases</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="design research">
+                <a href="/work/thesis-ubiquitous-design.html">Thesis: Ubiquitous Design</a>
+                <span>design research</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/successful-css-workshop.html">Successful CSS Workshop</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/literacy-history.html">Literacy History</a>
+                <span>thoughts</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/thesis-exhibition.html">Thesis Exhibition</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/font-flow.html">Font Flow</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/expressive-functional.html">Expressive// Functional</a>
+                <span>environmental design</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/undulation-film-festival.html">Undulation Film Festival</a>
+                <span>motion graphics</span>
+            </li><li data-search="process">
+                <a href="/blog/process-for-undulation-film-festival.html">Process for Undulation Film Festival</a>
+                <span>process</span>
+            </li><li data-search="typography">
+                <a href="/work/protege.html">Protégé</a>
+                <span>typography</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/del-2019-conference.html">DEL 2019 Conference</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="teaching">
+                <a href="/blog/lets-go-for-a-ride-an-interactive-data-based-narrative.html">Let’s Go for a Ride: An Interactive, Data-based Narrative</a>
+                <span>teaching</span>
+            </li><li data-search="design research">
+                <a href="/work/spendy.html">Spendy</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/a-supportive-classroom-management-style-to-maximize-learning.html">A Supportive Classroom Management Style to Maximize Learning</a>
+                <span>teaching</span>
+            </li><li data-search="typography">
+                <a href="/work/everything-you-think-is-wrong.html">Everything You Think Is Wrong</a>
+                <span>typography</span>
+            </li><li data-search="teaching">
+                <a href="/blog/controversy-creates-critical-thinking.html">Controversy Creates Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="environmental design">
+                <a href="/work/100-years-of-the-planets.html">100 Years of The Planets</a>
+                <span>environmental design</span>
+            </li><li data-search="campaigns">
+                <a href="/work/spring-thesis-forum.html">Spring Thesis Forum</a>
+                <span>campaigns</span>
+            </li><li data-search="design research">
+                <a href="/work/type-id-quiz.html">Type ID Quiz</a>
+                <span>design research</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/feed-project-space.html">FEED Project Space</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/supernationals-vii.html">SuperNationals VII</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/winesap.html">Winesap</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/a-reduction-into-amateurism.html">A Reduction into Amateurism</a>
+                <span>criticism</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bronzeville.html">Bronzeville</a>
+                <span>brand identity</span>
+            </li><li data-search="criticism">
+                <a href="/blog/for-the-battery-remaining.html">For the Battery Remaining</a>
+                <span>criticism</span>
+            </li><li data-search="typography">
+                <a href="/work/miss-eaves.html">Miss Eaves</a>
+                <span>typography</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-ultimate-nemesis-the-font.html">The Ultimate Nemesis, the Font</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/art-vocabulary-and-critical-thinking.html">Art Vocabulary and Critical Thinking</a>
+                <span>teaching</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/modernism-mancala.html">Modernism Mancala</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/the-underlying-message.html">The Underlying Message</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/post-modernity.html">Post Modernity</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="environmental design">
+                <a href="/work/vera-molnar-machine-imaginaire.html">Vera Molnar: Machine Imaginaire</a>
+                <span>environmental design</span>
+            </li><li data-search="environmental design">
+                <a href="/work/888-southeast-asia.html">888 Southeast Asia</a>
+                <span>environmental design</span>
+            </li><li data-search="data visualization">
+                <a href="/work/rules-and-random.html">Rules and Random</a>
+                <span>data visualization</span>
+            </li><li data-search="experiments">
+                <a href="/blog/stylized-nature-print.html">Stylized Nature Print</a>
+                <span>experiments</span>
+            </li><li data-search="data visualization">
+                <a href="/work/lets-go-for-a-ride.html">Let’s Go for a Ride</a>
+                <span>data visualization</span>
+            </li><li data-search="data visualization">
+                <a href="/work/dear-data.html">Dear Data</a>
+                <span>data visualization</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/good-typography-is-art.html">Good Typography is Art</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/alvin-lustig-broad-interests.html">Alvin Lustig: Broad Interests</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/bauhaus-ideals-a-practical-web.html">Bauhaus Ideals: A Practical Web</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/repurpose-and-assemblage.html">Repurpose &amp; Assemblage</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/materialization-of-light-and-the-photogram.html">Materialization of Light and the Photogram</a>
+                <span>criticism</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/bright-beam-goods-catalog.html">Bright Beam Goods Catalog</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/pentomino-tiling-puzzles.html">Pentomino Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="criticism">
+                <a href="/blog/technology-strengthens-typography.html">Technology Strengthens Typography</a>
+                <span>criticism</span>
+            </li><li data-search="design research">
+                <a href="/work/ingredients.html">in.gredients</a>
+                <span>design research</span>
+            </li><li data-search="teaching">
+                <a href="/blog/abstraction-of-an-apatosaurus.html">Abstraction of an Apatosaurus</a>
+                <span>teaching</span>
+            </li><li data-search="criticism">
+                <a href="/blog/the-resist-of-logo-redesigns.html">The Resist of Logo Redesigns</a>
+                <span>criticism</span>
+            </li><li data-search="teaching">
+                <a href="/blog/play-and-learning-in-art-and-design-education.html">Play and Learning in Art and Design Education</a>
+                <span>teaching</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand-exhibition.html">Grand Ampersand Exhibition</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/relaxing-rolling-mazes.html">Relaxing Rolling Mazes</a>
+                <span>product &amp; form</span>
+            </li><li data-search="teaching">
+                <a href="/blog/psychodynamic-development-of-josh-waitzkin.html">Psychodynamic Development of Josh Waitzkin</a>
+                <span>teaching</span>
+            </li><li data-search="data visualization">
+                <a href="/work/comdes-timeline.html">ComDes Timeline</a>
+                <span>data visualization</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/bright-beam-goods-website.html">Bright Beam Goods Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/grand-ampersand.html">Grand Ampersand</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/classic-puzzles-and-games.html">Classic Puzzles and Games</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/crit-club.html">Crit Club!</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="campaigns">
+                <a href="/work/pink-avocado-catering.html">Pink Avocado Catering</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/animal-ornament-kits.html">Animal Ornament Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="typography">
+                <a href="/work/daily-ligature.html">Daily Ligature</a>
+                <span>typography</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/spinning-top-kits.html">Spinning Top Kits</a>
+                <span>product &amp; form</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/tangram-tiling-puzzles.html">Tangram Tiling Puzzles</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/weavers-and-spinners-society-of-austin.html">Weavers &amp; Spinners Society of Austin</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/nibl.html">nibl</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/mistaken-lyrics-coasters.html">Mistaken Lyrics Coasters</a>
+                <span>product &amp; form</span>
+            </li><li data-search="brand identity">
+                <a href="/work/bright-beam-goods.html">Bright Beam Goods</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/palm-door-website.html">Palm Door Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/palm-door.html">Palm Door</a>
+                <span>brand identity</span>
+            </li><li data-search="typography">
+                <a href="/work/just-an-and.html">Just an And</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/makeatx.html">MakeATX</a>
+                <span>brand identity</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/pink-avocado-catering-website.html">Pink Avocado Catering Website</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/onyx-and-pearl-lookbook.html">Onyx + Pearl Lookbook</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/beat-the-wait.html">Beat the Wait</a>
+                <span>campaigns</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/min-chair.html">Min. Chair</a>
+                <span>product &amp; form</span>
+            </li><li data-search="workshops &amp; events">
+                <a href="/work/warnings-and-instructions.html">Warnings &amp; Instructions</a>
+                <span>workshops &amp; events</span>
+            </li><li data-search="typography">
+                <a href="/work/braeburn.html">Braeburn</a>
+                <span>typography</span>
+            </li><li data-search="brand identity">
+                <a href="/work/ayya-nyyl.html">AYYA-NYYL</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/container-corporation-of-america.html">Container Corporation of America</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/somewhere-in-austin.html">Somewhere in Austin</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/the-grid.html">The Grid</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/personal-space.html">Personal Space</a>
+                <span>thoughts</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/moon-cheese.html">Moon Cheese</a>
+                <span>product &amp; form</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/everything-goes-somewhere.html">Everything Goes Somewhere</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/balance-of-form-and-function.html">Balance of Form and Function</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/golden-medium.html">Golden Medium</a>
+                <span>campaigns</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-on-haunted-hill.html">House on Haunted Hill</a>
+                <span>campaigns</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/annie-dillard-trilogy.html">Annie Dillard Trilogy</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/house-rabbit-resource-network.html">House Rabbit Resource Network</a>
+                <span>campaigns</span>
+            </li><li data-search="motion graphics">
+                <a href="/work/de-stijl.html">De Stijl</a>
+                <span>motion graphics</span>
+            </li><li data-search="environmental design">
+                <a href="/work/north-shore.html">North Shore</a>
+                <span>environmental design</span>
+            </li><li data-search="product &amp; form">
+                <a href="/work/holspin-milk.html">Holspin Milk Yo-Yo</a>
+                <span>product &amp; form</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/good-wood.html">Good Wood</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="brand identity">
+                <a href="/work/love-booksellers.html">Love Booksellers</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/rr-donnelley-annual-report.html">RR Donnelley Annual Report</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="brand identity">
+                <a href="/work/wacom.html">Wacom</a>
+                <span>brand identity</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/digital-timepiece.html">Digital Timepiece</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="book &amp; editorial">
+                <a href="/work/art-nat-am.html">Art Nat Am</a>
+                <span>book &amp; editorial</span>
+            </li><li data-search="campaigns">
+                <a href="/work/from-within-outward.html">From Within Outward</a>
+                <span>campaigns</span>
+            </li><li data-search="web &amp; interactive">
+                <a href="/work/the-shoe-closet.html">The Shoe Closet</a>
+                <span>web &amp; interactive</span>
+            </li><li data-search="environmental design">
+                <a href="/work/zilker-park.html">Zilker Park</a>
+                <span>environmental design</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/social-deviance-of-lying.html">Social Deviance of Lying</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/sutnar-constructivist.html">Sutnar Constructivist</a>
+                <span>campaigns</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/play.html">Play</a>
+                <span>thoughts</span>
+            </li><li data-search="thoughts">
+                <a href="/blog/on-being-left-handed.html">On Being Left-Handed</a>
+                <span>thoughts</span>
+            </li><li data-search="campaigns">
+                <a href="/work/carson-at-the-paramount.html">Carson at the Paramount</a>
+                <span>campaigns</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/on-the-pulse-of-morning.html">On the Pulse of Morning</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="experiments">
+                <a href="/blog/woodgrain-daily-practice.html">Woodgrain Daily Practice</a>
+                <span>experiments</span>
+            </li><li data-search="typography">
+                <a href="/work/uni-formed.html">Uni-formed</a>
+                <span>typography</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/frank-lloyd-wright-perspective.html">Frank Lloyd Wright Perspective</a>
+                <span>art &amp; illustration</span>
+            </li><li data-search="art &amp; illustration">
+                <a href="/work/nostalgia-for-spin.html">Nostalgia for Spin</a>
+                <span>art &amp; illustration</span>
+            </li><label>No Results… Don’t be so Picky!</label>
+        </ul>
+    </div>
+</div>
+
+<main class="global-view">
+    <div class="view-wrapper">
+    
+<header class="sub-header">
+	
+    <h2>
+        <a href="/blog/all-posts.html">Blog</a> | <a href="/blog/teaching.html">teaching</a>
+        <span>05/31/2019</span>
+    </h2>
+    
+    <h1 class="header-title">Let’s Go for a Ride: An Interactive, Data-based Narrative</h1>
+    <div class="progress-bar"></div>
+</header>
+<section class="blog-post-intro">
+    <h1 class="scrollMARKER balance-text">Let’s Go for a Ride: An Interactive, Data-based Narrative</h1>
+    <aside class="blog-categories contents">
+        <ul>
+            <li><a href="#anchor-section-1">Abstract</a></li>
+            <li><a href="#anchor-section-2">1. Introduction</a></li>
+            <li><a href="#anchor-section-3">2. Materials and Methods</a></li>
+            <li><a href="#anchor-section-4">3. Results and Discussion</a></li>
+            <li><a href="#anchor-section-5">4. Conclusion</a></li>
+        </ul>
+    </aside>
+</section>
+<section>
+    <article class="view-content">
+        <div class="post-meta">
+    <span>by NH | </span>
+    <span>May 31, 2019 | </span>
+    <span class="read-time"></span>
+</div>
+
+        <h2 id="anchor-section-1" tabindex="0">Abstract</h2>
+        <p>Telling a story with the data lends itself to further community engagement and reveals the invisible patterns we create in our lives. Working with large sets of data allows for a powerful narrative to unfold. A narrative driven by data speaks to the truth and authenticity of a community story that could not be captured through the perspective of the individual. By massing our data together as a city, we can uncover patterns of human behavior, which is invaluable to designing a solution. This project aims to take the massive quantity of data and visualize a narrative in an interactive, understandable, and convincing way in order to motivate and promote changes to the way Austin perceives and participates in cycling as primary means of transportation. The City of Austin Open Data Portal grants access to the aggregate data on public life, and in the case of this project, the habits of Austinites regarding bicycle ridership. Combining the large data of B-cycle trips with Mobility Talks survey data and TxDOT crash and accident data, a new narrative unfolds describing the issues of infrastructure, safety, and community revolving around riding bicycles in Austin.</p>
+        <p>Keywords:​ bicycles; data; interactive media; narrative; design;</p>
+        <p>ISBN: 978-1-940297-49-1</p>
+
+        <h2 id="anchor-section-2" tabindex="0">1. Introduction</h2>
+        <p>In order to craft a story driven by data, questions regarding the public as a whole need to be asked in order to start the research off in a compelling direction, and cannot be solely based on a personal account of what it is like to live in the city. Using the City of Austin Open Data Portal, which contains massive databases related to traffic, infrastructure, and mobility, a question can be formulated: How can Austin improve the safety and accessibility for people who ride bicycles as a primary mode of transportation? This question led to a data-driven narrative that would help to explain the current way that people in Austin use bicycles for transportation as well as examine and explain the plans for new street designs to improve mobility for people on bicycles. Other data sources were needed to help craft a more comprehensive picture of Austin, which included TxDOT accident data to address safety for various types of transportation and Mobility Talks surveys to gauge the level of interest in riding bicycles from the public. Trip data from Austin B-cycle, a collection of over 660,000 individual trips, allowed the visualization of current habits of riders in the downtown area as well as for finding out popular times and destinations for riding.</p>
+        <p>A major part of interactive storytelling is the linear narrative structure. This simple structure of beginning, middle, and end allows the story to help pace the data being visualized in a way that is common to many people. To give a more complex and flexible pacing to the story, the linear narrative structure can be related to action over time, where the story starts with anticipation, moves into initial conflict and rising action up until the climax of the story. After the climax, the story winds down with falling action and the conclusion. Setting a pace for the data and placing it on the linear narrative structure not only holds the viewer’s attention, but makes the data more impactful and memorable. Combining interactive visuals and sticking to a simple narrative structure allows for a complex method of storytelling that works well with large data sets and can convey a great deal of information to people who are not data analysts or visual designers.</p>
+
+        <h2 id="anchor-section-3" tabindex="0">2. Materials and Methods</h2>
+        <p>The materials and methods used for creating the data visualization include Tableau software and Tableau Public Servers for sharing the outcomes and visualizations. Tableau is a data visualization program that allows for the representation of map data through latitude and longitude coordinates, pie charts and graphs from tables, and numerous other types of visualizations. The program allows for custom colors and filters to be scripted into the program to create a visually pleasing experience for the viewer. Microsoft Excel was also used in order to prepare the data for compatibility with the design goals of the project. This included rearranging columns and rows and combining data sources.</p>
+        <p>To achieve certain visuals, new spreadsheets needed to be generated from existing data. In order to create a line between two points in Tableau for certain visuals, two sets of paired latitude and longitude coordinates needed to be designated. This required using a scripting process to manipulate the data and automatically duplicate the values for making the pairs.</p>
+        <p>Other data, such as the survey data from the Mobility Talks needed to be entered into a spreadsheet by hand, since the data was not tabular, but rather listed in charts. This process was necessary in order to mix qualitative data with quantitative data, since Tableau works primarily with quantitative data to create visualizations. In order to add Austin specific maps to Tableau, such as those marking the boundaries of the 10 city council districts, a geojson map needed to be imported into the software. Many maps of this type are readily available online, but steps need to be taken to match the map data with the proper labels in the geojson file.</p>
+        <p>The combination of the programs allows for large scale data visualization through comparing multiple data sources and generating interactive visualizations including heat maps, word clouds, geographical maps, point arrays, line graphs, and pie charts. Uncovering the complex data and presenting it to the public can help a city make bigger decisions as well as change public opinion on the need for change in the way we use our city’s land resources and protect its inhabitants.</p>
+        <p>Additional narrative elements were created in Adobe Illustrator to enhance the visual identity of the story and provide more context to the data. These narrative elements help to ground the data and pace the story. These narrative elements included diagrams of streets and iconographic renderings of bicycles to give more narrative clues and provide visual breaks from large clusters of data. Files were saved as png in order to import them into Tableau.</p>
+        <p>The order of the visualization follows a linear narrative structure with a beginning, middle, and end (Figure 1). The structure is further divided into sections of action over time, starting with a preliminary anticipation while establishing the characters. Next, the story initializes conflict followed by rising action up to the climax of the story with the most action. The action then falls down to the conclusion where the viewer is presented with a call to action or a hopeful statement to think about going into the future. It is clear from the figure that the more advanced division of the narrative still holds true to the concept of beginning, middle, and end, with the dots still falling on the action curve.</p>
+        <figure class="shadow">
+            <img
+                    alt="free writing list"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2019/lets-go-for-a-ride-abstract/200w/200-figure-01.jpg 200w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/400w/400-figure-01.jpg 400w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/800w/800-figure-01.jpg 800w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/1200w/1200-figure-01.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2019/lets-go-for-a-ride-abstract/1200w/1200-figure-01.jpg"
+                />
+            <figcaption>Linear narrative structure plotted as time vs action.</figcaption>
+        </figure>
+
+        <h2 id="anchor-section-4" tabindex="0">3. Results and Discussion</h2>
+        <p>Apart from the order of the story, the visuals play a huge role in helping the audience understand what they are looking at. The idea of visual simplicity works to display information in an organized manner without any compromise to the data. Visual simplicity is achieved through the interactive nature of the data. Rather than list a large table with visible values for each entry, interactive visualizations allow for the data to only be presented when the user requires it. In my visualization, this comes in the form of hovering over a map or chart section, selecting a range from a drop down menu, or choosing an item from a filter.</p>
+        <p>While it can be useful to have many elements hidden initially from the viewer, there still needs to be clear indicators on what elements can be interacted with and what elements are likely to show. Adding titles and labels to graphs and charts gives hints to what the chart means but specific details and quantities are reserved for interaction.</p>
+        <p>Using colors to give relational meanings to the data is also an important step in visual simplicity. Rather than using multiple colors to indicate a range of information, a series of colors from the same hue can provide the viewer with the context to understand the information on a macro scale. When a value transitions from light to dark, the user can correctly infer that darker means more and lighter means less. This often negates the need for a color key or legend. However, if the color values are not picked with enough visual difference, the chart may not lend itself to an inherent readability.</p>
+        <p>When dealing with big data, it is really easy to display 10,000 points on a map and leave viewers to search. However, through the use of color and scale, 10,000 data points can dissolve into a few brightly colored focal points that carry the entire message. If the imagery wasn’t simple and playful (Figure 2), but rather detailed and complex, the audience would have a hard time moving from one data visualization to the next.</p>
+        <p>This visual hierarchy of information not only helps guide the viewer from one section of the visualization to the next, but it also provides reference points to help the viewer make deeper visual connections to the information. In the ring charts (made as rings rather than pies to mirror the imagery of a bicycle wheel), the color used to represent bicycles is always the same and the order of the information on the rings is in order of severity. The lighter, cooler colors are less severe than the bright and eye-catching oranges that represent the most shocking of data. In this regard, the orange often represents fatalities consistently in all the charts and points on a map. While this is a general trend, the brighter colors can be used for other points of emphasis.</p>
+        <figure class="shadow">
+            <img
+                    alt="free writing list"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2019/lets-go-for-a-ride-abstract/200w/200-figure-02.jpg 200w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/400w/400-figure-02.jpg 400w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/800w/800-figure-02.jpg 800w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/1200w/1200-figure-02.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2019/lets-go-for-a-ride-abstract/1200w/1200-figure-02.jpg"
+                />
+            <figcaption>Simple imagery included in data-heavy visualizations help pace the narrative.</figcaption>
+        </figure>
+        <p>Maps are especially important when telling a story about a city since it visually shows the layout of the area. It allows for the narrative to have context and works as an anchor point for the complex data being visualized. Maps also help to give a boundary for the location of the story, which is useful when introducing a character in a narrative. Since the audience is likely a resident of the city, they themselves are, by default, characters in the narrative. The first map in the story (Figure 3) shows all of Austin’s ten districts and how residents feel about riding bicycles. Now everyone can start to formulate their opinion based on what their neighbors feel. The maps also serve as identifying landmarks.</p>
+        <p>People recognize different things in the map and they will naturally focus on areas important to them. To some, this is the river and town lake, to others it’s a small intersection where they usually get lunch. This pulls them into the story even further because they recognize real places. Data-driven stories are great for backing up the sentimental with facts. Bicycles go well with maps since they are being discussed as a form of transportation. In many cases, data sets on transportation feature distances and locations described by latitude and longitude. Having precise coordinates allows for showcasing the data in a variety of ways. Individual coordinates can be plotted as dots on a map or whole areas like districts or counties can be highlighted. In either case, maps provide the visual narrative with a sense of place.</p>
+        <figure class="shadow">
+            <img
+                    alt="free writing list"
+                    loading="lazy"
+                    srcset="
+                        /images/posts/2019/lets-go-for-a-ride-abstract/200w/200-figure-03.jpg 200w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/400w/400-figure-03.jpg 400w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/800w/800-figure-03.jpg 800w,
+                        /images/posts/2019/lets-go-for-a-ride-abstract/1200w/1200-figure-03.jpg 1200w"
+                    sizes="(min-width: 1400px) 60vw, (min-width: 1120px) 65vw, (min-width: 760px) 60vw, 100vw"
+                    src="/images/posts/2019/lets-go-for-a-ride-abstract/1200w/1200-figure-03.jpg"
+                />
+            <figcaption>Maps allow a personalization of the narrative while adding a sense of place.</figcaption>
+        </figure>
+        <p>Pacing the story in the linear narrative structure allows for a story to keep the viewer engaged during each narrative section. By separating the narrative into five parts, each part can focus on a specific aspect of the story structure. The first part provides anticipation by stating the problem and introducing the characters. To achieve this, this visualization introduces Austin through its current transportation makeup, which will include everyone living in the city. The audience vicariously becomes the character, because he or she can relate to either the statistic for someone who already rides, or someone who only drives or takes other forms of transportation.</p>
+        <p>The next phase is to introduce conflict, which shifts to showing a few barriers of entry to starting to ride in Austin, but also showing how the character can move past them with minimal action required on their part. There is also a color shift in the presentation of this page to orange, which is used to indicate a shift in tone. This part of the narrative deals with place even more than the first part with all the charts and graphs dealing with location. The next phase of the narrative increases the action and gives the character a sense of urgency and immediacy. This part looks at the times people ride on an hourly basis as well as on a yearly basis. Having the narrative cover such a broad and fine scale keeps the story relevant no matter when the story is viewed. This part of the story makes for the best time to use the most complex forms of visual information, since the viewer is already invested in the story, but not fatigued with information yet required on their part. There is also a color shift in the presentation of this page to orange, which is used to indicate a shift in tone. This part of the narrative deals with place even more than the first part with all the charts and graphs dealing with location. The next phase of the narrative increases the action and gives the character a sense of urgency and immediacy. This part looks at the times people ride on an hourly basis as well as on a yearly basis. Having the narrative cover such a broad and fine scale keeps the story relevant no matter when the story is viewed. This part of the story makes for the best time to use the most complex forms of visual information, since the viewer is already invested in the story, but not fatigued with information yet.</p>
+        <p>The most simplified part is the climax in terms of visuals. Only a few bits of information are needed, but the viewer will likely spend more time interacting with this data than any other part. The climax of the story is where the narrative pushes the biggest challenge onto the viewer. For riding bicycles in Austin, this is the issue of safety. The charts are the most simplified, but deal with the worries that often prevents most people from riding in the city.</p>
+        <p>Finally, the last part of the narrative brings down the action and leaves the viewer with a job to do, or a call to action. Not all narratives need to end this way, as the story may not have a resolution, but this part should still bring the story to a close. At this point, the viewer has gone through all the convincing, and they are left with a small task that is immediately achievable and attainable. This final call to action leaves the viewer knowing what to do and how to do it. They don’t have to think or do any more research on their own—it’s easy for them to become part of the solution.</p>
+
+        <h2 id="anchor-section-5" tabindex="0">4. Conclusion</h2>
+        <p>Crafting a story using large data sets doesn’t have to be complex and filled with tables and unreadable graphs. The creator of the story just has to identify the most relevant parts that push along the narrative and design the visuals to only focus on specific aspects and goals. Following the basic narrative progression allows the data to have the most impact at the right time. The interactive visuals in the narrative should not remove the details in the data, but only obscure them until they are needed by the viewer.</p>
+        <p>The only way to know what kind of story your data can tell, is to spend as much time with the data as possible. While living in Austin gives a person some clues as to what story to tell, the real story came from analyzing the data. Data-based narratives are not a work of fiction—the facts of the story already exists in the data, waiting to be uncovered. Data is closest to truth, and truth makes for authenticity. Authentic stories make great narratives, since they are believable. By using data to present a narrative, it is easier to prevent the narrative from being biased or skewed, since the data will no longer support the narrative. It is up to the visualizer to uncover the story hidden in the data and clearly communicate it through visual simplicity.</p>
+
+        <aside class="references">
+            <h6>References</h6>
+            <ol>
+                <li>Austin B-Cycle Kiosk Locations. (2017). Austin Data Portal. Web. Retrieved 5 March 2018. https://data.austintexas.gov/Transportation-and-Mobility/Austin-B-Cycle-Kiosk-Locations/qd73-bsdg.</li>
+                <li>Austin B-cycle Stats and Facts. Retrieved 16 April 16, 2018, from https://austinbcycle.com/about/stats-facts.</li>
+                <li>Austin B-Cycle Trips. (2017). AustinTexas.gov. Web. Retrieved April 16, 2018, from https://data.austintexas.gov/Transportation-and-Mobility/Austin-B-Cycle-Trips/tyfh-5r8s.</li>
+                <li>Austin Bicycle Master Plan. (2014). AustinTexas.gov. Web. Retrieved 16 April 2018. https://austintexas.gov/page/austin-bicycle-master-plan.</li>
+                <li>Batema, Cara. “What Is a Linear Narrative?” SeattlePi. Web. Retrieved 9 May 2019. https://education.seattlepi.com/linear-narrative-6001.html.</li>
+                <li>Mobility Talks Public Engagement Report. (2016). AustinTexas.gov. Web. Retrieved 11 February 2018. http://www.austintexas.gov/mobilitytalks.</li>
+                <li>Moore, Susan. “5 Best Practices for Telling Great Stories.” Tableau. Web. Retrieved 1 March 2018. https://www.tableau.com/5_best_practices.</li>
+                <li>Smith, Amanda. “Internal Structure - Part I: Linear Structure.” 24 Carrot Writing, March 11, 2019. Web. Retrieved 9 May 2019. http://www.24carrotwriting.com/-blog/internal-structure-part-i-linear-structure.</li>
+                <li>TxDOT Crash Reports and Records. (2009–2018). TxDOT. Web. 5 March 2018 https://www.txdot.gov/driver/laws/crash-reports.html.</li>
+            </ol>
+        </aside>
+
+        <p>You can read the published paper on the SEGD site: <a href="https://segd.org/let%E2%80%99s-go-ride-interactive-data-based-narrative" target="_blank" rel="noopener">Let's Go for a Ride Abstract</a></p>
+    </article>
+
+</section>
+
+    </div>
+</main>
+
+<footer class="global-footer">
+    <div class="copyright">
+        <p>© 2008 – <span id="currentYear"></span> Nathaniel Haefner</p>
+        <div class="check-radio-group">
+            <div class="check-container">
+                <label class="switch" onclick="gridToggle()">
+                    <input id="gridToggle" type="checkbox"/>
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <div class="check-container">
+                <label class="switch darktoggle" onclick="colorToggle()">
+                    <input id="colorToggle" type="checkbox"/>
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/work/all-work.html">All Work</a></li>
+            <li><a href="/blog/all-posts.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>            
+        </ul>
+        <ul>
+            <li><a href="https://www.pinterest.com/typography_nerd/" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="/scripts/nathaniel-haefner.min.js"></script>
+</body>
+</html>
