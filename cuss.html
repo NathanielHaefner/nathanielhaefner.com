@@ -264,21 +264,66 @@
             if (!isSpeechEnabled) window.speechSynthesis.cancel();
         });
 
-        function speakResult(word1, word2) {
-            if (isSpeechEnabled && 'speechSynthesis' in window) {
-                window.speechSynthesis.cancel();
+        // function speakResult(word1, word2) {
+        //     if (isSpeechEnabled && 'speechSynthesis' in window) {
+        //         window.speechSynthesis.cancel();
                 
-                const utterance = new SpeechSynthesisUtterance(`${word1} ${word2}`);
-                const voices = window.speechSynthesis.getVoices();
-                const britishVoice = voices.find(v => v.lang === 'en-GB' && v.name.includes('Google')) || 
-                                     voices.find(v => v.lang === 'en-GB');
+        //         const utterance = new SpeechSynthesisUtterance(`${word1} ${word2}`);
+        //         const voices = window.speechSynthesis.getVoices();
+        //         const britishVoice = voices.find(v => v.lang === 'en-GB' && v.name.includes('Google')) || 
+        //                              voices.find(v => v.lang === 'en-GB');
 
-                if (britishVoice) utterance.voice = britishVoice;
-                utterance.pitch = 1.0;
-                utterance.rate = 0.8; 
+        //         if (britishVoice) utterance.voice = britishVoice;
+        //         utterance.pitch = 1.0;
+        //         utterance.rate = 0.8; 
 
-                window.speechSynthesis.speak(utterance);
+        //         window.speechSynthesis.speak(utterance);
+        //     }
+        // }
+
+        // 1. Create a global flag to check if speech is "unlocked"
+        let speechUnlocked = false;
+
+        function unlockAudio() {
+            if (speechUnlocked) return;
+            
+            // Play an empty utterance to "wake up" the engine on iOS
+            const silent = new SpeechSynthesisUtterance('');
+            window.speechSynthesis.speak(silent);
+            speechUnlocked = true;
+            
+            // Remove the listener once unlocked
+            window.removeEventListener('touchstart', unlockAudio);
+            window.removeEventListener('click', unlockAudio);
+        }
+
+        // Add these listeners to the very start of your app
+        window.addEventListener('touchstart', unlockAudio);
+        window.addEventListener('click', unlockAudio);
+
+        function speakResult(word1, word2) {
+            if (!isSpeechEnabled || !('speechSynthesis' in window)) return;
+
+            // iOS Fix: Don't cancel unless speaking, as it can hang the queue
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
             }
+
+            const utterance = new SpeechSynthesisUtterance(`${word1} ${word2}`);
+            const voices = window.speechSynthesis.getVoices();
+            
+            // iOS specific: 'en-GB' voices are often named differently
+            const britishVoice = voices.find(v => v.lang.includes('en-GB'));
+
+            if (britishVoice) utterance.voice = britishVoice;
+            
+            utterance.pitch = 1.0;
+            utterance.rate = 0.8; 
+
+            // Necessary for iOS: wrap in a tiny timeout if called from a complex event
+            setTimeout(() => {
+                window.speechSynthesis.speak(utterance);
+            }, 0);
         }
 
         function spin() {
