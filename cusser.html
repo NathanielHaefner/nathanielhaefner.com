@@ -86,6 +86,10 @@
             left: 0; 
             top: 0;
             will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
 
         .word-item {
@@ -95,10 +99,15 @@
             width: 100%; 
             color: var(--text-color); 
             text-transform: capitalize;
-            font-size: clamp(1.8rem, 10vw, 4.5rem);
+            font-size: clamp(1.8rem, 11vw, 4.5rem);
             /*text-align: center; */
             box-sizing: border-box;
             line-height: 1;
+        }
+
+        .word-item span {
+            font-size: .4em;
+            margin: 1em 0 0 .4em;
         }
 
         .left-half .word-item {
@@ -161,13 +170,13 @@
     <script>
         const adj = ["Shit", "Fuck", "Cock", "Ass", "Dick", "Twat", "Cunt", "Piss", "Douche", "Wank", "Jerk", "Bitch", "Slut", "Whore", "Balls", "Prick", "Turd", "Chode", "Clit", "Gash", "Skank", "Anal", "Rectal", "Shaft", "Knob", "Schlong", "Bell", "Sack", "Rim", "Taint", "Nut", "Sperm", "Jizz", "Spooge", "Snot", "Puke", "Barf", "Scum", "Dirt", "Filth", "Trash", "Waste", "Sewer", "Crap", "Butt", "Arse", "Nipple", "Dong", "Boner", "Wang", "Pecker", "Wiener", "Butch", "Rod", "Tube", "Snake", "Meat", "Beef", "Neck", "Ham", "Salami", "Sausage", "Log", "Stool", "Dump", "Load", "Squirt", "Spray", "Leak", "Drip", "Ooze", "Slime", "Gunk", "Goo", "Crust", "Scab", "Pus", "Boil", "Wart", "Mole", "Fart", "Belch", "Gas", "Slobber", "Queef", "Snatch", "Crotch", "Groin", "Lap", "Rear", "Back", "Hole", "Crack", "Slot", "Pit", "Drain", "Pipe", "Hose", "Pump", "Juice", "Milk", "Cream", "Butter", "Grease", "Oil", "Fat", "Lard", "Blubber", "Flesh", "Skin", "Bone", "Brain", "Head", "Face", "Mouth", "Tongue", "Throat", "Lip", "Ear", "Eye", "Nose", "Toe", "Foot", "Hand", "Fist", "Finger", "Thumb", "Arm", "Leg", "Bolts", "Doofus", "Power", "Scuba", "Music", "Piano", "Note", "Plug", "Tofu", "Gristle", "Muck", "Stench", "Vomit", "Phlegm", "Gurgle", "Spigot", "Spout"];
         
-        const noun = ["Fucker", "Sucker", "Licker", "Guzzler", "Gobbler", "Shitter", "Wanker", "Jerker", "Boner", "Donger", "Snatcher", "Twatter", "Cunter", "Pisser", "Slutter", "Whorer", "Pricker", "Herder", "Axolotl", "Choker", "Stroker", "Shafter", "Schlonger", "Tapper", "Jobber", "Sniffer", "Cruncher", "Jizzer", "Spooger", "Bagger", "Shrimp", "Wiper", "Twister", "Puller", "Swinger", "Biter", "Handler", "Rider", "Pangolin", "Steamer", "Charmer", "Beater", "Tugger", "Slapper", "Smuggler", "Jammer", "Pusher", "Taker", "Quokka", "Blower", "Gunner", "Painter", "Plugger", "Feeder", "Baller", "Stirrer", "Goblin", "Picker", "Popper", "Rubber", "Passer", "Catcher", "Rotter", "Grabber", "Dancer", "Ender", "Diver", "Filler", "Cleaner", "Squeezer", "Churner", "Slicker", "Render", "Bucket", "Nugget", "Flayer", "Crusher", "Drainer", "Sitter", "Breather", "Lasher", "Smacker", "Gouger", "Fetisher", "Pumper", "Banger", "Twiddler", "Humper", "Stacker", "Tightener", "Driver", "Turner", "Grinder", "Swisher", "Polisher", "Shiner", "Burglar", "Juggler", "Nozzle", "Pirate", "Banker", "Mopper", "Vomiter", "Dabber", "Lurker", "Peeper", "Grouper", "Fighter", "Bloater", "Mucker", "Swiller", "Gunker", "Sludger", "Pointer", "Squinter", "Bender", "Crawler", "Giggler", "Stabber", "Spanker", "Dunker", "Whinner", "Barker", "Growler", "Snorter", "Wheezer", "Tapir", "Zebra", "Turtle", "Whale", "Falcon", "Otter", "Giraffe", "Lemur"];
+        const noun = ["Fucker", "Sucker", "Licker", "Guzzler", "Gobbler", "Shitter", "Wanker", "Jerker", "Boner", "Donger", "Snatcher", "Twatter", "Cunter", "Pisser", "Slutter", "Whorer", "Pricker", "Herder", "Axolotl", "Choker", "Stroker", "Shafter", "Schlonger", "Tapper", "Jobber", "Sniffer", "Cruncher", "Jizzer", "Spooger", "Bagger", "Shrimp", "Wiper", "Twister", "Puller", "Swinger", "Biter", "Handler", "Rider", "Jazzer", "Steamer", "Charmer", "Beater", "Tugger", "Slapper", "Smuggler", "Jammer", "Pusher", "Taker", "Monster", "Blower", "Gunner", "Painter", "Plugger", "Feeder", "Baller", "Stirrer", "Goblin", "Picker", "Popper", "Rubber", "Passer", "Catcher", "Rotter", "Grabber", "Dancer", "Ender", "Diver", "Filler", "Cleaner", "Squeezer", "Churner", "Slicker", "Render", "Bucket", "Nugget", "Flayer", "Crusher", "Drainer", "Sitter", "Breather", "Lasher", "Smacker", "Gouger", "Fetisher", "Pumper", "Banger", "Twiddler", "Humper", "Stacker", "Tightener", "Driver", "Turner", "Grinder", "Swisher", "Polisher", "Shiner", "Burglar", "Juggler", "Nozzle", "Pirate", "Banker", "Mopper", "Vomiter", "Dabber", "Lurker", "Peeper", "Grouper", "Fighter", "Bloater", "Mucker", "Swiller", "Gunker", "Sludger", "Pointer", "Squinter", "Bender", "Crawler", "Giggler", "Stabber", "Spanker", "Dunker", "Whinner", "Barker", "Growler", "Snorter", "Wheezer", "Tapir", "Zebra", "Turtle", "Whale", "Falcon", "Otter", "Giraffe", "Lemur"];
 
         const strip1 = document.getElementById('strip1');
         const strip2 = document.getElementById('strip2');
         const btn = document.getElementById('spinBtn');
 
-        const repeats = 15;
+        const repeats = 5;
         let isFirstLoad = true;
         let currentIdx1 = 0; 
         let currentIdx2 = 0;
@@ -178,7 +187,7 @@
 
             if (includeHello) {
                 h1 += `<div class="word-item v-2">Wiggins</div>`;
-                h2 += `<div class="word-item v-2">Cusser</div>`;
+                h2 += `<div class="word-item v-2">Cusser<span>1.0</span></div>`;
             } else {
                 h1 += `<div class="word-item"></div>`;
                 h2 += `<div class="word-item"></div>`;
@@ -201,7 +210,7 @@
                 strip1.style.transform = `translateY(-${h}px)`;
                 strip2.style.transform = `translateY(-${h}px)`;
             } else {
-                const targetSet = 10;
+                const targetSet = 3;
                 const pos1 = (targetSet * adj.length + currentIdx1 + 2) * h - h;
                 const pos2 = (targetSet * noun.length + currentIdx2 + 2) * h - h;
                 strip1.style.transform = `translateY(-${pos1}px)`;
@@ -214,26 +223,28 @@
             if (isFirstLoad) { isFirstLoad = false; buildStrips(false); }
 
             const h = window.innerHeight / 3;
-            strip1.style.transition = 'none'; strip2.style.transition = 'none';
-            strip1.style.transform = `translateY(0px)`; strip2.style.transform = `translateY(0px)`;
+            strip1.style.transition = 'none'; 
+            strip2.style.transition = 'none';
+            strip1.style.transform = `translate3d(0, 0, 0)`; 
+            strip2.style.transform = `translate3d(0, 0, 0)`;
 
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                     currentIdx1 = Math.floor(Math.random() * adj.length);
                     currentIdx2 = Math.floor(Math.random() * noun.length);
-                    const targetSet = 10;
+                    const targetSet = 3;
                     const pos1 = (targetSet * adj.length + currentIdx1 + 2) * h - h;
                     const pos2 = (targetSet * noun.length + currentIdx2 + 2) * h - h;
 
-                    const smoothTiming = 'transform 3.0s cubic-bezier(0.1, 0, 0, 1)';
-                    strip1.style.transition = smoothTiming;
-                    strip2.style.transition = 'transform 3.2s cubic-bezier(0.1, 0, 0, 1)';
+                    const bezier = 'cubic-bezier(0.05, 0, 0.01, 1.02)';
+                    strip1.style.transition = `transform 4.0s ${bezier}`;
+                    strip2.style.transition = `transform 4.2s ${bezier}`;
 
-                    strip1.style.transform = `translateY(-${pos1}px)`;
-                    strip2.style.transform = `translateY(-${pos2}px)`;
+                    strip1.style.transform = `translate3d(0, -${pos1}px, 0)`;
+                    strip2.style.transform = `translate3d(0, -${pos2}px, 0)`;
                 });
             });
-            setTimeout(() => btn.disabled = false, 3500);
+            setTimeout(() => btn.disabled = false, 4500);
         }
 
         buildStrips(true);
