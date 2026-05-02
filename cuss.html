@@ -202,7 +202,7 @@
     <script>
         const adj = ["Shit", "Fuck", "Cock", "Ass", "Dick", "Twat", "Cunt", "Piss", "Douche", "Wank", "Jerk", "Bitch", "Slut", "Whore", "Balls", "Prick", "Turd", "Chode", "Clit", "Gash", "Skank", "Anal", "Rectal", "Shaft", "Knob", "Schlong", "Bell", "Sack", "Rim", "Taint", "Nut", "Sperm", "Jizz", "Spooge", "Snot", "Puke", "Barf", "Scum", "Dirt", "Filth", "Trash", "Waste", "Sewer", "Crap", "Butt", "Arse", "Nipple", "Dong", "Boner", "Wang", "Pecker", "Wiener", "Penis", "Rod", "Tube", "Snake", "Meat", "Beef", "Neck", "Ham", "Salami", "Sausage", "Log", "Stool", "Dump", "Load", "Squirt", "Spray", "Leak", "Drip", "Ooze", "Slime", "Gunk", "Goo", "Crust", "Scab", "Pus", "Boil", "Wart", "Mole", "Fart", "Belch", "Gas", "Slobber", "Queef", "Snatch", "Crotch", "Groin", "Lap", "Rear", "Back", "Hole", "Crack", "Slot", "Tit", "Drain", "Pipe", "Hose", "Pump", "Juice", "Milk", "Cream", "Butter", "Grease", "Hair", "Fat", "Lard", "Blubber", "Flesh", "Skin", "Bone", "Brain", "Head", "Face", "Mouth", "Tongue", "Throat", "Lip", "Ear", "Eye", "Nose", "Toe", "Foot", "Hand", "Fist", "Finger", "Thumb", "Arm", "Leg", "Boob", "Doofus", "Power", "Scuba", "Music", "Piano", "Note", "Plug", "Tofu", "Gristle", "Muck", "Stench", "Vomit", "Phlegm", "Gurgle", "Spigot", "Spout"];
         
-        const noun = ["Fucker", "Sucker", "Licker", "Guzzler", "Gobbler", "Shitter", "Wanker", "Jerker", "Boner", "Donger", "Snatcher", "Twatter", "Cunter", "Pisser", "Slutter", "Whorer", "Pricker", "Herder", "Axolotl", "Choker", "Stroker", "Shafter", "Schlonger", "Tapper", "Jobber", "Sniffer", "Cruncher", "Jizzer", "Spooger", "Bagger", "Shrimp", "Wiper", "Twister", "Puller", "Swinger", "Biter", "Handler", "Rider", "Jazzer", "Steamer", "Charmer", "Beater", "Tugger", "Slapper", "Smuggler", "Jammer", "Pusher", "Taker", "Monster", "Blower", "Gunner", "Painter", "Plugger", "Feeder", "Baller", "Stirrer", "Goblin", "Picker", "Popper", "Rubber", "Passer", "Catcher", "Rotter", "Grabber", "Dancer", "Ender", "Diver", "Filler", "Cleaner", "Squeezer", "Churner", "Slicker", "Render", "Bucket", "Nugget", "Flayer", "Crusher", "Drainer", "Sitter", "Breather", "Lasher", "Smacker", "Gouger", "Fetisher", "Pumper", "Banger", "Twiddler", "Humper", "Stacker", "Tightener", "Driver", "Turner", "Grinder", "Swisher", "Polisher", "Shiner", "Burglar", "Juggler", "Nozzle", "Pirate", "Banker", "Mopper", "Vomiter", "Dabber", "Lurker", "Peeper", "Grouper", "Fighter", "Bloater", "Mucker", "Swiller", "Gunker", "Sludger", "Pointer", "Squinter", "Bender", "Crawler", "Giggler", "Stabber", "Spanker", "Dunker", "Whinner", "Barker", "Growler", "Snorter", "Wheezer", "Funker", "Fluffer", "Turtle", "Whale", "Whipper", "Drawer", "Giraffe", "Pooper"];
+        const noun = ["Fucker", "Sucker", "Licker", "Guzzler", "Gobbler", "Shitter", "Wanker", "Jerker", "Boner", "Donger", "Snatcher", "Twatter", "Cunter", "Pisser", "Slutter", "Whorer", "Pricker", "Herder", "Axolotl", "Choker", "Stroker", "Shafter", "Schlonger", "Tapper", "Jobber", "Sniffer", "Cruncher", "Jizzer", "Spooger", "Bagger", "Shrimp", "Wiper", "Twister", "Puller", "Swinger", "Biter", "Handler", "Rider", "Jazzer", "Steamer", "Charmer", "Beater", "Tugger", "Slapper", "Smuggler", "Jammer", "Pusher", "Taker", "Monster", "Blower", "Gunner", "Painter", "Plugger", "Feeder", "Baller", "Stirrer", "Goblin", "Picker", "Popper", "Rubber", "Passer", "Catcher", "Rotter", "Grabber", "Dancer", "Ender", "Diver", "Filler", "Cleaner", "Squeezer", "Churner", "Slicker", "Render", "Bucket", "Nugget", "Flayer", "Crusher", "Drainer", "Sitter", "Breather", "Lasher", "Smacker", "Gouger", "Fetisher", "Pumper", "Banger", "Twiddler", "Humper", "Stacker", "Tightener", "Driver", "Turner", "Grinder", "Swisher", "Polisher", "Shiner", "Burglar", "Juggler", "Nozzle", "Pirate", "Banker", "Mopper", "Vomiter", "Dabber", "Lurker", "Peeper", "Lover", "Fighter", "Bloater", "Mucker", "Swiller", "Gunker", "Sludger", "Pointer", "Squinter", "Bender", "Crawler", "Giggler", "Stabber", "Spanker", "Dunker", "Whinner", "Barker", "Growler", "Snorter", "Wheezer", "Funker", "Fluffer", "Turtle", "Whale", "Whipper", "Drawer", "Giraffe", "Pooper"];
 
         const strip1 = document.getElementById('strip1');
         const strip2 = document.getElementById('strip2');
@@ -250,61 +250,47 @@
             }
         }
 
-        let isSpeechEnabled = true;
+        let isSpeechEnabled = false; 
+
         const volumeBtn = document.getElementById('volumeBtn');
         const volumeIcon = document.getElementById('volumeIcon');
 
         const iconOn = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>';
         const iconOff = '<path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>';
 
+        volumeIcon.innerHTML = iconOff;
+
         volumeBtn.addEventListener('click', () => {
             isSpeechEnabled = !isSpeechEnabled;
             volumeIcon.innerHTML = isSpeechEnabled ? iconOn : iconOff;
             
-            if (!isSpeechEnabled) window.speechSynthesis.cancel();
+            if (!isSpeechEnabled) {
+                window.speechSynthesis.cancel();
+            } else {
+                const flare = new SpeechSynthesisUtterance("");
+                window.speechSynthesis.speak(flare);
+            }
         });
 
-        // function speakResult(word1, word2) {
-        //     if (isSpeechEnabled && 'speechSynthesis' in window) {
-        //         window.speechSynthesis.cancel();
-                
-        //         const utterance = new SpeechSynthesisUtterance(`${word1} ${word2}`);
-        //         const voices = window.speechSynthesis.getVoices();
-        //         const britishVoice = voices.find(v => v.lang === 'en-GB' && v.name.includes('Google')) || 
-        //                              voices.find(v => v.lang === 'en-GB');
-
-        //         if (britishVoice) utterance.voice = britishVoice;
-        //         utterance.pitch = 1.0;
-        //         utterance.rate = 0.8; 
-
-        //         window.speechSynthesis.speak(utterance);
-        //     }
-        // }
-
-        // 1. Create a global flag to check if speech is "unlocked"
         let speechUnlocked = false;
 
         function unlockAudio() {
             if (speechUnlocked) return;
             
-            // Play an empty utterance to "wake up" the engine on iOS
             const silent = new SpeechSynthesisUtterance('');
             window.speechSynthesis.speak(silent);
             speechUnlocked = true;
             
-            // Remove the listener once unlocked
             window.removeEventListener('touchstart', unlockAudio);
             window.removeEventListener('click', unlockAudio);
         }
 
-        // Add these listeners to the very start of your app
         window.addEventListener('touchstart', unlockAudio);
         window.addEventListener('click', unlockAudio);
 
         function speakResult(word1, word2) {
             if (!isSpeechEnabled || !('speechSynthesis' in window)) return;
 
-            // iOS Fix: Don't cancel unless speaking, as it can hang the queue
             if (window.speechSynthesis.speaking) {
                 window.speechSynthesis.cancel();
             }
@@ -312,7 +298,6 @@
             const utterance = new SpeechSynthesisUtterance(`${word1} ${word2}`);
             const voices = window.speechSynthesis.getVoices();
             
-            // iOS specific: 'en-GB' voices are often named differently
             const britishVoice = voices.find(v => v.lang.includes('en-GB'));
 
             if (britishVoice) utterance.voice = britishVoice;
@@ -320,7 +305,6 @@
             utterance.pitch = 1.0;
             utterance.rate = 0.8; 
 
-            // Necessary for iOS: wrap in a tiny timeout if called from a complex event
             setTimeout(() => {
                 window.speechSynthesis.speak(utterance);
             }, 0);
