@@ -12,8 +12,8 @@
             --text-color: #060606;
             --button-bg: #ffffff;
             --button-text: #060606;
-            --mask-start: 25%;
-            --mask-end: 75%;
+            --mask-start: 28%;
+            --mask-end: 78%;
         }
 
         body, html {
@@ -236,7 +236,7 @@
                     const pos1 = (targetSet * adj.length + currentIdx1 + 2) * h - h;
                     const pos2 = (targetSet * noun.length + currentIdx2 + 2) * h - h;
 
-                    const bezier = 'cubic-bezier(0.05, 0, 0.01, 1.02)';
+                    const bezier = 'cubic-bezier(0.05, 0, 0.01, 1.01)';
                     strip1.style.transition = `transform 4.0s ${bezier}`;
                     strip2.style.transition = `transform 4.2s ${bezier}`;
 
