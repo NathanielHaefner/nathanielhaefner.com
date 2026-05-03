@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Focus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Manufacturing+Consent&display=swap" rel="stylesheet">
+    
+<style>
+:root {
+    --dark: #121211;
+    --bg: #fffff2;
+    --accent: #c90000;
+    --white: #ffffff;
+    --success: #22c55e;
+    --header-height: 80px;
+}
+
+/* Base Layout */
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography Styles */
+.font-serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.font-sans {
+    font-family: 'Helvetica', Arial, sans-serif;
+    /*font-family: Tahoma, Geneva, sans-serif;*/
+}
+
+.font-script {
+    /*font-family: "Corinthia", cursive;*/
+    font-family: 'Monotype Corsiva', 'Apple Chancery', cursive;
+}
+
+.font-black {
+    font-family: "Manufacturing Consent", system-ui; 
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 2000;
+}
+
+.logo {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: var(--dark);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+nav button.active {
+    color: var(--accent);
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    /*margin-top: var(--header-height);
+    height: calc(100vh - var(--header-height));*/
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.container section {
+    margin-top: var(--header-height);
+}
+
+/* Grid & Sidebar Layouts */
+.calibration-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+#instructional-box {
+    flex: 1;
+    max-width: 700px;
+    min-height: 200px;
+    line-height: 1.4;
+    margin: 0 auto;
+    text-wrap: pretty;
+    font-size: 20px; /* Initial Instrucitons Font Size */
+}
+
+#instructional-box p {
+    margin: 0;
+}
+
+.upload-box {
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.calibration-sidebar {
+    /*width: 240px;*/
+    width: 260px;
+    /*padding: 20px;*/
+    position: absolute;
+    right: 40px;
+}
+
+@media (max-width: 1340px) {
+    .calibration-layout {
+        max-width: 100%;
+        flex-direction: row;
+        height: auto;
+    }
+    .calibration-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    .calibration-layout {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .calibration-sidebar {
+        width: 100%;
+    }
+}
+
+.control-group {
+    margin-bottom: 24px;
+}
+
+.bold-label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Selection Controls */
+.mode-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    padding: 10px;
+    border: 3px solid var(--dark);
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.mode-btn.selected {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.mode-grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.mode-grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.mode-grid-two .mode-btn {
+    padding: 20px 10px;
+}
+
+.mode-btn label {
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -24px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.icon-traditional,
+.icon-guiding,
+.icon-focus {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.icon-traditional::before,
+.icon-traditional::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 12px;
+    margin: auto;
+    border-top: 3px solid var(--dark);
+    border-bottom: 3px solid var(--dark);
+    position: absolute;
+    top: 2px;
+}
+
+.icon-traditional::after {
+    width: 24px;
+    top: 9px;
+}
+
+.icon-guiding::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: auto;
+    background: linear-gradient(to right, transparent 5%, var(--accent));
+}
+
+.icon-focus::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+}
+
+
+.font-selector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 12px;
+    margin-bottom: 40px;
+}
+
+.font-grid-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.font-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border: 3px solid var(--dark);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 32px;
+    position: relative;
+    line-height: 1;
+}
+
+.font-btn label {
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.font-btn.selected {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Form Elements */
+.customselect {
+    position: relative;
+    width: 100%;
+}
+
+.customselect select {
+    appearance: none;
+}
+
+.customselect::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--dark); 
+    pointer-events: none;
+}
+
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid var(--dark);
+    font-family: inherit;
+    box-sizing: border-box;
+    background: var(--white);
+    border-radius: 4px;
+    outline: 0;
+}
+
+select {
+    border-color: var(--accent);
+}
+
+textarea {
+    font-size: 18px;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--dark);
+    color: var(--white);
+    border: 3px solid var(--dark);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.custom-file-upload:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Optional: styling for the filename span */
+#file-label-text {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* Custom Buttons */
+.btn-go {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--dark);
+    background: var(--dark);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.btn-go:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-octagon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.btn-octagon:hover {
+    background: var(--dark);
+}
+
+.btn-main {
+    background: var(--dark);
+    color: white;
+    border: 3px solid var(--dark);
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-main:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Display Areas */
+#cal-reading-area,
+#passage-display,
+#active-reading-area {
+    max-width: 700px;
+    padding: 40px 0;
+    text-align: left;
+    line-height: 1.4;
+    margin: 0 auto;
+    text-wrap: pretty;
+}
+
+@media (max-width: 800px) {
+    #cal-reading-area,
+    #passage-display,
+    #active-reading-area {
+        padding: 40px;
+    }
+}
+
+#active-reading-area {
+    font-size: 20px;
+}
+
+#focus-container,
+#cal-focus-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--header-height));
+    width: 100vw;
+}
+
+#dot-word,
+#cal-dot-word {
+    font-size: 20px;
+    font-weight: normal;
+    min-height: 18px;
+    white-space: nowrap;
+    text-align: center;
+    /*margin-bottom: 30px;*/
+}
+
+#dot-word {
+    font-size: 36px;
+}
+
+#dot,
+#cal-dot,
+#cal-dot-static {
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-top: 2px;
+    border: 3px solid var(--accent);
+}
+
+/* Reading Mechanics */
+.guide-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    /*background: var(--accent);*/
+    background: linear-gradient(to right, transparent 5%, var(--accent));
+    pointer-events: none;
+}
+
+.active-word .guide-line {
+    width: 100%;
+}
+
+.word-wrapper {
+    position: relative;
+    display: inline-block;
+    /*margin-right: 12px;*/
+    /*padding-bottom: 4px;*/
+}
+
+#calibration-display,
+#tool-output {
+    position: fixed;
+    /*top: var(--header-height);*/
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 2*(var(--header-height)));
+    padding-top: var(--header-height);
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+#calibration-display.scrollable-passage {
+    justify-content: flex-start;
+    padding-top: var(--header-height);
+}
+
+.scrollable-passage #passage-display {
+    margin: auto;
+}
+
+/* Overlays & Feedback */
+.result-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    border: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 2rem 6rem;
+    z-index: 2100;
+    box-shadow: 10px 10px 0px var(--dark);
+    text-align: center;
+}
+
+.result-overlay h3 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.wpm-value {
+    font-size: 120px;
+    font-weight: bold;
+    display: block;
+}
+
+.quiz-item {
+    position: relative;
+}
+
+.quiz-item input {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid var(--dark);
+    font-family: inherit;
+    box-sizing: border-box;
+    background: var(--white);
+    border-radius: 4px;
+    outline: 0;
+}
+
+.quiz-item p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.feedback-mark {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.correct-mark {
+    color: var(--success);
+}
+
+.incorrect-mark {
+    color: var(--accent);
+}
+
+.input-correct {
+    border-color: var(--success) !important;
+    background-color: #f0fff4;
+}
+
+.input-incorrect {
+    border-color: var(--accent) !important;
+    background-color: #fff5f5;
+}
+
+.quiz-score {
+    text-align: center;
+}
+
+/* Utilities */
+.hidden {
+    display: none !important;
+}
+
+/* Slider Controls */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: var(--dark);
+    border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    background: var(--white);
+    border: 3px solid var(--accent);
+    margin-top: -7px;
+    border-radius: 50%;
+}
+
+#countdown, #reader-countdown {
+    font-size: 20vw;
+}
+
+#reader-countdown {
+    padding-top: 100px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Font F<span>o</span>cus</div>
+    <nav>
+        <button id="tab-calibrate" class="active" onclick="switchTab('calibrate')">Testing</button>
+        <button id="tab-reader" onclick="switchTab('reader')">Speed Reader</button>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="view-calibrate">
+        <div class="calibration-layout">
+            <div id="instructional-box">
+                <p id="instruction-text" class="font-sans">
+                    Font Focus aims to find links between types of fonts used, presentation of fonts, and font technology to help students read faster and retain more of the information they read.<br><br>
+                    This page is the testing page. Here you can set the parameters of the text including font style and size to test which of those parameters affects your ability to read text quickly and accurately.<br><br>
+                    You may also choose between three different reading modes: Traditional, Underline, and Focus to see which one helps increase your reading speed and comprehension.<br><br>
+                    After choosing a passage to read, there will be a short, five question quiz about what you have read to check for comprehension.
+                </p>
+            </div>
+            <aside class="calibration-sidebar">
+                <div class="control-group">
+                    <label class="bold-label">Font Style:</label>
+                    <div class="font-selector-grid">
+                        <button class="font-btn font-serif" onclick="setCalStyles('font-serif', this)">A<label>Serif</label></button>
+                        <button class="font-btn font-sans selected" onclick="setCalStyles('font-sans', this)">A<label>Sans</label></button>
+                        <button class="font-btn font-script" onclick="setCalStyles('font-script', this)">A<label>Script</label></button>
+                        <button class="font-btn font-black" onclick="setCalStyles('font-black', this)">A<label>Fraktur</label></button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="bold-label">Font Size: <span id="size-label">20</span>px</label>
+                    <input type="range" id="font-size-slider" min="12" max="36" value="20" oninput="changeCalSize()">
+                </div>
+
+                <div class="control-group">
+                    <label class="bold-label">Select a Passage:</label>
+                    <div class="customselect">
+                        <select id="story-select">
+                            <option value="0">The Silent Language of Trees</option>
+                            <option value="1">The Power of the Tides</option>
+                            <option value="2">The Migration of the Monarch</option>
+                            <option value="3">The Architecture of Memory</option>
+                            <option value="4">The Ethics of Mars Colonization</option>
+                            <option value="5">The Paradox of Choice</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="bold-label">Reading Mode:</label>
+                    <div class="mode-selector mode-grid-three">
+                        <button class="mode-btn selected" id="mode-traditional" onclick="setCalibrationMode('traditional')"><i class="icon-traditional"></i><label>Traditional</label></button>
+                        <button class="mode-btn" id="mode-lines" onclick="setCalibrationMode('lines')"><i class="icon-guiding"></i><label>Underline<label></button>
+                        <button class="mode-btn" id="mode-dot" onclick="setCalibrationMode('dot')"><i class="icon-focus"></i><label>Focus</label></button>
+                    </div>
+                </div>
+
+                <div id="cal-wpm-group" class="control-group hidden">
+                    <label class="bold-label">Speed (WPM): <span id="cal-speed-label">300</span></label>
+                    <input type="range" id="cal-speed-slider" min="200" max="600" step="10" value="300" oninput="updateCalSpeedDisp()">
+                </div>
+
+                <div id="cal-chunk-group" class="control-group hidden">
+                    <label class="bold-label">Focus Words: <span id="cal-chunk-label">3</span></label>
+                    <input type="range" id="cal-chunk-slider" min="1" max="5" step="1" value="3" oninput="updateChunkDisp()">
+                </div>
+                
+                <button class="btn-go" onclick="startCalibration()">Go</button>
+            </aside>
+        </div>
+
+        <div id="calibration-display" class="hidden">
+            <h1 id="countdown"></h1>
+            <div id="passage-display" class="font-sans hidden"></div>
+            <div id="cal-tool-output" class="hidden">
+                 <div id="cal-focus-container" class="hidden">
+                    <div id="cal-dot-word" class="font-sans"></div>
+                    <div id="cal-dot-static"></div>
+                </div>
+                <div id="cal-reading-area" class="font-sans"></div>
+            </div>
+            <button id="stop-test-btn" class="btn-octagon hidden" onclick="handleStopClick()">Stop</button>
+        </div>
+
+        <div id="wpm-display-box" class="hidden result-overlay">
+            <h3 id="wpm-result-text"></h3>
+            <button class="btn-main" onclick="showQuiz()">Take Comprehension Quiz</button>
+        </div>
+
+        <div id="quiz-section" class="hidden" style="max-width: 600px; margin: 40px auto; padding: 20px;">
+            <h2>Comprehension Quiz</h2>
+            <div id="quiz-container"></div>
+            <button id="submit-quiz-btn" class="btn-main" onclick="scoreQuiz()">Submit Answers</button>
+            <div id="post-quiz-actions" class="hidden">
+                <h3 id="score-summary" class="quiz-score"></h3>
+                <button class="btn-main" onclick="resetCalibration()">Finished</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="view-reader" class="hidden">
+        <div class="calibration-layout">
+            <div class="upload-box">
+                <div class="control-group">
+                    <label class="bold-label">Upload Text to Read</label>
+                    <label class="custom-file-upload">
+                        <input type="file" id="file-input" accept=".txt" onchange="handleFileUpload(event)">
+                        <span id="file-label-text">Upload a .txt File</span>
+                    </label>
+                </div>
+                <div class="control-group">
+                    <textarea id="user-text" placeholder="Or paste your text here..." rows="12"></textarea>
+                </div>
+            </div>
+
+            <aside class="calibration-sidebar">
+                <div class="control-group">
+                    <label class="bold-label">Reader Font Style:</label>
+                    <div class="font-selector-grid font-grid-two">
+                        <button class="font-btn reader-font-btn font-serif" onclick="setReaderStyles('font-serif', this)">A<label>Serif</label></button>
+                        <button class="font-btn reader-font-btn font-sans selected" onclick="setReaderStyles('font-sans', this)">A<label>Sans</label></button>
+                        <!-- <button class="font-btn reader-font-btn font-script" onclick="setReaderStyles('font-script', this)">A<label>Script</label></button>
+                        <button class="font-btn reader-font-btn font-black" onclick="setReaderStyles('font-black', this)">A<label>Blackletter</label></button> -->
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="bold-label">Reader Mode:</label>
+                    <div class="mode-selector mode-grid-two">
+                        <button class="mode-btn reader-mode-btn selected" id="reader-mode-lines" onclick="setReaderMode('lines', this)"><i class="icon-guiding"></i><label>Underline</label></button>
+                        <button class="mode-btn reader-mode-btn" id="reader-mode-dot" onclick="setReaderMode('dot', this)"><i class="icon-focus"></i><label>Focus</label></button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="bold-label">Target WPM: <span id="speed-label">300</span></label>
+                    <input type="range" id="speed-slider" min="200" max="600" step="50" value="300" oninput="updateSpeedDisp()">
+                </div>
+
+                <button class="btn-go" onclick="initTool()">Go</button>
+            </aside>
+        </div>
+
+        <div id="tool-output" class="hidden">
+            <div id="focus-container" class="hidden">
+                <div id="dot-word" class="font-sans"></div>
+                <div id="dot"></div>
+            </div>
+            <div id="active-reading-area" class="font-sans"></div>
+            <button id="stop-test-btn-reader" class="btn-octagon" onclick="resetReader()">Stop</button>
+        </div>
+    </section>
+</div>
+
+<script>
+const calibrationData = [
+    { 
+        title: "The Silent Language of Trees", 
+        text: "Imagine you are walking through a quiet forest. You see towering oaks and slender pines, all standing perfectly still. To you, they look like solitary giants, but beneath your feet, a secret conversation is happening. Scientists have discovered that trees are actually 'social' creatures. They communicate through a complex underground network of fungi often called the 'Wood Wide Web.' These tiny fungal threads connect the roots of different trees, allowing them to share vital resources. For example, if a large 'Mother Tree' has access to plenty of sunlight, she can send extra sugar through the network to a smaller sapling struggling in the shade. But it isn’t just about food. Trees also use this network to send out warnings. When a willow tree is attacked by hungry beetles, it releases chemical signals into the air and the soil. Nearby trees 'hear' this signal and begin producing bitter chemicals in their leaves to make themselves taste terrible to the bugs. This cooperation shows us that a forest isn't just a collection of individual plants; it’s a community. By looking out for one another, the trees ensure that the entire ecosystem stays healthy and strong. Next time you see a forest, remember: there is much more going on than meets the eye.", 
+        questions: [
+            { q: "What is the 'Wood Wide Web'?", keys: ["fungi", "fungus", "fungal", "network"] }, 
+            { q: "How does a 'Mother Tree' help a smaller tree that is in the shade?", keys: ["sugar", "resources", "food"] },
+            { q: "How do trees warn each other about hungry bugs?", keys: ["chemical", "signals", "soil", "air"] },
+            { q: "What happens to the leaves of a tree after it gets a warning signal?", keys: ["bitter", "taste terrible"] },
+            { q: "Is a forest just a group of lonely plants, or is it a community?", keys: ["community"] }
+        ] 
+    },
+    { 
+        title: "The Power of the Tides", 
+        text: "If you’ve ever spent a day at the beach, you’ve probably noticed that the ocean's edge doesn't stay in one place. Over several hours, the water slowly creeps up the sand (high tide) and then later pulls back (low tide). This rhythmic rising and falling is caused by the invisible tug of gravity. The Moon is the main character in this story. Even though it is far away, its gravitational pull is strong enough to 'stretch' Earth’s oceans. This creates a bulge of water on the side of the Earth facing the Moon. As the Earth rotates, different parts of the world pass through these bulges, causing the tides to change. Today, engineers are finding ways to turn this moving water into electricity. By placing underwater turbines—which look like giant fans—in areas with strong tides, we can capture the energy of the flowing water. Unlike solar or wind power, which can be unpredictable, the tides are perfectly reliable. We know exactly when the water will move, making tidal energy a promising tool for a greener future.", 
+        questions: [
+            { q: "What causes the ocean water to move in and out?", keys: ["gravity", "tug"] }, 
+            { q: "What is it called when the water moves far up onto the sand?", keys: ["high tide"] },
+            { q: "Which object in space has the most control over the tides?", keys: ["moon"] },
+            { q: "How can we use the tides to make electricity?", keys: ["turbines", "fans", "energy"] },
+            { q: "Why is tidal energy better than wind or solar energy?", keys: ["reliable", "predictable", "know when"] }
+        ] 
+    },
+    { 
+        title: "The Migration of the Monarch", 
+        text: "Every autumn, millions of monarch butterflies perform one of the most incredible journeys in the animal kingdom. Weighing less than a paperclip, these fragile insects fly up to 3,000 miles from southern Canada and the northern United States all the way to the forests of central Mexico. How do they do it? Scientists believe monarchs use a 'sun compass.' Even on cloudy days, they can sense the position of the sun to stay on course. They also have a special internal clock that helps them adjust their direction as the sun moves across the sky throughout the day. The most amazing part of this journey is that no single butterfly makes the entire round trip. The monarchs that fly to Mexico live for several months, but their children and grandchildren will be the ones to fly back north in the spring. It takes four generations to complete the full cycle. Each new generation somehow knows exactly where to go, even though they have never been there before. This 'inherited map' remains one of nature's greatest mysteries.", 
+        questions: [
+            { q: "How many miles does a monarch butterfly fly to get to Mexico?", keys: ["3,000", "3000"] }, 
+            { q: "What do butterflies use to find their way on cloudy days?", keys: ["sun compass", "sun"] },
+            { q: "Does one single butterfly make the whole trip there and back?", keys: ["no", "never"] },
+            { q: "How many generations does it take to finish the full trip?", keys: ["four", "4"] },
+            { q: "How do young butterflies know where to go if they’ve never been there before?", keys: ["inherited", "map", "mysteries"] }
+        ] 
+    },
+    { 
+        title: "The Architecture of Memory", 
+        text: "Human memory is not a dusty filing cabinet where documents are stored in alphabetical order; rather, it is a dynamic, reconstructive process. Neurologists categorize memory into several distinct systems, the most fleeting of which is sensory memory, followed by short-term (or working) memory, and finally, long-term memory. The transition of information from short-term to long-term storage is known as encoding. This process is heavily influenced by how much attention we pay to the information and how well we can 'hook' it to existing knowledge. For instance, if you are learning a new mathematical formula like the Pythagorean theorem, a² + b² = c², your brain is more likely to retain it if you visualize a physical triangle rather than just memorizing the letters. However, our memories are notoriously fallible. Every time we recall an event, we are not playing back a video recording; we are rebuilding the scene from fragments of data. This is why two people can witness the same car accident and provide completely different accounts to the police. Understanding the biological machinery of the brain—specifically the hippocampus, which acts as the brain’s librarian—helps us develop better study habits. Techniques like 'spaced repetition' capitalize on how our neurons form physical connections, proving that the mind is less like a muscle.", 
+        questions: [
+            { q: "What is the difference between 'short-term' and 'long-term' memory?", keys: ["storage", "duration", "fleeting"] }, 
+            { q: "What is 'encoding' in your own words?", keys: ["transition", "storage", "hook"] },
+            { q: "Why might two people remember the same event differently?", keys: ["rebuilding", "fragments", "fallible", "reconstructive"] },
+            { q: "What part of the brain acts like a 'librarian'?", keys: ["hippocampus"] },
+            { q: "Why is it better to study a little bit every day instead of all at once?", keys: ["spaced repetition", "muscle", "connections"] }
+        ] 
+    },
+    { 
+        title: "The Ethics of Mars Colonization", 
+        text: "For decades, the idea of humans living on Mars was the exclusive domain of science fiction. Today, 'becoming multi-planetary' is a serious goal. However, this ambition brings ethical dilemmas. The primary hurdle is the sheer hostility of the Martian environment. With an atmospheric pressure less than 1% of Earth's and cosmic radiation, survival requires total dependence on technology. If a life-support system fails, there is no 'Plan B.' Furthermore, there is the issue of Planetary Protection. If Mars harbors microbial life, arriving humans would inevitably contaminate the planet with Earth-based bacteria. Do we have the right to alter another planet’s ecosystem for our own survival? Finally, we must consider the governance of a Martian colony. Will the laws of Earth apply, or will Mars become a 'corporate state'? As we stand on the precipice, we must decide if we are going to Mars as explorers, as refugees, or as conquerors.", 
+        questions: [
+            { q: "Why is the air on Mars dangerous for humans?", keys: ["pressure", "radiation", "1%"] }, 
+            { q: "What is 'Planetary Protection'?", keys: ["microbial", "bacteria", "ecosystem"] },
+            { q: "What might happen if humans bring Earth bacteria to Mars?", keys: ["contaminate", "destroy"] },
+            { q: "Who should make the laws for people living on Mars?", keys: ["earth", "corporate", "governance"] },
+            { q: "Do you think humans have the right to change another planet?", keys: ["yes", "no", "opinion"] }
+        ] 
+    },
+    { 
+        title: "The Paradox of Choice", 
+        text: "In modern society, we often operate under the assumption that more choice is always better. However, psychologists have identified a phenomenon known as the Paradox of Choice. When faced with too many options, the human brain often experiences 'analysis paralysis.' Instead of making a decision and feeling happy about it, we become overwhelmed. We worry about making the 'wrong' choice and missing out on a better alternative. This is closely related to opportunity cost—the idea that by choosing one thing, you are giving up everything else. Research has shown that people presented with only six options are often more satisfied than those presented with thirty. With fewer choices, it is easier to justify the decision. To find true contentment, we may need to learn the art of being a 'satisficer'—someone who is happy with a choice that is 'good enough' rather than hunting indefinitely for the best.", 
+        questions: [
+            { q: "Why does having too many choices sometimes make us unhappy?", keys: ["overwhelmed", "wrong choice", "expectations"] }, 
+            { q: "What is 'analysis paralysis'?", keys: ["overwhelmed", "deciding", "information"] },
+            { q: "Why do we feel bad about what we didn't pick?", keys: ["opportunity cost", "giving up"] },
+            { q: "Why are people usually happier with 6 choices instead of 30?", keys: ["justify", "perfect"] },
+            { q: "What is a 'satisficer'?", keys: ["good enough", "contentment"] }
+        ] 
+    }
+];
+</script>
+<script>
+let startTime, currentStoryIndex, timerInterval;
+let selectedCalMode = 'traditional';
+let selectedReaderMode = 'lines';
+let readerFontClass = 'font-sans';
+let CHUNK_SIZE = 3;
+
+// --- SHARED NAVIGATION ---
+function switchTab(tab) {
+    clearInterval(timerInterval);
+    
+    // Hide all sections and deactivate all tab buttons
+    document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    
+    // Show active section and activate button
+    document.getElementById(`view-${tab}`).classList.remove('hidden');
+    document.getElementById(`tab-${tab}`).classList.add('active');
+
+    if (tab === 'calibrate') {
+        resetCalibration();
+    } 
+    
+    if (tab === 'reader') {
+        resetReader();
+        resetReaderFont(); // Force Sans Serif on every entry
+    }
+}
+
+// Helper to force the Reader to Sans Serif on tab switch
+function resetReaderFont() {
+    // 1. Update the internal variable used by initTool
+    readerFontClass = 'font-sans';
+
+    // 2. Update the UI buttons in the Reader sidebar
+    document.querySelectorAll('.reader-font-btn').forEach(btn => {
+        btn.classList.remove('selected');
+        // Find the specific button for Sans and select it
+        if (btn.classList.contains('font-sans')) {
+            btn.classList.add('selected');
+        }
+    });
+
+    // 3. Apply the class to the preview/output areas immediately
+    const activeArea = document.getElementById('active-reading-area');
+    const dotWord = document.getElementById('dot-word');
+    
+    if (activeArea) activeArea.className = 'font-sans';
+    if (dotWord) dotWord.className = 'font-sans';
+}
+
+// --- CALIBRATION MODE & STYLES ---
+function setCalibrationMode(mode) {
+    selectedCalMode = mode;
+    document.querySelectorAll('#view-calibrate .mode-btn').forEach(b => b.classList.remove('selected'));
+    document.getElementById(`mode-${mode}`).classList.add('selected');
+    
+    const wpmGroup = document.getElementById('cal-wpm-group');
+    const chunkGroup = document.getElementById('cal-chunk-group');
+
+    if (mode === 'traditional') {
+        wpmGroup.classList.add('hidden');
+        chunkGroup.classList.add('hidden');
+    } else if (mode === 'lines') {
+        wpmGroup.classList.remove('hidden');
+        chunkGroup.classList.add('hidden'); // Guiding lines uses sentences, not chunks
+    } else if (mode === 'dot') {
+        wpmGroup.classList.remove('hidden');
+        chunkGroup.classList.remove('hidden'); // Show chunk slider for Focus Dot
+    }
+}
+
+function updateChunkDisp() {
+    const val = document.getElementById('cal-chunk-slider').value;
+    document.getElementById('cal-chunk-label').innerText = val;
+    // Update global constant for the next run
+    CHUNK_SIZE = parseInt(val);
+}
+
+function setCalStyles(fontClass, btn) {
+    document.querySelectorAll('.calibration-sidebar .font-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    ['instruction-text', 'passage-display', 'cal-reading-area', 'cal-dot-word'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.className = fontClass;
+    });
+}
+
+function changeCalSize() {
+    const val = document.getElementById('font-size-slider').value;
+    document.getElementById('size-label').innerText = val;
+    ['instruction-text', 'passage-display', 'cal-reading-area', 'cal-dot-word'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.fontSize = val + 'px';
+    });
+}
+
+function updateCalSpeedDisp() { document.getElementById('cal-speed-label').innerText = document.getElementById('cal-speed-slider').value; }
+
+// --- CALIBRATION EXECUTION ---
+function startCalibration() {
+    const cd = document.getElementById('countdown');
+    const stopBtn = document.getElementById('stop-test-btn');
+    const calDotWord = document.getElementById('cal-dot-word');
+    
+    // Reset and hide everything
+    cd.innerText = ""; 
+    cd.classList.remove('hidden');
+    stopBtn.classList.add('hidden');
+
+    // FIX: Set the word container to a non-breaking space
+    // Use innerHTML so the browser interprets it as an entity
+    if (calDotWord) {
+        calDotWord.innerHTML = "&nbsp;";
+    }
+
+    document.querySelector('#view-calibrate .calibration-layout').classList.add('hidden');
+    document.getElementById('calibration-display').classList.remove('hidden');
+    document.getElementById('passage-display').classList.add('hidden');
+    document.getElementById('cal-tool-output').classList.add('hidden');
+    document.getElementById('cal-focus-container').classList.add('hidden');
+    document.getElementById('wpm-display-box').classList.add('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    
+    let count = 3;
+    timerInterval = setInterval(() => {
+        if (count > 0) {
+            cd.innerText = count;
+        } else if (count === 0) {
+            cd.innerText = "GO!";
+        } else {
+            clearInterval(timerInterval);
+            cd.innerText = ""; 
+            cd.classList.add('hidden');
+            stopBtn.classList.remove('hidden');
+            runCalTest();
+            return;
+        }
+        count--;
+    }, 1000);
+}
+
+function resetCalibration() {
+    clearInterval(timerInterval);
+    
+    // Clean up the scrollable class
+    document.getElementById('calibration-display').classList.remove('scrollable-passage');
+
+    // Ensure all possible overlays and buttons are hidden
+    document.getElementById('stop-test-btn').classList.add('hidden');
+    document.getElementById('wpm-display-box').classList.add('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('calibration-display').classList.add('hidden');
+    
+    // Reset the main setup view
+    document.querySelector('#view-calibrate .calibration-layout').classList.remove('hidden');
+    
+    // Clear dynamic content
+    document.getElementById('countdown').innerText = "";
+    document.getElementById('cal-reading-area').innerHTML = "";
+    document.getElementById('cal-dot-word').innerText = "";
+}
+
+function runCalTest() {
+    currentStoryIndex = document.getElementById('story-select').value;
+    const text = calibrationData[currentStoryIndex].text;
+    const calDisplay = document.getElementById('calibration-display');
+    const passageDisplay = document.getElementById('passage-display');
+    
+    document.getElementById('stop-test-btn').classList.remove('hidden');
+    startTime = new Date();
+
+    if (selectedCalMode === 'traditional') {
+        // Apply scrolling behavior for Traditional Mode
+        calDisplay.classList.add('scrollable-passage');
+        
+        passageDisplay.innerText = text;
+        passageDisplay.classList.remove('hidden');
+    } else {
+        // Remove scrolling behavior for animated modes
+        calDisplay.classList.remove('scrollable-passage');
+        
+        document.getElementById('cal-tool-output').classList.remove('hidden');
+        const calWpm = parseInt(document.getElementById('cal-speed-slider').value);
+        const speed = (60 / calWpm) * 1000; 
+        
+        if (selectedCalMode === 'lines') {
+            runGuidingLines(text, speed, document.getElementById('cal-reading-area'), true, calWpm);
+        } else {
+            CHUNK_SIZE = parseInt(document.getElementById('cal-chunk-slider').value);
+            runFocusDot(text, speed, document.getElementById('cal-reading-area'), 'cal-focus-container', 'cal-dot-word', true, calWpm);
+        }
+    }
+}
+
+function handleStopClick() {
+    if (selectedCalMode === 'traditional') {
+        const elapsed = (new Date() - startTime) / 1000;
+        const wordCount = calibrationData[currentStoryIndex].text.split(' ').length;
+        finishTest(Math.round((wordCount / elapsed) * 60));
+    } else {
+        resetCalibration();
+    }
+}
+
+function finishTest(wpm) {
+    clearInterval(timerInterval);
+    document.getElementById('stop-test-btn').classList.add('hidden');
+    document.getElementById('wpm-display-box').classList.remove('hidden');
+    document.getElementById('wpm-result-text').innerHTML = `You Read <span class="wpm-value">${wpm}</span> Words Per Minute`;
+}
+
+// --- QUIZ LOGIC ---
+function showQuiz() {
+    document.getElementById('wpm-display-box').classList.add('hidden');
+    document.getElementById('calibration-display').classList.add('hidden');
+    document.getElementById('quiz-section').classList.remove('hidden');
+    
+    const container = document.getElementById('quiz-container');
+    const questions = calibrationData[currentStoryIndex].questions;
+    container.innerHTML = questions.map((item, i) => `
+        <div class="quiz-item">
+            <p><strong>${i+1}. ${item.q}</strong><span id="mark-${i}" class="feedback-mark"></span></p>
+            <input type="text" id="ans-${i}" class="quiz-input" style="width: 100%; padding: 10px; border: 2px solid var(--dark);">
+        </div>
+    `).join('');
+}
+
+function scoreQuiz() {
+    let score = 0;
+    const questions = calibrationData[currentStoryIndex].questions;
+    questions.forEach((q, i) => {
+        const input = document.getElementById(`ans-${i}`);
+        const mark = document.getElementById(`mark-${i}`);
+        const val = input.value.toLowerCase().trim();
+        const isCorrect = q.keys.some(k => val.includes(k.toLowerCase()));
+        if (isCorrect) {
+            score++; mark.innerText = " ✓"; mark.className = "feedback-mark correct-mark";
+            input.classList.add('input-correct');
+        } else {
+            mark.innerText = " ✗"; mark.className = "feedback-mark incorrect-mark";
+            input.classList.add('input-incorrect');
+        }
+        input.disabled = true;
+    });
+    document.getElementById('score-summary').innerText = `Score: ${score}/${questions.length}`;
+    document.getElementById('post-quiz-actions').classList.remove('hidden');
+    document.getElementById('submit-quiz-btn').classList.add('hidden');
+}
+
+// --- READER LOGIC ---
+function setReaderStyles(fontClass, btn) {
+    readerFontClass = fontClass;
+    document.querySelectorAll('.reader-font-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+}
+
+function setReaderMode(mode, btn) {
+    selectedReaderMode = mode;
+    document.querySelectorAll('.reader-mode-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+}
+
+function updateSpeedDisp() { document.getElementById('speed-label').innerText = document.getElementById('speed-slider').value; }
+
+function initTool() {
+    const textInput = document.getElementById('user-text').value.trim();
+    if (!textInput) return alert("Please enter text!");
+
+    // 1. Prepare UI: Hide setup, show output area
+    document.querySelector('#view-reader .calibration-layout').classList.add('hidden');
+    const toolOutput = document.getElementById('tool-output');
+    toolOutput.classList.remove('hidden');
+
+    // 2. Clear previous states and set stability space
+    const activeArea = document.getElementById('active-reading-area');
+    const dotWordDisplay = document.getElementById('dot-word');
+    const stopBtn = document.getElementById('stop-test-btn-reader');
+    
+    activeArea.classList.add('hidden');
+    document.getElementById('focus-container').classList.add('hidden');
+    stopBtn.classList.add('hidden'); // Hide stop button during countdown
+    
+    // Stability fix: ensure dot doesn't move
+    dotWordDisplay.innerHTML = "&nbsp;";
+    dotWordDisplay.className = readerFontClass;
+    activeArea.className = readerFontClass;
+
+    // 3. Create or find a countdown element for the reader
+    // Check if we already have a countdown header in tool-output; if not, use a simple prompt
+    let readerCD = document.getElementById('reader-countdown');
+    if (!readerCD) {
+        readerCD = document.createElement('h1');
+        readerCD.id = 'reader-countdown';
+        toolOutput.prepend(readerCD);
+    }
+    readerCD.classList.remove('hidden');
+    readerCD.style.textAlign = 'center';
+
+    // 4. Run Countdown
+    let count = 3;
+    timerInterval = setInterval(() => {
+        if (count > 0) {
+            readerCD.innerText = count;
+        } else if (count === 0) {
+            readerCD.innerText = "GO!";
+        } else {
+            clearInterval(timerInterval);
+            readerCD.classList.add('hidden');
+            stopBtn.classList.remove('hidden');
+            
+            // 5. Start the actual tool logic
+            startReaderAnimation(textInput);
+        }
+        count--;
+    }, 1000);
+}
+
+function resetReader() {
+    clearInterval(timerInterval);
+    document.getElementById('tool-output').classList.add('hidden');
+    document.querySelector('#view-reader .calibration-layout').classList.remove('hidden');
+    
+    // Clear countdown text
+    const readerCD = document.getElementById('reader-countdown');
+    if (readerCD) readerCD.innerText = "";
+    
+    document.getElementById('focus-container').classList.add('hidden');
+    document.getElementById('dot-word').innerHTML = "&nbsp;"; 
+    document.getElementById('active-reading-area').innerHTML = ""; 
+}
+
+function startReaderAnimation(text) {
+    const activeArea = document.getElementById('active-reading-area');
+    const wpm = parseInt(document.getElementById('speed-slider').value);
+    const msPerWord = (60 / wpm) * 1000;
+    const READER_CHUNK_SIZE = 3; 
+
+    if (selectedReaderMode === 'lines') {
+        runGuidingLines(text, msPerWord, activeArea, false, wpm);
+    } else {
+        runFocusDot(text, msPerWord, activeArea, 'focus-container', 'dot-word', false, wpm, READER_CHUNK_SIZE);
+    }
+}
+
+// --- SHARED TOOLS ---
+function runGuidingLines(text, speed, targetArea, isCalibration, setWpm) {
+    targetArea.classList.remove('hidden');
+    
+    // UPDATED REGEX:
+    // This looks for punctuation OR the end of the string ($)
+    const sentences = text.match(/[^.!?]+([.!?]+|$)/g) || [text];
+    
+    let sentenceIdx = 0;
+
+    function renderSentenceGroup() {
+        // Clears the area for the next group
+        targetArea.innerHTML = "";
+        
+        const group = sentences.slice(sentenceIdx, sentenceIdx + 3).join(" ");
+        const words = group.split(/\s+/).filter(w => w.length > 0);
+        
+        targetArea.innerHTML = words.map(w => `<span class="word-wrapper">${w}<span class="guide-line" style="transition: none;"></span></span>`).join(' ');
+        
+        const spans = targetArea.querySelectorAll('.word-wrapper');
+        let wordIdx = 0;
+        
+        timerInterval = setInterval(() => {
+            if (wordIdx >= spans.length) {
+                clearInterval(timerInterval);
+                sentenceIdx += 3;
+                if (sentenceIdx < sentences.length) {
+                    renderSentenceGroup();
+                } else {
+                    if (isCalibration) finishTest(setWpm);
+                    else resetReader();
+                }
+                return;
+            }
+            if (wordIdx > 0) spans[wordIdx - 1].classList.remove('active-word');
+            spans[wordIdx].classList.add('active-word');
+            wordIdx++;
+        }, speed);
+    }
+    renderSentenceGroup();
+}
+
+function runFocusDot(text, speed, area, containerId, wordId, isCalibration, setWpm, passedChunk) {
+    // Use the passed value if it exists, otherwise use the global variable
+    const currentChunk = passedChunk || CHUNK_SIZE;
+    
+    const words = text.split(/\s+/);
+    document.getElementById(containerId).classList.remove('hidden');
+    area.classList.add('hidden');
+    
+    let i = 0;
+    timerInterval = setInterval(() => {
+        if (i >= words.length) {
+            clearInterval(timerInterval);
+            isCalibration ? finishTest(setWpm) : resetReader();
+            return;
+        }
+        
+        // Use currentChunk for slicing and timing
+        document.getElementById(wordId).innerText = words.slice(i, i + currentChunk).join(" ");
+        i += currentChunk;
+
+    }, speed * currentChunk); 
+}
+
+function handleFileUpload(event) {
+    const file = event.target.files[0];
+    const textArea = document.getElementById('user-text');
+    const labelText = document.getElementById('file-label-text');
+
+    if (!file) return;
+
+    if (textArea.value.trim().length > 0) {
+        const confirmOverwrite = confirm("Uploading a new file will replace your current text. Do you want to continue?");
+        if (!confirmOverwrite) {
+            // Reset the input value so the same file can be picked again later
+            event.target.value = ''; 
+            return;
+        }
+    }
+
+    labelText.innerText = file.name;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        textArea.value = e.target.result;
+        
+        event.target.value = ''; 
+    };
+    reader.readAsText(file);
+}
+
+
+</script>
+
+</body>
+</html>
