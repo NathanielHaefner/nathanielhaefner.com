@@ -24,6 +24,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    overscroll-behavior: none;
 }
 
 body {
@@ -372,6 +373,7 @@ textarea {
     font-size: 18px;
     background: var(--white);
     color: var(--dark);
+    resize: vertical;
 }
 
 .custom-file-upload input[type="file"] {
@@ -499,6 +501,10 @@ textarea {
     font-size: 20px;
 }
 
+#cal-tool-output {
+    overflow: hidden;
+}
+
 #focus-container,
 #cal-focus-container {
     display: flex;
@@ -575,6 +581,10 @@ textarea {
     overflow-y: auto;
 }
 
+#tool-output {
+    overflow: hidden;
+}
+
 #calibration-display.scrollable-passage {
     justify-content: flex-start;
     padding-top: var(--header-height);
@@ -613,6 +623,7 @@ textarea {
 
 .quiz-item {
     position: relative;
+    margin-bottom: 12px;
 }
 
 .quiz-item input {
@@ -631,10 +642,19 @@ textarea {
     font-weight: normal;
 }
 
+.quiz-item strong {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 4px;
+}
+
 .feedback-mark {
     font-weight: bold;
     margin-left: 10px;
     font-size: 2rem;
+    position: absolute;
+    right: -30px;
+    top: 22px;
 }
 
 .correct-mark {
@@ -857,7 +877,7 @@ input[type="range"]::-webkit-slider-thumb {
 const calibrationData = [
     { 
         title: "The Silent Language of Trees", 
-        text: "Imagine you are walking through a quiet forest. You see towering oaks and slender pines, all standing perfectly still. To you, they look like solitary giants, but beneath your feet, a secret conversation is happening. Scientists have discovered that trees are actually 'social' creatures. They communicate through a complex underground network of fungi often called the 'Wood Wide Web.' These tiny fungal threads connect the roots of different trees, allowing them to share vital resources. For example, if a large 'Mother Tree' has access to plenty of sunlight, she can send extra sugar through the network to a smaller sapling struggling in the shade. But it isn’t just about food. Trees also use this network to send out warnings. When a willow tree is attacked by hungry beetles, it releases chemical signals into the air and the soil. Nearby trees 'hear' this signal and begin producing bitter chemicals in their leaves to make themselves taste terrible to the bugs. This cooperation shows us that a forest isn't just a collection of individual plants; it’s a community. By looking out for one another, the trees ensure that the entire ecosystem stays healthy and strong. Next time you see a forest, remember: there is much more going on than meets the eye.", 
+        text: "Imagine you are walking through a quiet forest. You see towering oaks and slender pines, all standing perfectly still. To you, they look like solitary giants, but beneath your feet, a secret conversation is happening. Scientists have discovered that trees are actually 'social' creatures. They communicate through a complex underground network of fungi often called the 'Wood Wide Web'. These tiny fungal threads connect the roots of different trees, allowing them to share vital resources. For example, if a large 'Mother Tree' has access to plenty of sunlight, she can send extra sugar through the network to a smaller sapling struggling in the shade. But it isn’t just about food. Trees also use this network to send out warnings. When a willow tree is attacked by hungry beetles, it releases chemical signals into the air and the soil. Nearby trees 'hear' this signal and begin producing bitter chemicals in their leaves to make themselves taste terrible to the bugs. This cooperation shows us that a forest isn't just a collection of individual plants; it’s a community. By looking out for one another, the trees ensure that the entire ecosystem stays healthy and strong. Next time you see a forest, remember: there is much more going on than meets the eye.", 
         questions: [
             { q: "What is the 'Wood Wide Web'?", keys: ["fungi", "fungus", "fungal", "network"] }, 
             { q: "How does a 'Mother Tree' help a smaller tree that is in the shade?", keys: ["sugar", "resources", "food"] },
@@ -1075,6 +1095,7 @@ function resetCalibration() {
     document.getElementById('stop-test-btn').classList.add('hidden');
     document.getElementById('wpm-display-box').classList.add('hidden');
     document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('post-quiz-actions').classList.add('hidden');
     document.getElementById('calibration-display').classList.add('hidden');
     
     // Reset the main setup view
@@ -1140,6 +1161,10 @@ function showQuiz() {
     document.getElementById('wpm-display-box').classList.add('hidden');
     document.getElementById('calibration-display').classList.add('hidden');
     document.getElementById('quiz-section').classList.remove('hidden');
+
+    document.getElementById('post-quiz-actions').classList.add('hidden');    // Hide previous score/finished btn
+    document.getElementById('submit-quiz-btn').classList.remove('hidden'); // Show the submit btn again
+    document.getElementById('score-summary').innerText = "";
     
     const container = document.getElementById('quiz-container');
     const questions = calibrationData[currentStoryIndex].questions;
@@ -1359,6 +1384,7 @@ function handleFileUpload(event) {
     };
     reader.readAsText(file);
 }
+
 
 
 </script>
