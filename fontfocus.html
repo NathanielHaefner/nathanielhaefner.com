@@ -757,12 +757,42 @@ input[type="range"]::-webkit-slider-thumb {
                     <label class="bold-label">Select a Passage:</label>
                     <div class="customselect">
                         <select id="story-select">
-                            <option value="0">The Silent Language of Trees</option>
-                            <option value="1">The Power of the Tides</option>
-                            <option value="2">The Migration of the Monarch</option>
-                            <option value="3">The Architecture of Memory</option>
-                            <option value="4">The Ethics of Mars Colonization</option>
-                            <option value="5">The Paradox of Choice</option>
+                            <!-- <optgroup label="6th Grade">
+                                 <option value="0">The Silent Language of Trees</option>
+                                 <option value="1">The Power of the Tides</option>
+                                 <option value="2">The Migration of the Monarch</option>
+                            </optgroup>
+                            <optgroup label="9th Grade">
+                                 <option value="3">The Architecture of Memory</option>
+                                  <option value="4">The Ethics of Mars Colonization</option>
+                                <option value="5">The Paradox of Choice</option>
+                            </optgroup>
+                            <optgroup label="7th Grade">
+                                <option value="6">The Great Barrier Reef</option>
+                                <option value="7">The Invention of the Internet</option>
+                                <option value="8">How Volcanos Shape the Earth</option>
+                                <option value="9">The Mystery of Dark Matter</option>
+                                <option value="10">The Roman Colosseum</option>
+                                <option value="11">The Science of Sleep</option>
+                                <option value="12">The History of Chocolate</option>
+                                <option value="13">Bioluminescence: Nature’s Glow</option>
+                                <option value="14">The Great Wall of China</option>
+                                <option value="15">The Role of Honeybees</option>
+                                <option value="16">The Rosetta Stone</option>
+                                <option value="17">The Life of a Star</option>
+                            </optgroup> -->
+                            <option value="0">The Great Barrier Reef</option>
+                            <option value="1">The Invention of the Internet</option>
+                            <option value="2">How Volcanos Shape the Earth</option>
+                            <option value="3">The Mystery of Dark Matter</option>
+                            <option value="4">The Roman Colosseum</option>
+                            <option value="5">The Science of Sleep</option>
+                            <option value="6">The History of Chocolate</option>
+                            <option value="7">Bioluminescence: Nature’s Glow</option>
+                            <option value="8">The Great Wall of China</option>
+                            <option value="9">The Role of Honeybees</option>
+                            <option value="10">The Rosetta Stone</option>
+                            <option value="11">The Life of a Star</option>
                         </select>
                     </div>
                 </div>
@@ -873,72 +903,205 @@ input[type="range"]::-webkit-slider-thumb {
     </section>
 </div>
 
+
 <script>
 const calibrationData = [
+    // { 
+    //     title: "The Silent Language of Trees", 
+    //     text: "Imagine you are walking through a quiet forest. You see towering oaks and slender pines, all standing perfectly still. To you, they look like solitary giants, but beneath your feet, a secret conversation is happening. Scientists have discovered that trees are actually 'social' creatures. They communicate through a complex underground network of fungi often called the 'Wood Wide Web'. These tiny fungal threads connect the roots of different trees, allowing them to share vital resources. For example, if a large 'Mother Tree' has access to plenty of sunlight, she can send extra sugar through the network to a smaller sapling struggling in the shade. But it isn’t just about food. Trees also use this network to send out warnings. When a willow tree is attacked by hungry beetles, it releases chemical signals into the air and the soil. Nearby trees 'hear' this signal and begin producing bitter chemicals in their leaves to make themselves taste terrible to the bugs. This cooperation shows us that a forest isn't just a collection of individual plants; it’s a community. By looking out for one another, the trees ensure that the entire ecosystem stays healthy and strong. Next time you see a forest, remember: there is much more going on than meets the eye.", 
+    //     questions: [
+    //         { q: "What is the 'Wood Wide Web'?", keys: ["fungi", "fungus", "fungal", "network"] }, 
+    //         { q: "How does a 'Mother Tree' help a smaller tree that is in the shade?", keys: ["sugar", "resources", "food"] },
+    //         { q: "How do trees warn each other about hungry bugs?", keys: ["chemical", "signals", "soil", "air"] },
+    //         { q: "What happens to the leaves of a tree after it gets a warning signal?", keys: ["bitter", "taste terrible"] },
+    //         { q: "Is a forest just a group of lonely plants, or is it a community?", keys: ["community"] }
+    //     ] 
+    // },
+    // { 
+    //     title: "The Power of the Tides", 
+    //     text: "If you’ve ever spent a day at the beach, you’ve probably noticed that the ocean's edge doesn't stay in one place. Over several hours, the water slowly creeps up the sand (high tide) and then later pulls back (low tide). This rhythmic rising and falling is caused by the invisible tug of gravity. The Moon is the main character in this story. Even though it is far away, its gravitational pull is strong enough to 'stretch' Earth’s oceans. This creates a bulge of water on the side of the Earth facing the Moon. As the Earth rotates, different parts of the world pass through these bulges, causing the tides to change. Today, engineers are finding ways to turn this moving water into electricity. By placing underwater turbines—which look like giant fans—in areas with strong tides, we can capture the energy of the flowing water. Unlike solar or wind power, which can be unpredictable, the tides are perfectly reliable. We know exactly when the water will move, making tidal energy a promising tool for a greener future.", 
+    //     questions: [
+    //         { q: "What causes the ocean water to move in and out?", keys: ["gravity", "tug"] }, 
+    //         { q: "What is it called when the water moves far up onto the sand?", keys: ["high tide"] },
+    //         { q: "Which object in space has the most control over the tides?", keys: ["moon"] },
+    //         { q: "How can we use the tides to make electricity?", keys: ["turbines", "fans", "energy"] },
+    //         { q: "Why is tidal energy better than wind or solar energy?", keys: ["reliable", "predictable", "know when"] }
+    //     ] 
+    // },
+    // { 
+    //     title: "The Migration of the Monarch", 
+    //     text: "Every autumn, millions of monarch butterflies perform one of the most incredible journeys in the animal kingdom. Weighing less than a paperclip, these fragile insects fly up to 3,000 miles from southern Canada and the northern United States all the way to the forests of central Mexico. How do they do it? Scientists believe monarchs use a 'sun compass.' Even on cloudy days, they can sense the position of the sun to stay on course. They also have a special internal clock that helps them adjust their direction as the sun moves across the sky throughout the day. The most amazing part of this journey is that no single butterfly makes the entire round trip. The monarchs that fly to Mexico live for several months, but their children and grandchildren will be the ones to fly back north in the spring. It takes four generations to complete the full cycle. Each new generation somehow knows exactly where to go, even though they have never been there before. This 'inherited map' remains one of nature's greatest mysteries.", 
+    //     questions: [
+    //         { q: "How many miles does a monarch butterfly fly to get to Mexico?", keys: ["3,000", "3000"] }, 
+    //         { q: "What do butterflies use to find their way on cloudy days?", keys: ["sun compass", "sun"] },
+    //         { q: "Does one single butterfly make the whole trip there and back?", keys: ["no", "never"] },
+    //         { q: "How many generations does it take to finish the full trip?", keys: ["four", "4"] },
+    //         { q: "How do young butterflies know where to go if they’ve never been there before?", keys: ["inherited", "map", "mysteries"] }
+    //     ] 
+    // },
+    // { 
+    //     title: "The Architecture of Memory", 
+    //     text: "Human memory is not a dusty filing cabinet where documents are stored in alphabetical order; rather, it is a dynamic, reconstructive process. Neurologists categorize memory into several distinct systems, the most fleeting of which is sensory memory, followed by short-term (or working) memory, and finally, long-term memory. The transition of information from short-term to long-term storage is known as encoding. This process is heavily influenced by how much attention we pay to the information and how well we can 'hook' it to existing knowledge. For instance, if you are learning a new mathematical formula like the Pythagorean theorem, a² + b² = c², your brain is more likely to retain it if you visualize a physical triangle rather than just memorizing the letters. However, our memories are notoriously fallible. Every time we recall an event, we are not playing back a video recording; we are rebuilding the scene from fragments of data. This is why two people can witness the same car accident and provide completely different accounts to the police. Understanding the biological machinery of the brain—specifically the hippocampus, which acts as the brain’s librarian—helps us develop better study habits. Techniques like 'spaced repetition' capitalize on how our neurons form physical connections, proving that the mind is less like a muscle.", 
+    //     questions: [
+    //         { q: "What is the difference between 'short-term' and 'long-term' memory?", keys: ["storage", "duration", "fleeting"] }, 
+    //         { q: "What is 'encoding' in your own words?", keys: ["transition", "storage", "hook"] },
+    //         { q: "Why might two people remember the same event differently?", keys: ["rebuilding", "fragments", "fallible", "reconstructive"] },
+    //         { q: "What part of the brain acts like a 'librarian'?", keys: ["hippocampus"] },
+    //         { q: "Why is it better to study a little bit every day instead of all at once?", keys: ["spaced repetition", "muscle", "connections"] }
+    //     ] 
+    // },
+    // { 
+    //     title: "The Ethics of Mars Colonization", 
+    //     text: "For decades, the idea of humans living on Mars was the exclusive domain of science fiction. Today, 'becoming multi-planetary' is a serious goal. However, this ambition brings ethical dilemmas. The primary hurdle is the sheer hostility of the Martian environment. With an atmospheric pressure less than 1% of Earth's and cosmic radiation, survival requires total dependence on technology. If a life-support system fails, there is no 'Plan B.' Furthermore, there is the issue of Planetary Protection. If Mars harbors microbial life, arriving humans would inevitably contaminate the planet with Earth-based bacteria. Do we have the right to alter another planet’s ecosystem for our own survival? Finally, we must consider the governance of a Martian colony. Will the laws of Earth apply, or will Mars become a 'corporate state'? As we stand on the precipice, we must decide if we are going to Mars as explorers, as refugees, or as conquerors.", 
+    //     questions: [
+    //         { q: "Why is the air on Mars dangerous for humans?", keys: ["pressure", "radiation", "1%"] }, 
+    //         { q: "What is 'Planetary Protection'?", keys: ["microbial", "bacteria", "ecosystem"] },
+    //         { q: "What might happen if humans bring Earth bacteria to Mars?", keys: ["contaminate", "destroy"] },
+    //         { q: "Who should make the laws for people living on Mars?", keys: ["earth", "corporate", "governance"] },
+    //         { q: "Do you think humans have the right to change another planet?", keys: ["yes", "no", "opinion"] }
+    //     ] 
+    // },
+    // { 
+    //     title: "The Paradox of Choice", 
+    //     text: "In modern society, we often operate under the assumption that more choice is always better. However, psychologists have identified a phenomenon known as the Paradox of Choice. When faced with too many options, the human brain often experiences 'analysis paralysis.' Instead of making a decision and feeling happy about it, we become overwhelmed. We worry about making the 'wrong' choice and missing out on a better alternative. This is closely related to opportunity cost—the idea that by choosing one thing, you are giving up everything else. Research has shown that people presented with only six options are often more satisfied than those presented with thirty. With fewer choices, it is easier to justify the decision. To find true contentment, we may need to learn the art of being a 'satisficer'—someone who is happy with a choice that is 'good enough' rather than hunting indefinitely for the best.", 
+    //     questions: [
+    //         { q: "Why does having too many choices sometimes make us unhappy?", keys: ["overwhelmed", "wrong choice", "expectations"] }, 
+    //         { q: "What is 'analysis paralysis'?", keys: ["overwhelmed", "deciding", "information"] },
+    //         { q: "Why do we feel bad about what we didn't pick?", keys: ["opportunity cost", "giving up"] },
+    //         { q: "Why are people usually happier with 6 choices instead of 30?", keys: ["justify", "perfect"] },
+    //         { q: "What is a 'satisficer'?", keys: ["good enough", "contentment"] }
+    //     ] 
+    // },
     { 
-        title: "The Silent Language of Trees", 
-        text: "Imagine you are walking through a quiet forest. You see towering oaks and slender pines, all standing perfectly still. To you, they look like solitary giants, but beneath your feet, a secret conversation is happening. Scientists have discovered that trees are actually 'social' creatures. They communicate through a complex underground network of fungi often called the 'Wood Wide Web'. These tiny fungal threads connect the roots of different trees, allowing them to share vital resources. For example, if a large 'Mother Tree' has access to plenty of sunlight, she can send extra sugar through the network to a smaller sapling struggling in the shade. But it isn’t just about food. Trees also use this network to send out warnings. When a willow tree is attacked by hungry beetles, it releases chemical signals into the air and the soil. Nearby trees 'hear' this signal and begin producing bitter chemicals in their leaves to make themselves taste terrible to the bugs. This cooperation shows us that a forest isn't just a collection of individual plants; it’s a community. By looking out for one another, the trees ensure that the entire ecosystem stays healthy and strong. Next time you see a forest, remember: there is much more going on than meets the eye.", 
+        title: "The Great Barrier Reef", 
+        text: "The Great Barrier Reef is the world’s largest coral reef system, stretching over 1,400 miles off the coast of Australia. It is so massive that it can actually be seen from outer space. This vibrant underwater world is built by billions of tiny organisms called coral polyps. These polyps create hard calcium skeletons that stack on top of each other over thousands of years. The reef provides a home for thousands of species, including sea turtles, sharks, and brightly colored clownfish. However, the reef is currently facing a major threat: rising ocean temperatures. When the water gets too warm, the coral becomes stressed and turns white, a process known as bleaching. If the water doesn't cool down, the coral can die, leaving the many animals that depend on it without a home. Protecting our oceans is vital to keeping this natural wonder alive for future generations.", 
         questions: [
-            { q: "What is the 'Wood Wide Web'?", keys: ["fungi", "fungus", "fungal", "network"] }, 
-            { q: "How does a 'Mother Tree' help a smaller tree that is in the shade?", keys: ["sugar", "resources", "food"] },
-            { q: "How do trees warn each other about hungry bugs?", keys: ["chemical", "signals", "soil", "air"] },
-            { q: "What happens to the leaves of a tree after it gets a warning signal?", keys: ["bitter", "taste terrible"] },
-            { q: "Is a forest just a group of lonely plants, or is it a community?", keys: ["community"] }
+            { q: "Where is the Great Barrier Reef located?", keys: ["coast", "australia", "ocean"] }, 
+            { q: "What tiny organisms build the reef?", keys: ["coral", "polyps", "organisms"] },
+            { q: "Why is the reef turning white?", keys: ["warm", "temperature", "bleaching"] },
+            { q: "Can you see the reef from space?", keys: ["yes", "outer space", "massive"] },
+            { q: "What happens to animals if the coral dies?", keys: ["home", "depend", "habitat"] }
         ] 
     },
     { 
-        title: "The Power of the Tides", 
-        text: "If you’ve ever spent a day at the beach, you’ve probably noticed that the ocean's edge doesn't stay in one place. Over several hours, the water slowly creeps up the sand (high tide) and then later pulls back (low tide). This rhythmic rising and falling is caused by the invisible tug of gravity. The Moon is the main character in this story. Even though it is far away, its gravitational pull is strong enough to 'stretch' Earth’s oceans. This creates a bulge of water on the side of the Earth facing the Moon. As the Earth rotates, different parts of the world pass through these bulges, causing the tides to change. Today, engineers are finding ways to turn this moving water into electricity. By placing underwater turbines—which look like giant fans—in areas with strong tides, we can capture the energy of the flowing water. Unlike solar or wind power, which can be unpredictable, the tides are perfectly reliable. We know exactly when the water will move, making tidal energy a promising tool for a greener future.", 
+        title: "The Invention of the Internet", 
+        text: "It is hard to imagine a world without the internet, but it hasn't been around forever. The roots of the internet began in the 1960s as a government project called ARPANET. The goal was to allow computers at different universities to share information with one another. Back then, computers were the size of entire rooms! In the 1980s, a scientist named Tim Berners-Lee invented the World Wide Web, which made it easier for regular people to navigate the internet using links. Today, the internet is a global network of cables and satellites that connects billions of people. We use it for everything from schoolwork to watching videos. While it provides us with endless information, we must also be careful about digital privacy and the spread of false information. The internet has changed the way humans communicate more than almost any other invention in history.", 
         questions: [
-            { q: "What causes the ocean water to move in and out?", keys: ["gravity", "tug"] }, 
-            { q: "What is it called when the water moves far up onto the sand?", keys: ["high tide"] },
-            { q: "Which object in space has the most control over the tides?", keys: ["moon"] },
-            { q: "How can we use the tides to make electricity?", keys: ["turbines", "fans", "energy"] },
-            { q: "Why is tidal energy better than wind or solar energy?", keys: ["reliable", "predictable", "know when"] }
+            { q: "What was the original name of the internet project?", keys: ["arpanet", "government", "project"] }, 
+            { q: "Who invented the World Wide Web?", keys: ["tim", "berners-lee", "scientist"] },
+            { q: "What was the size of computers in the 1960s?", keys: ["size", "entire", "rooms"] },
+            { q: "How are computers connected globally today?", keys: ["cables", "satellites", "network"] },
+            { q: "What are two things we should be careful about online?", keys: ["privacy", "false", "information"] }
         ] 
     },
     { 
-        title: "The Migration of the Monarch", 
-        text: "Every autumn, millions of monarch butterflies perform one of the most incredible journeys in the animal kingdom. Weighing less than a paperclip, these fragile insects fly up to 3,000 miles from southern Canada and the northern United States all the way to the forests of central Mexico. How do they do it? Scientists believe monarchs use a 'sun compass.' Even on cloudy days, they can sense the position of the sun to stay on course. They also have a special internal clock that helps them adjust their direction as the sun moves across the sky throughout the day. The most amazing part of this journey is that no single butterfly makes the entire round trip. The monarchs that fly to Mexico live for several months, but their children and grandchildren will be the ones to fly back north in the spring. It takes four generations to complete the full cycle. Each new generation somehow knows exactly where to go, even though they have never been there before. This 'inherited map' remains one of nature's greatest mysteries.", 
+        title: "How Volcanos Shape the Earth", 
+        text: "Volcanoes are often seen as destructive forces, but they are also essential for building our planet. A volcano is essentially an opening in the Earth's crust that allows molten rock, called magma, to escape. Once magma reaches the surface, it is called lava. Over time, as lava cools and hardens, it creates new land. In fact, entire island chains like Hawaii were formed by volcanic activity under the ocean. Volcanoes also release gases that helped create Earth's atmosphere billions of years ago. Some volcanoes are 'active,' meaning they could erupt at any time, while others are 'extinct' and haven't erupted in thousands of years. While an eruption can be dangerous to nearby towns, the ash left behind is full of nutrients. This makes volcanic soil some of the most fertile ground on Earth for growing crops.", 
         questions: [
-            { q: "How many miles does a monarch butterfly fly to get to Mexico?", keys: ["3,000", "3000"] }, 
-            { q: "What do butterflies use to find their way on cloudy days?", keys: ["sun compass", "sun"] },
-            { q: "Does one single butterfly make the whole trip there and back?", keys: ["no", "never"] },
-            { q: "How many generations does it take to finish the full trip?", keys: ["four", "4"] },
-            { q: "How do young butterflies know where to go if they’ve never been there before?", keys: ["inherited", "map", "mysteries"] }
+            { q: "What is molten rock called before it hits the surface?", keys: ["magma", "underground", "rock"] }, 
+            { q: "How were the islands of Hawaii formed?", keys: ["volcano", "lava", "activity"] },
+            { q: "What is the difference between active and extinct volcanoes?", keys: ["erupt", "time", "thousands"] },
+            { q: "Why is volcanic ash good for the environment?", keys: ["nutrients", "fertile", "soil"] },
+            { q: "What did volcanic gases help create long ago?", keys: ["earth", "atmosphere", "gases"] }
         ] 
     },
     { 
-        title: "The Architecture of Memory", 
-        text: "Human memory is not a dusty filing cabinet where documents are stored in alphabetical order; rather, it is a dynamic, reconstructive process. Neurologists categorize memory into several distinct systems, the most fleeting of which is sensory memory, followed by short-term (or working) memory, and finally, long-term memory. The transition of information from short-term to long-term storage is known as encoding. This process is heavily influenced by how much attention we pay to the information and how well we can 'hook' it to existing knowledge. For instance, if you are learning a new mathematical formula like the Pythagorean theorem, a² + b² = c², your brain is more likely to retain it if you visualize a physical triangle rather than just memorizing the letters. However, our memories are notoriously fallible. Every time we recall an event, we are not playing back a video recording; we are rebuilding the scene from fragments of data. This is why two people can witness the same car accident and provide completely different accounts to the police. Understanding the biological machinery of the brain—specifically the hippocampus, which acts as the brain’s librarian—helps us develop better study habits. Techniques like 'spaced repetition' capitalize on how our neurons form physical connections, proving that the mind is less like a muscle.", 
+        title: "The Mystery of Dark Matter", 
+        text: "When you look up at the night sky, you see stars, planets, and galaxies. However, scientists believe that everything we can see makes up only about 5% of the entire universe. The rest is made of a mysterious substance called dark matter. Unlike stars or planets, dark matter does not emit, absorb, or reflect light. This makes it completely invisible to telescopes. So, how do we know it exists? Scientists can see how its gravity pulls on the stars and galaxies that we *can* see. It acts like an invisible glue that keeps galaxies from flying apart as they spin. Without dark matter, the universe would look very different. Even though we cannot touch it or see it, dark matter is one of the most important building blocks of space. Researchers are still working hard in labs deep underground to catch a glimpse of a dark matter particle.", 
         questions: [
-            { q: "What is the difference between 'short-term' and 'long-term' memory?", keys: ["storage", "duration", "fleeting"] }, 
-            { q: "What is 'encoding' in your own words?", keys: ["transition", "storage", "hook"] },
-            { q: "Why might two people remember the same event differently?", keys: ["rebuilding", "fragments", "fallible", "reconstructive"] },
-            { q: "What part of the brain acts like a 'librarian'?", keys: ["hippocampus"] },
-            { q: "Why is it better to study a little bit every day instead of all at once?", keys: ["spaced repetition", "muscle", "connections"] }
+            { q: "How much of the universe is made of stuff we can actually see?", keys: ["5%", "five", "percent"] }, 
+            { q: "Why can’t we see dark matter with a telescope?", keys: ["invisible", "light", "reflect"] },
+            { q: "How do scientists know dark matter is there?", keys: ["gravity", "pulls", "stars"] },
+            { q: "What would happen to galaxies without dark matter?", keys: ["flying", "apart", "spin"] },
+            { q: "Where are scientists trying to find dark matter particles?", keys: ["labs", "deep", "underground"] }
         ] 
     },
     { 
-        title: "The Ethics of Mars Colonization", 
-        text: "For decades, the idea of humans living on Mars was the exclusive domain of science fiction. Today, 'becoming multi-planetary' is a serious goal. However, this ambition brings ethical dilemmas. The primary hurdle is the sheer hostility of the Martian environment. With an atmospheric pressure less than 1% of Earth's and cosmic radiation, survival requires total dependence on technology. If a life-support system fails, there is no 'Plan B.' Furthermore, there is the issue of Planetary Protection. If Mars harbors microbial life, arriving humans would inevitably contaminate the planet with Earth-based bacteria. Do we have the right to alter another planet’s ecosystem for our own survival? Finally, we must consider the governance of a Martian colony. Will the laws of Earth apply, or will Mars become a 'corporate state'? As we stand on the precipice, we must decide if we are going to Mars as explorers, as refugees, or as conquerors.", 
+        title: "The Roman Colosseum", 
+        text: "Standing in the heart of Rome, Italy, the Colosseum is a massive stone amphitheater that is nearly 2,000 years old. Completed in 80 AD, it could hold over 50,000 spectators. People gathered there to watch gladiators—often enslaved people or prisoners—fight one another or battle wild animals. The floor of the Colosseum was covered in sand to soak up blood, and beneath the floor was a complex system of tunnels and elevators used to bring animals and fighters into the arena. Sometimes, the Romans even flooded the arena to stage miniature naval battles with real boats. While the games were often violent, they were a major part of Roman culture and politics. Today, much of the Colosseum has been damaged by earthquakes and stone thieves, but it remains a powerful symbol of the Roman Empire’s engineering skills.", 
         questions: [
-            { q: "Why is the air on Mars dangerous for humans?", keys: ["pressure", "radiation", "1%"] }, 
-            { q: "What is 'Planetary Protection'?", keys: ["microbial", "bacteria", "ecosystem"] },
-            { q: "What might happen if humans bring Earth bacteria to Mars?", keys: ["contaminate", "destroy"] },
-            { q: "Who should make the laws for people living on Mars?", keys: ["earth", "corporate", "governance"] },
-            { q: "Do you think humans have the right to change another planet?", keys: ["yes", "no", "opinion"] }
+            { q: "How many people could fit inside the Colosseum?", keys: ["50,000", "fifty", "thousand"] }, 
+            { q: "What was kept in the tunnels beneath the floor?", keys: ["animals", "fighters", "elevators"] },
+            { q: "What was the purpose of the sand on the floor?", keys: ["soak", "up", "blood"] },
+            { q: "What did the Romans do to host boat battles?", keys: ["flooded", "arena", "water"] },
+            { q: "What caused damage to the Colosseum over time?", keys: ["earthquakes", "thieves", "damage"] }
         ] 
     },
     { 
-        title: "The Paradox of Choice", 
-        text: "In modern society, we often operate under the assumption that more choice is always better. However, psychologists have identified a phenomenon known as the Paradox of Choice. When faced with too many options, the human brain often experiences 'analysis paralysis.' Instead of making a decision and feeling happy about it, we become overwhelmed. We worry about making the 'wrong' choice and missing out on a better alternative. This is closely related to opportunity cost—the idea that by choosing one thing, you are giving up everything else. Research has shown that people presented with only six options are often more satisfied than those presented with thirty. With fewer choices, it is easier to justify the decision. To find true contentment, we may need to learn the art of being a 'satisficer'—someone who is happy with a choice that is 'good enough' rather than hunting indefinitely for the best.", 
+        title: "The Science of Sleep", 
+        text: "You spend about one-third of your life asleep, but your brain isn't just 'turned off' during that time. Sleep is an active period where your body repairs itself and your brain organizes information. There are two main types of sleep: REM (Rapid Eye Movement) and non-REM sleep. During REM sleep, your brain is very active, and this is when most dreaming happens. Your muscles become temporarily paralyzed so you don't act out your dreams. Deep non-REM sleep is when your body releases growth hormones and heals tissues. If you don't get enough sleep, you might feel grumpy or have trouble concentrating. This is because sleep helps clear out toxins that build up in your brain during the day. For a 7th grader, getting about 9 hours of sleep is the best way to keep your memory sharp and your body healthy.", 
         questions: [
-            { q: "Why does having too many choices sometimes make us unhappy?", keys: ["overwhelmed", "wrong choice", "expectations"] }, 
-            { q: "What is 'analysis paralysis'?", keys: ["overwhelmed", "deciding", "information"] },
-            { q: "Why do we feel bad about what we didn't pick?", keys: ["opportunity cost", "giving up"] },
-            { q: "Why are people usually happier with 6 choices instead of 30?", keys: ["justify", "perfect"] },
-            { q: "What is a 'satisficer'?", keys: ["good enough", "contentment"] }
+            { q: "What are the two main types of sleep?", keys: ["rem", "non-rem", "rapid"] }, 
+            { q: "When do most of our dreams happen?", keys: ["rem", "active", "dreaming"] },
+            { q: "What does the body do during deep non-REM sleep?", keys: ["growth", "heals", "repairs"] },
+            { q: "Why do your muscles freeze during REM sleep?", keys: ["paralyzed", "act", "dreams"] },
+            { q: "How many hours of sleep should a middle schooler get?", keys: ["9", "nine", "hours"] }
+        ] 
+    },
+    { 
+        title: "The History of Chocolate", 
+        text: "Chocolate is a favorite treat around the world, but it didn't start out as a sweet candy bar. Thousands of years ago, the Maya and Aztec people in Central America grew cacao trees. They took the seeds from the cacao pods, fermented them, and ground them into a thick paste. They didn't add sugar; instead, they mixed the paste with water, chili peppers, and cornmeal to make a frothy, bitter drink. They believed that chocolate was a gift from the gods and even used cacao beans as a form of money. When Spanish explorers arrived in the 1500s, they took chocolate back to Europe. Eventually, people began adding sugar and milk to make it taste more like the chocolate we know today. In the 1800s, the first solid chocolate bars were invented, turning a bitter drink into a portable snack.", 
+        questions: [
+            { q: "Which ancient civilizations first used cacao?", keys: ["maya", "aztec", "america"] }, 
+            { q: "What did the original chocolate drink taste like?", keys: ["bitter", "spicy", "chili"] },
+            { q: "What did the Aztecs use cacao beans for besides food?", keys: ["money", "currency", "trading"] },
+            { q: "Who brought chocolate to Europe?", keys: ["spanish", "explorers", "spain"] },
+            { q: "What was added to chocolate to make it popular in Europe?", keys: ["sugar", "milk", "sweet"] }
+        ] 
+    },
+    { 
+        title: "Bioluminescence: Nature’s Glow", 
+        text: "Imagine a creature that can create its own light without using a battery or a lightbulb. This is called bioluminescence. Most bioluminescent animals live in the deep ocean, where it is pitch black. They produce light through a chemical reaction inside their bodies involving a substance called luciferin. Different animals use their glow for different reasons. The anglerfish uses a glowing 'lure' on its head to attract curious prey. Other creatures, like certain types of shrimp, shoot out glowing clouds to confuse predators so they can escape. On land, the most famous example is the firefly. Fireflies use their light to talk to each other and find mates. Whether it's in the deep sea or a summer backyard, bioluminescence is a beautiful example of how living things adapt to their environments.", 
+        questions: [
+            { q: "What is it called when an animal makes its own light?", keys: ["bioluminescence", "glow", "create"] }, 
+            { q: "What is the name of the substance that helps create the glow?", keys: ["luciferin", "chemical", "reaction"] },
+            { q: "How does an anglerfish use its light?", keys: ["lure", "prey", "attract"] },
+            { q: "Why do fireflies glow?", keys: ["mates", "talk", "communicate"] },
+            { q: "Where do most bioluminescent creatures live?", keys: ["ocean", "deep", "sea"] }
+        ] 
+    },
+    { 
+        title: "The Great Wall of China", 
+        text: "The Great Wall of China is one of the most impressive building projects in human history. It isn't just one long wall, but a series of walls and fortifications built over hundreds of years. The main purpose of the wall was to protect the Chinese Empire from invasions by nomadic groups from the north. Construction began more than 2,000 years ago, and different dynasties added to it over time. Millions of workers, including soldiers and peasants, helped build it using stone, brick, and even packed earth. Along the wall, there are watchtowers where soldiers could send signals using smoke or fire to warn of approaching enemies. While the wall didn't always stop invaders, it served as a powerful border and helped control trade along the Silk Road. Today, it is a famous landmark visited by millions of people each year.", 
+        questions: [
+            { q: "What was the main reason the wall was built?", keys: ["protect", "invasions", "enemies"] }, 
+            { q: "Was the Great Wall built all at once?", keys: ["no", "dynasties", "hundreds"] },
+            { q: "What materials were used to build the wall?", keys: ["stone", "brick", "earth"] },
+            { q: "How did soldiers send messages along the wall?", keys: ["smoke", "fire", "signals"] },
+            { q: "What famous trade route did the wall help control?", keys: ["silk", "road", "trade"] }
+        ] 
+    },
+    { 
+        title: "The Role of Honeybees", 
+        text: "Honeybees are much more than just insects that make a sweet treat; they are vital to our food supply. As bees fly from flower to flower looking for nectar, they pick up pollen on their fuzzy bodies. When they move to the next flower, they drop some of that pollen off. This process is called pollination, and it allows plants to create seeds and fruit. Without bees, many of the foods we love—like apples, strawberries, and almonds—would disappear. Inside a beehive, there is a strict social structure. There is one queen who lays eggs, thousands of female worker bees who do all the chores, and a few male drones. Bees communicate the location of good flowers by performing a 'waggle dance.' By moving in specific patterns, they tell their hive-mates exactly how far away the food is and which direction to fly.", 
+        questions: [
+            { q: "What is the process called when bees move pollen?", keys: ["pollination", "pollen", "seeds"] }, 
+            { q: "What are three foods that depend on bees?", keys: ["apples", "strawberries", "almonds"] },
+            { q: "Who is in charge of laying eggs in a hive?", keys: ["queen", "bee", "eggs"] },
+            { q: "What do worker bees do?", keys: ["chores", "work", "female"] },
+            { q: "How do bees tell each other where to find food?", keys: ["waggle", "dance", "communicate"] }
+        ] 
+    },
+    { 
+        title: "The Rosetta Stone", 
+        text: "For hundreds of years, the hieroglyphics of Ancient Egypt were a complete mystery. No one knew how to read the strange pictures carved into temple walls. That changed in 1799 when French soldiers found a large black slab of stone near the town of Rosetta. This 'Rosetta Stone' had the same message written in three different languages: Hieroglyphics, Demotic (another Egyptian script), and Ancient Greek. Because scholars could already read Ancient Greek, they were finally able to use it as a key to crack the code of the hieroglyphics. It took a brilliant man named Jean-François Champollion years of study to finally translate the symbols. This discovery opened up a whole new world of understanding, allowing us to read the journals, laws, and stories of people who lived thousands of years ago.", 
+        questions: [
+            { q: "Why was the Rosetta Stone so important?", keys: ["hieroglyphics", "translate", "code"] }, 
+            { q: "How many languages were written on the stone?", keys: ["three", "3", "languages"] },
+            { q: "Which language on the stone did scholars already know?", keys: ["greek", "ancient", "read"] },
+            { q: "Who was the man who finally translated the stone?", keys: ["jean-francois", "champollion", "french"] },
+            { q: "What did the stone allow us to learn about?", keys: ["egypt", "history", "stories"] }
+        ] 
+    },
+    { 
+        title: "The Life of a Star", 
+        text: "Stars may look like tiny dots of light, but they are actually giant balls of burning gas. A star begins its life in a nebula, which is a massive cloud of dust and gas. Over millions of years, gravity pulls the dust together until it gets so hot and dense that it starts a process called nuclear fusion. This is when the star begins to shine. The size of a star determines how long it will live. Small stars, like our Sun, can live for billions of years. When a small star runs out of fuel, it eventually shrinks into a 'white dwarf.' However, massive stars have a much more dramatic ending. When they run out of fuel, they collapse and then explode in a giant flash called a supernova. This explosion is so bright it can outshine an entire galaxy. The leftovers of a supernova can even turn into a black hole.", 
+        questions: [
+            { q: "Where is a star born?", keys: ["nebula", "cloud", "dust"] }, 
+            { q: "What process makes a star shine?", keys: ["nuclear", "fusion", "heat"] },
+            { q: "What happens to a small star when it runs out of fuel?", keys: ["white", "dwarf", "shrinks"] },
+            { q: "What is a massive star’s explosion called?", keys: ["supernova", "explode", "flash"] },
+            { q: "What can the remains of a supernova become?", keys: ["black", "hole", "remains"] }
         ] 
     }
 ];
@@ -1384,6 +1547,7 @@ function handleFileUpload(event) {
     };
     reader.readAsText(file);
 }
+
 
 
 
